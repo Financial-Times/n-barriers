@@ -1,0 +1,26 @@
+{
+  "name": "n-barriers",
+  "version": "0.0.0",
+  "description": "Next FT - barriers",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Financial-Times/n-barriers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Financial-Times/n-barriers/issues"
+  },
+  "homepage": "https://github.com/Financial-Times/n-barriers",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.1.2",
+    "case": "^1.2.1",
+    "chai": "~2.0.0",
+    "chai-webdriver": "^1.0.0",
+    "fetch-mock": "^2.0.0",
+    "mocha": "^2.1.0",
+    "origami-build-tools": "^4.2.0",
+    "selenium-webdriver": "^2.46.1"
+  },
+  "private": true
+}

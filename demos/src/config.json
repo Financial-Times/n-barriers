@@ -1,0 +1,11 @@
+{
+  "demos": [
+    {
+      "name": "demo",
+      "js": "demos/src/demo.js",
+      "template": "demos/src/demo.html",
+      "sass": "demos/src/demo.scss",
+      "description": "Barrier demo"
+    }
+  ]
+}

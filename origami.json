@@ -1,0 +1,15 @@
+{
+    "description": "Next FT - barriers",
+    "origamiType": "module",
+    "origamiVersion": 1,
+    "support": "next.team@ft.com",
+    "supportStatus": "experimental",
+    "runServer": "true",
+    "demos": [
+        {
+            "path": "/demos/demo.html",
+            "expanded": true,
+            "description": "Barriers"
+        }
+    ]
+}

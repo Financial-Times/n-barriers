@@ -1,0 +1,14 @@
+.barrier-grid__suspended {
+	text-align: center;
+}
+
+.barrier-grid__suspended-header {
+	line-height: 40px;
+}
+
+.suspended-barrier__select {
+	@include nButtons();
+	@include nButtonsSize(big);
+	@include nButtonsTheme(standout);
+	text-transform: none;
+}

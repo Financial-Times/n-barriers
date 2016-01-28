@@ -1,0 +1,25 @@
+{
+  "name": "n-barriers",
+  "main": [
+    "main.scss",
+    "main.js"
+  ],
+  "description": "Next FT - barriers",
+  "homepage": "https://github.com/Financial-Times/n-barriers",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/js/components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "next-feature-flags-client": "^8.2.0",
+    "next-sass-setup": "^7.0.5",
+    "o-grid": "^4.0.5",
+    "next-buttons": "~2.2.4"
+  }
+}
