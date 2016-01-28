@@ -16,7 +16,7 @@ watch:
 	obt demo --runServer --updateorigami --watch
 
 test:
-	npm test
+	@echo "No tests yet!"
 
 verify:
 	obt verify
