@@ -15,3 +15,7 @@
 	left: 0;
 	z-index: 17;
 }
+
+.barrier__container {
+	@include oGridColspan(12 L10 center);
+}
