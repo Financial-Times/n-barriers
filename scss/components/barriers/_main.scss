@@ -4,6 +4,8 @@
 @import 'barrier-grid';
 @import 'registration';
 @import 'suspended';
+@import 'inline';
+@import 'narrow';
 
 .barrier-overlay {
 	position: fixed;
@@ -14,8 +16,4 @@
 	top: 0;
 	left: 0;
 	z-index: 17;
-}
-
-.barrier__container {
-	@include oGridColspan(12 L10 center);
 }

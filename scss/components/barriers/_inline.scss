@@ -5,10 +5,10 @@
 /* inline class hacked into to app that results in barrier being invoked*/
 
 .inline {
-  .barrier-overlay,
-  .barrier-grid,
-  .premium-barrier-simple,
-  .subscription-barrier-grid,
+	.barrier-overlay,
+	.barrier-grid,
+	.premium-barrier-simple,
+	.subscription-barrier-grid,
 	.trial-barrier-grid{
 		z-index: auto;
 	}

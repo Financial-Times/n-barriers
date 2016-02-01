@@ -156,31 +156,32 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		background-color: oColorsGetPaletteColor('white');
 		padding-top: 20px;
 		padding-bottom: 10px;
-		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
-		@include oGridRespondTo(S) {
-			min-height: 560px;
-		}
-	}
 
-	.trial-barrier-grid__option--option1 .trial-barrier-grid__option-inner,
-	.trial-barrier-grid__option--option3 .trial-barrier-grid__option-inner {
-		@include oGridRespondTo(S) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
-		}
-	}
-
-	.trial-barrier-grid__option--option1 .trial-barrier-grid__option-inner,
-	.trial-barrier-grid__option--option2 .trial-barrier-grid__option-inner,
-	.trial-barrier-grid__option--option3 .trial-barrier-grid__option-inner {
-		@include oGridRespondTo(L) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
-		}
+		flex: 1;
 	}
 
 	.trial-barrier-grid__option {
+
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
 		background: white;
 		color: black;
+		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+
+		&.trial-barrier-grid__option--option1,
+		&.trial-barrier-grid__option--option3 {
+			@include oGridRespondTo(S) {
+				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			}
+		}
+
+		&.trial-barrier-grid__option--option1,
+		&.trial-barrier-grid__option--option2,
+		&.trial-barrier-grid__option--option3 {
+			@include oGridRespondTo(L) {
+				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			}
+		}
+
 	}
 
 	.trial-barrier-grid__learn-more {
@@ -195,20 +196,21 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .trial-barrier-grid--missing-newspaper {
+
 	.trial-barrier-grid__option {
 		@include oGridColumn((default: full-width, M: one-third));
 		@include oGridRemoveGutters();
-	}
 
-	.trial-barrier-grid__option--option2 .trial-barrier-grid__option-inner,
-	.trial-barrier-grid__option--option3 .trial-barrier-grid__option-inner {
-		@include oGridRespondTo(M) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
+		&.trial-barrier-grid__option--option2,
+		&.trial-barrier-grid__option--option3 {
+			@include oGridRespondTo(M) {
+				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			}
 		}
-	}
 
-	.trial-barrier-grid__option--option4 .trial-barrier-grid__option-inner {
-		border-right: 0;
+		&.trial-barrier-grid__option--option4 {
+			border-right: 0;
+		}
 	}
 
 	.trial-barrier-grid__price {

@@ -1,0 +1,22 @@
+/*********************************************
+* Styling for inline rendering of barriers
+**********************************************/
+
+/* narrow class hacked into to app that results in barrier being invoked*/
+
+
+.narrow {
+	.barrier-grid__option,
+	.subscription-barrier-grid__option,
+	.trial-barrier-grid__option {
+		@include oGridColspan((default: full-width, M: one-half));
+	}
+
+	.barrier {
+		padding: 0;
+	}
+
+	.barrier__container {
+		@include oGridColspan(12)
+	}
+}
