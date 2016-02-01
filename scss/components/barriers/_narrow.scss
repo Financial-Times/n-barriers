@@ -6,17 +6,38 @@
 
 
 .narrow {
-	.barrier-grid__option,
-	.subscription-barrier-grid__option,
+
+  &.barrier {
+    padding-right: 0;
+  }
+
+  .barrier-grid__option {
+    @include oGridColspan((default: full-width, M: one-half));
+    &.barrier-grid__option--option2 {
+      @include oGridRespondTo(M) {
+      	border-right: 0;
+      }
+    }
+  }
+	.subscription-barrier-grid__option {
+    @include oGridColspan((default: full-width, M: one-half));
+    &.subscription-barrier-grid__option--option2 {
+      @include oGridRespondTo(M) {
+        border-right: 0;
+      }
+    }
+  }
 	.trial-barrier-grid__option {
 		@include oGridColspan((default: full-width, M: one-half));
-	}
-
-	.barrier {
-		padding: 0;
+    &.trial-barrier-grid__option--option2 {
+      @include oGridRespondTo(M) {
+        border-right: 0;
+      }
+    }
 	}
 
 	.barrier__container {
-		@include oGridColspan(12)
+		@include oGridColspan(12);
+    padding-left: 0;
 	}
 }
