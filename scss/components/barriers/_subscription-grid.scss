@@ -132,30 +132,27 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
-		@include oGridRespondTo(S) {
-			min-height: 490px;
-		}
+		flex: 1;
 	}
-
-	.subscription-barrier-grid__option--option1 .subscription-barrier-grid__option-inner,
-	.subscription-barrier-grid__option--option3 .subscription-barrier-grid__option-inner {
-		@include oGridRespondTo(S) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
-		}
-	}
-
-	.subscription-barrier-grid__option--option1 .subscription-barrier-grid__option-inner,
-	.subscription-barrier-grid__option--option2 .subscription-barrier-grid__option-inner,
-	.subscription-barrier-grid__option--option3 .subscription-barrier-grid__option-inner {
-		@include oGridRespondTo(L) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
-		}
-	}
-
 
 	.subscription-barrier-grid__option {
 		@include oGridColumn((default: full-width, S: one-half, L: one-quarter));
 			@include oGridRemoveGutters();
+
+		&.subscription-barrier-grid__option--option1,
+		&.subscription-barrier-grid__option--option3 {
+			@include oGridRespondTo(S) {
+				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			}
+		}
+
+		&.subscription-barrier-grid__option--option1,
+		&.subscription-barrier-grid__option--option2,
+		&.subscription-barrier-grid__option--option3 {
+			@include oGridRespondTo(L) {
+				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			}
+		}
 	}
 
 	.subscription-barrier-grid__learn-more {
