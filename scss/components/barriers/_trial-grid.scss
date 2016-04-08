@@ -15,7 +15,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	background-color: oColorsGetPaletteColor('warm-2');
 	h2 {
 		@include oTypographySansBold(m);
-		@include oGridColumn((default: full-width, L: three-quarters));
+		@include oGridColspan((default: full-width, L: three-quarters));
 	}
 
 	h2 {
@@ -35,7 +35,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 	.trial-barrier-grid__sign-in {
 		@include oTypographySansBold(s);
-		@include oGridColumn((default: full-width, L: one-quarter));
+		@include oGridColspan((default: full-width, L: one-quarter));
 
 		background-color: oColorsGetPaletteColor('warm-3');
 		padding: 10px;
@@ -197,7 +197,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 .trial-barrier-grid--missing-newspaper {
 
 	.trial-barrier-grid__option {
-		@include oGridColumn((default: full-width, M: one-third));
+		@include oGridColspan((default: full-width, M: one-third));
 
 		&.trial-barrier-grid__option--option2,
 		&.trial-barrier-grid__option--option3 {
@@ -238,7 +238,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .trial-barrier-grid__other-option {
-	@include oGridColumn((default: one-third));
+	@include oGridColspan((default: one-third));
 
 	.trial-barrier-grid__other-option-inner {
 		text-align: center;

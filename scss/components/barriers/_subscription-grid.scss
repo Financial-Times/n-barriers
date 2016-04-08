@@ -13,7 +13,7 @@
 	background-color: oColorsGetPaletteColor('warm-2');
 	h2 {
 		@include oTypographySansBold(m);
-		@include oGridColumn((default: full-width, L: three-quarters));
+		@include oGridColspan((default: full-width, L: three-quarters));
 	}
 
 	h2 {
@@ -135,7 +135,7 @@
 	}
 
 	.subscription-barrier-grid__option {
-		@include oGridColumn((default: full-width, S: one-half, L: one-quarter));
+		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
 
 		&.subscription-barrier-grid__option--option1,
 		&.subscription-barrier-grid__option--option3 {
@@ -177,7 +177,7 @@
 }
 
 .subscription-barrier-grid__other-option {
-	@include oGridColumn((default: one-third));
+	@include oGridColspan((default: one-third));
 
 	.subscription-barrier-grid__other-option-inner {
 		text-align: center;
