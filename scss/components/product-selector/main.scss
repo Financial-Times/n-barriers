@@ -161,9 +161,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 	.product-selector__option {
 		@include oGridColumn((default: full-width, S: one-half, L: one-quarter));
-		@include oGridRespondTo(S) {
-			@include oGridRemoveGutters();
-		}
 
 		&.product-selector__option--option1,
 		&.product-selector__option--option3 {
@@ -226,7 +223,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .product-selector__other-option {
 	@include oGridColumn((default: full-width, S: one-third));
-	@include oGridRemoveGutters();
 
 	.product-selector__other-option-inner {
 		text-align: center;

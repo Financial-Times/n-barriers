@@ -136,7 +136,6 @@
 
 	.subscription-barrier-grid__option {
 		@include oGridColumn((default: full-width, S: one-half, L: one-quarter));
-			@include oGridRemoveGutters();
 
 		&.subscription-barrier-grid__option--option1,
 		&.subscription-barrier-grid__option--option3 {

@@ -198,7 +198,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 	.trial-barrier-grid__option {
 		@include oGridColumn((default: full-width, M: one-third));
-		@include oGridRemoveGutters();
 
 		&.trial-barrier-grid__option--option2,
 		&.trial-barrier-grid__option--option3 {

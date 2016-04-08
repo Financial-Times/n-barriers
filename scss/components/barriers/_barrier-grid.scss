@@ -237,7 +237,6 @@
 
 	.barrier-grid__option {
 		@include oGridColumn((default: full-width, S: one-half, L: one-quarter));
-		@include oGridRemoveGutters();
 		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
 		padding-bottom: 20px;
 	}
@@ -251,7 +250,6 @@
 .barrier-grid--missing-newspaper {
 	.barrier-grid__option {
 		@include oGridColumn((default: full-width, M: one-third));
-		@include oGridRemoveGutters();
 	}
 
 	.barrier-grid__option--option2 .barrier-grid__option-inner,
