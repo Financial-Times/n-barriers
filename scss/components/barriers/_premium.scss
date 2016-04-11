@@ -28,7 +28,7 @@
 
 	h2 {
 		@include oTypographySansBold(m);
-		@include oGridColumn((default: full-width, L: three-quarters));
+		@include oGridColspan((default: full-width, L: three-quarters));
 		margin: 0;
 	}
 
@@ -49,7 +49,7 @@
 
 	.premium-barrier-simple__sign-in {
 		@include oTypographySansBold(s);
-		@include oGridColumn((default: full-width, L: one-quarter));
+		@include oGridColspan((default: full-width, L: one-quarter));
 
 		background-color: oColorsGetPaletteColor('warm-3');
 		padding: 10px;
@@ -106,7 +106,7 @@
 }
 
 .premium-barrier-simple__other-option {
-	@include oGridColumn((default: one-half, L: 3));
+	@include oGridColspan((default: one-half, L: 3));
 
 	.premium-barrier-simple__other-option-inner {
 		text-align: center;

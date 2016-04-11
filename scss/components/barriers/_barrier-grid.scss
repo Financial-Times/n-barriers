@@ -13,7 +13,7 @@
 	background-color: oColorsGetPaletteColor('warm-2');
 	h2 {
 		@include oTypographySansBold(m);
-		@include oGridColumn((default: full-width, L: three-quarters));
+		@include oGridColspan((default: full-width, L: three-quarters));
 	}
 
 	h2 {
@@ -33,7 +33,7 @@
 
 	.barrier-grid__sign-in {
 		@include oTypographySansBold(s);
-		@include oGridColumn((default: full-width, L: one-quarter));
+		@include oGridColspan((default: full-width, L: one-quarter));
 
 		background-color: oColorsGetPaletteColor('warm-3');
 		padding: 10px 25px;
@@ -236,8 +236,7 @@
 
 
 	.barrier-grid__option {
-		@include oGridColumn((default: full-width, S: one-half, L: one-quarter));
-		@include oGridRemoveGutters();
+		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
 		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
 		padding-bottom: 20px;
 	}
@@ -250,8 +249,7 @@
 
 .barrier-grid--missing-newspaper {
 	.barrier-grid__option {
-		@include oGridColumn((default: full-width, M: one-third));
-		@include oGridRemoveGutters();
+		@include oGridColspan((default: full-width, M: one-third));
 	}
 
 	.barrier-grid__option--option2 .barrier-grid__option-inner,

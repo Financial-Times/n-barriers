@@ -21,5 +21,8 @@
     "next-sass-setup": "^7.0.5",
     "o-grid": "^4.0.5",
     "next-buttons": "~2.2.4"
+  },
+  "resolutions": {
+    "o-ft-icons": "next"
   }
 }

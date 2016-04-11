@@ -17,7 +17,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	padding: 10px;
 	h1 {
 		@include oTypographySansBold(m);
-		@include oGridColumn((default: full-width, L: three-quarters));
+		@include oGridColspan((default: full-width, L: three-quarters));
 		text-align: center;
 		margin-bottom: 10px;
 		padding-left: 10px;
@@ -30,7 +30,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 	.product-selector__sign-in {
 		@include oTypographySansBold(s);
-		@include oGridColumn((default: full-width, L: one-quarter));
+		@include oGridColspan((default: full-width, L: one-quarter));
 		text-align: center;
 		padding-right: 10px;
 
@@ -160,10 +160,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.product-selector__option {
-		@include oGridColumn((default: full-width, S: one-half, L: one-quarter));
-		@include oGridRespondTo(S) {
-			@include oGridRemoveGutters();
-		}
+		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
 
 		&.product-selector__option--option1,
 		&.product-selector__option--option3 {
@@ -225,8 +222,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .product-selector__other-option {
-	@include oGridColumn((default: full-width, S: one-third));
-	@include oGridRemoveGutters();
+	@include oGridColspan((default: full-width, S: one-third));
 
 	.product-selector__other-option-inner {
 		text-align: center;
