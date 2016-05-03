@@ -17,10 +17,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "next-buttons": "^2.2.4",
     "next-feature-flags-client": "^8.2.0",
-    "next-sass-setup": "^7.0.5",
-    "o-grid": "^4.0.5",
-    "next-buttons": "~2.2.4"
+    "next-sass-setup": "^8.0.2",
+    "o-grid": "^4.0.5"
   },
   "resolutions": {
     "o-ft-icons": "next"
