@@ -1,5 +1,7 @@
-node_modules/
-bower_components/
-build/
-demos/local/
-demos/demo.html
+/bower_components/
+/build/
+/demos/local/
+/demos/demo.html
+/node_modules/
+
+/npm-debug.log

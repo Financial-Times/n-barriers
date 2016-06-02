@@ -140,13 +140,13 @@
 
 .premium-barrier-simple__other-option--corporate a {
 	&:before {
-		@include nextIcon(section-business-life, oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('section-business-life', oColorsGetPaletteColor(link-1), 35);
 	}
 }
 
 .premium-barrier-simple__other-option--newspaper a {
 	&:before {
-		@include nextIcon(newspaper, oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('newspaper', oColorsGetPaletteColor(link-1), 35);
 	}
 }
 

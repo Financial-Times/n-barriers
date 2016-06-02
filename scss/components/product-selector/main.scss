@@ -142,7 +142,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		margin-left: 20px;
 
 		&:before {
-			@include nextIcon(tick, #35bd14, 14);
+			@include oIconsGetIcon('tick', #35bd14, 14);
 			content: '';
 			margin-right: 4px;
 			position: absolute;
@@ -252,24 +252,24 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .product-selector__other-option--corporate a {
 	&:before {
-		@include nextIcon(section-business-life, oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('section-business-life', oColorsGetPaletteColor(link-1), 35);
 	}
 }
 
 .product-selector__other-option--epaper a {
 	&:before {
-		@include nextIcon(section-magazine, oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('section-magazine', oColorsGetPaletteColor(link-1), 35);
 	}
 }
 
 .product-selector__other-option--newspaper a {
 	&:before {
-		@include nextIcon(newspaper, oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('newspaper', oColorsGetPaletteColor(link-1), 35);
 	}
 }
 
 .product-selector__other-option--weekend a {
 	&:before {
-		@include nextIcon(ipad-portrait, oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('ipad-portrait', oColorsGetPaletteColor(link-1), 35);
 	}
 }
