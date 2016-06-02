@@ -1,0 +1,108 @@
+/*****************************************
+* Header
+*****************************************/
+.mobile-barrier-grid__header {
+    margin-top: 10px;
+	background-color: oColorsGetPaletteColor('warm-2');
+	h2 {
+		@include oTypographySansBold(m);
+		@include oGridColspan((default: full-width, L: three-quarters));
+	}
+
+	h2 {
+		padding-left: 10px;
+	}
+
+	h2 .trial-barrier-grid__heading-pretext {
+		display: block;
+		padding-top: 10px;
+	}
+
+	h2 .trial-barrier-grid__article-title {
+		font-weight: normal;
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.mobile-barrier-grid__sign-in {
+	@include oTypographySansBold(s);
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.mobile-barrier-grid__prompt {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+
+/*****************************************
+* Main options
+*****************************************/
+.mobile-barrier-grid__option-inner {
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+	h3 {
+		margin: 0;
+	}
+}
+
+.mobile-barrier-grid__option--option1 .mobile-barrier-grid__option-inner {
+	background: #074f6c;
+}
+
+.mobile-barrier-grid__option--option2 .mobile-barrier-grid__option-inner {
+	background: #0d6b91;
+}
+
+.mobile-barrier-grid__option--option3 .mobile-barrier-grid__option-inner {
+	background: #58a2c5;
+}
+
+.mobile-barrier-grid__options {
+	background: #ffffff;
+	padding: 0 10px 10px;
+	margin-bottom: 10px;
+}
+.mobile-barrier-grid__option {
+	@include oGridColspan((default: full-width));
+    margin: 10px auto 0;
+}
+
+.mobile-barrier-grid__price {
+	font-weight: bold;
+}
+
+.js .mobile-barrier-grid__expandable {
+	transition: max-height .5s;
+	max-height: 0;
+	overflow: hidden;
+}
+
+.mobile-barrier-grid__option--expanded .mobile-barrier-grid__expandable {
+	max-height: 200px;
+}
+
+.mobile-barrier-grid__details {
+	@include oTypographySans(s);
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		padding-bottom: 5px;
+	}
+}
+
+.mobile-barrier-grid .mobile-barrier-grid__select {
+	@include nButtons();
+	@include nButtonsSize(big);
+	@include nButtonsTheme(inverse);
+	margin-top: 10px;
+	text-transform: none;
+}
