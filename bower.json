@@ -17,10 +17,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "next-buttons": "^2.2.4",
-    "next-feature-flags-client": "^8.2.0",
-    "next-sass-setup": "^8.0.2",
-    "o-grid": "^4.0.5",
-    "o-icons": "^4.1.2"
+    "n-ui": "^1.11.4",
+    "next-feature-flags-client": "^8.2.0"
   }
 }
