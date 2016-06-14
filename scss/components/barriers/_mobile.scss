@@ -20,6 +20,7 @@
 	@include oTypographySansBold(s);
 	width: 100%;
 	text-align: center;
+	color: #636363;
 	margin-bottom: 0;
 }
 
@@ -28,34 +29,31 @@
 *****************************************/
 .mobile-barrier-grid__option-inner {
 	padding: 10px 10px 10px 0;
+	text-align: center;
+	color: #ffffff;
 	h3 {
 		@include oTypographySansBold(m);
 		margin: 0;
 	}
 	p {
-		margin-top: 5px;
+		margin: 5px 0;
 	}
 }
 
 .mobile-barrier-grid__option--option1 {
-	background: #116e98;
+	background: #06374c;
 }
-
-.mobile-barrier-grid__option--option1 .mobile-barrier-grid__primary {
-	color: #ffffff;
-}
-
 
 .mobile-barrier-grid__option--option2 {
-	background: #f9dbcc;
+	background: #094965;
 }
 
 .mobile-barrier-grid__option--option3 {
-	background: #dbd0c4;
+	background: #0d5b7e;
 }
 
 .mobile-barrier-grid__option--option4 {
-	background: #dbd0c4;
+	background: #116e98;
 }
 
 .mobile-barrier-grid__options {
@@ -63,76 +61,15 @@
 	margin-bottom: 10px;
 }
 .mobile-barrier-grid__option {
+	border-radius: 5px;
     margin: 10px auto 0;
-}
-
-.mobile-barrier-grid__more {
-	font-weight: bold;
-	border-bottom: 1px dotted;
-	margin-left: 5px;
 }
 
 .mobile-barrier-grid__price {
 	@include oTypographySans(m);
 	display: inline-block;
 	font-weight: bold;
-	margin: 10px 0;
-	
 	span {
 		font-weight: normal;
 	}
-}
-
-.js .mobile-barrier-grid__expandable {
-	transition: max-height .5s;
-	max-height: 0;
-	overflow: hidden;
-}
-
-.mobile-barrier-grid__option--expanded .mobile-barrier-grid__expandable {
-	max-height: 280px;
-}
-
-.mobile-barrier-grid__details {
-	@include oTypographySans(s);
-	list-style: none;
-	padding: 0;
-	margin: 0;
-
-	li {
-		position: relative;
-		padding-bottom: 5px;
-		margin-left: 20px;
-
-		&:before {
-			@include oIconsGetIcon('tick', #333333, 14);
-			content: '';
-			margin-right: 4px;
-			position: absolute;
-			top: 2px;
-			left: -20px;
-		}
-	}
-}
-
-
-.mobile-barrier-grid__option--option1 {
-	li {
-		&:before {
-			@include oIconsGetIcon('tick', #ffffff, 14);
-		}
-	}
-}
-
-.mobile-barrier-grid__secondary {
-	text-align: right;
-	background: #fdf8f2;	
-}
-
-.mobile-barrier-grid .mobile-barrier-grid__select {
-	@include nButtons();
-	@include nButtonsSize(medium);
-	@include nButtonsTheme(standout);
-	text-transform: none;
-	margin: 0 10px;
 }
