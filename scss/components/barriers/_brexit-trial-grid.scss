@@ -85,7 +85,14 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		margin-bottom: 20px;
 	}
 
-	.brexit-trial-barrier-grid__price,
+	.brexit-trial-barrier-grid__price {
+		display: inline-block;
+		&.standout {
+			background-color: #9e2f50;
+			color: white;
+			padding: 5px;
+		}
+	}
 	.brexit-trial-barrier-grid__select {
 		display: inline-block;
 	}
