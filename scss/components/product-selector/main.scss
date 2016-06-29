@@ -77,7 +77,15 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		margin-bottom: 20px;
 	}
 
-	.product-selector__price,
+	.product-selector__price {
+		display: inline-block;
+		&.standout {
+			background-color: #9e2f50;
+			color: white;
+			padding: 5px;
+		}
+	}
+
 	.product-selector__select {
 		display: inline-block;
 	}
