@@ -245,6 +245,12 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			display: block;
 			margin-right: 0;
 			margin-bottom: 10px;
+
+			&.standout {
+				background-color: #9e2f50;
+				color: white;
+				padding: 5px;
+			}
 		}
 	}
 }
