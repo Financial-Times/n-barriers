@@ -17,8 +17,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "n-ui": "^2.0.0",
-    "next-feature-flags-client": "^8.2.0"
+    "n-ui": "^2.0.0"
   },
   "resolutions": {
     "n-ui": "^2.0.0"
