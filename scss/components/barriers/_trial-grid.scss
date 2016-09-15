@@ -317,3 +317,47 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		@include oIconsGetIcon('ipad-portrait', oColorsGetPaletteColor(link-1), 35);
 	}
 }
+
+.mock-overlay {
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+.barrier-mock-overlay {
+	z-index:3;
+}
+
+.trial-barrier-grid__header .u-visually-hidden {
+	padding: 0;
+	margin: 0;
+}
+
+p.barrier-grid__heading {
+	margin-bottom: 10px;
+	font-weight: bold;
+	max-width: 75%;
+	min-width: 71%;
+	padding: 0 0 10px 10px;
+	font-size: 20px;
+}
+
+p .barrier-grid__heading-pretext {
+	padding-top: 10px;
+	display:block;
+}
+
+p .barrier-grid__article-title {
+	font-weight: normal;
+	display: block;
+}
+
+p .barrier-grid__article-subtext {
+	font-weight: normal;
+	font-size: 15px;
+	display: block;
+}
