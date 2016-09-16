@@ -341,9 +341,10 @@ p.barrier-grid__heading {
 	margin-bottom: 10px;
 	font-weight: bold;
 	max-width: 75%;
-	min-width: 71%;
+	min-width: 75%;
 	padding: 0 0 10px 10px;
 	font-size: 20px;
+	box-sizing: border-box;
 }
 
 p .barrier-grid__heading-pretext {
