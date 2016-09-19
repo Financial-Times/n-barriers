@@ -1,6 +1,6 @@
 .corporate-special {
 
-	h2 {
+	.corporate-special__heading {
 		padding: 10px 10px;
 		@include oGridRespondTo(L) {
 			line-height: 50px;	
