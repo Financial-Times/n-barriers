@@ -7,8 +7,8 @@
 }
 
 .suspended-barrier__select {
-	@include nButtons();
-	@include nButtonsSize(big);
-	@include nButtonsTheme(standout);
+	@include oButtons();
+	@include oButtonsSize(big);
+	@include oButtonsTheme(standout);
 	text-transform: none;
 }

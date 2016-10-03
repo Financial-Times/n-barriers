@@ -84,9 +84,9 @@
 	}
 
 	.subscription-barrier-grid__select {
-		@include nButtons();
-		@include nButtonsSize(big);
-		@include nButtonsTheme(standout);
+		@include oButtons();
+		@include oButtonsSize(big);
+		@include oButtonsTheme(standout);
 	}
 
 	.subscription-barrier-grid__secondary {

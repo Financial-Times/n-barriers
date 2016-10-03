@@ -76,13 +76,10 @@
 }
 
 .premium-barrier-simple__upgrade-now {
-	@include nextLinkButton(
-		$background: oColorsGetPaletteColor('link-2')
-	);
-	@include oTypographySans(s);
-	width: 200px;
-	margin: 0 auto;
-	display: block;
+	@include oButtons();
+	@include oButtonsSize(big);
+	@include oButtonsTheme(standout);
+	text-transform: none;
 }
 
 /*****************************************
