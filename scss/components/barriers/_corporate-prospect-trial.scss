@@ -65,7 +65,19 @@
 .corporate-prospect-trial__form {
 
 	& > div {
-		min-height: 800px;
+
+		@include oGridRespondTo(M) {
+			min-height: 800px;
+		}
+
+		@include oGridRespondTo(L) {
+			min-height: 990px;
+		}
+
+		@include oGridRespondTo(XL) {
+			min-height: 910px;
+		}
+
 		background-color: oColorsGetPaletteColor('warm-5');
 	}
 
