@@ -38,11 +38,9 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		@include oTypographySansBold(s);
 		@include oGridColspan((default: full-width, L: one-quarter));
 
-		background-color: oColorsGetPaletteColor('warm-3');
 		padding: 10px;
 
 		@include oGridRespondTo(L) {
-			background-color: oColorsGetPaletteColor('warm-2');
 			text-align: right;
 			padding-top: 12px;
 		}
