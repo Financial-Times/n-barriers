@@ -27,7 +27,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	h2 .trial-barrier-grid__heading-pretext {
 		display: block;
 		padding-top: 10px;
-		
+
 	}
 
 	h2 .trial-barrier-grid__article-title {
@@ -39,11 +39,9 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		@include oTypographySansBold(s);
 		@include oGridColspan((default: full-width, L: one-quarter));
 
-		background-color: oColorsGetPaletteColor('warm-3');
 		padding: 10px;
 
 		@include oGridRespondTo(L) {
-			background-color: oColorsGetPaletteColor('warm-2');
 			text-align: right;
 			padding-top: 12px;
 		}
@@ -123,7 +121,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			display: block;
 			margin-right: 0;
 			margin-bottom: 10px;
-			
+
 			&.standout {
 				background-color: #9e2f50;
 				color: white;
@@ -138,9 +136,9 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.trial-barrier-grid__select {
-		@include nButtons();
-		@include nButtonsSize(big);
-		@include nButtonsTheme(standout);
+		@include oButtons();
+		@include oButtonsSize(big);
+		@include oButtonsTheme(standout);
 		text-transform: none;
 	}
 
@@ -186,7 +184,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 		flex: 1;
 	}
-	
+
 	.trial-barrier-grid__option {
 
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
@@ -280,7 +278,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	.trial-barrier-grid__other-option-inner {
 		text-align: center;
 		padding-bottom: 18px;
-		padding-top: 18px;
 	}
 
 	a {
@@ -333,14 +330,19 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	z-index:3;
 }
 
+.trial-barrier-grid__header .u-visually-hidden {
+	padding: 0;
+	margin: 0;
+}
+
 p.barrier-grid__heading {
-	padding-left: 25px;
 	margin-bottom: 10px;
 	font-weight: bold;
 	max-width: 75%;
-	min-width: 71%;
-	padding: 10px 0 10px 25px;
+	min-width: 75%;
+	padding: 0 0 10px 10px;
 	font-size: 20px;
+	box-sizing: border-box;
 }
 
 p .barrier-grid__heading-pretext {

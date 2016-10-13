@@ -1,0 +1,163 @@
+@mixin corporateProspectTrialSection() {
+		box-sizing: border-box;
+		overflow: hidden;
+		height: 100%;
+		padding: 0 10%;
+
+		@include oGridRespondTo(M) {
+			padding: 45px;
+		}
+
+		@include oGridRespondTo(L) {
+			padding: 80px;
+		}
+}
+
+.corporate-prospect-trial {
+
+	position: relative;
+	margin: {
+		top: 20px;
+	}
+
+	h1 {
+		@include oGridRespondTo(M) {
+			text-align: left;
+		}
+	}
+
+	h2 {
+		width: 100%;
+		margin: 15px 0;
+		text-align: center;
+
+		@include oGridRespondTo(M) {
+			text-align: left;
+		}
+	}
+
+	p {
+		width: 100%;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	ul {
+		padding: {
+			left: 20px;
+		};
+		list-style: none;
+	}
+
+	li {
+		@include oGridRespondTo(M) {
+			margin: 8px 0;
+		}
+
+		position: relative;
+		margin-left: 20px;
+
+		&:before {
+			@include oIconsGetIcon('tick', #35bd14, 14);
+			content: '';
+			margin-right: 4px;
+			position: absolute;
+			top: 2px;
+			left: -20px;
+		}
+	}
+
+	iframe {
+		min-height: 400px;
+		display: block;
+		border: 0;
+	}
+
+}
+
+.corporate-prospect-trial__form {
+
+	& > div {
+
+		@include oGridRespondTo(M) {
+			min-height: 800px;
+		}
+
+		@include oGridRespondTo(L) {
+			min-height: 990px;
+		}
+
+		@include oGridRespondTo(XL) {
+			min-height: 910px;
+		}
+
+		background-color: oColorsGetPaletteColor('warm-5');
+	}
+
+	@include oGridRespondTo(M) {
+		padding: {
+			left: 0;
+		}
+	}
+
+}
+
+.corporate-prospect-trial__contact {
+
+	@include oGridRespondTo(M) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	div {
+		@include corporateProspectTrialSection();
+		background-color: oColorsGetPaletteColor('warm-1');
+	}
+
+}
+
+.corporate-prospect-trial__description {
+
+	@include corporateProspectTrialSection();
+	background-color: oColorsGetPaletteColor('white');
+
+	img {
+		display: none;
+		margin: 0 auto 30px;
+
+		@include oGridRespondTo(L) {
+			display: block;
+		}
+	}
+
+	p {
+		text-align: center;
+		@include oGridRespondTo(M) {
+			text-align: left;
+		}
+	}
+
+}
+
+.corporate-prospect-trial__title {
+	text-align: center;
+	font-weight: 600;
+	font-size: 22px;
+	margin: 15px 0;
+	width: 100%;
+}
+
+.corporate-prospect-trial__sign-in {
+	@include oTypographySansBold(s);
+
+	@include oGridRespondTo(M) {
+		padding: 15px;
+		text-align: right;
+		background-color: oColorsGetPaletteColor('warm-2');
+	}
+
+
+	background-color: oColorsGetPaletteColor('warm-3');
+	padding: 10px;
+}
