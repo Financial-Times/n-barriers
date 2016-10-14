@@ -135,6 +135,7 @@
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
 		background: white;
 		color: black;
+		border-right: none;
 		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
 
 		&.trial-barrier-grid__option--option0,
@@ -220,8 +221,24 @@
 	}
 
 	.trial-barrier-grid__other-option {
-		border-right: 2px solid #f6e9d8;
-		height: 100%;
+		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
+			border-bottom: 2px solid oColorsGetPaletteColor('warm-2');
+			border-right: none;
+			height: 33.3%;
+			width: 100%;
+			min-width: 100%;
+		@include oGridRespondTo(S) {
+			height: 100%;
+			width:33.3%;
+			min-width: 33.3%;
+			border-right: 2px solid oColorsGetPaletteColor('warm-2');
+		}
+		@include oGridRespondTo(L) {
+			height:100%;
+			width: 33.3%;
+			min-width: 33.3%;
+			border-right: 2px solid oColorsGetPaletteColor('warm-2');
+		}
 		a:before {
 			display:none;
 		}
