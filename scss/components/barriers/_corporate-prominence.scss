@@ -155,6 +155,57 @@
 
 		&.trial-barrier-grid__option--team {
 			min-width: 100%;
+			@include oGridRespondTo(S) {
+				.trial-barrier-grid__option-inner {
+					padding-bottom: 0px;
+					display: flex;
+					padding-top:0px;
+					.trial-barrier-grid__top-section {
+						padding-top: 20px;
+						width:49%;
+						border-right: 2px solid oColorsGetPaletteColor('warm-2');
+						display:inline-block;
+					}
+					.trial-barrier-grid__secondary {
+						width: 49%;
+						display: inline-block;
+						vertical-align: top;
+						padding:0px;
+						padding-left:10px;
+						padding-top:10px;
+					}
+					.trial-barrier-grid__channel {
+						display:none;
+					}
+				}
+			}
+			@include oGridRespondTo(L) {
+				.trial-barrier-grid__option-inner {
+					display:block;
+					padding-top: 25px;
+					.trial-barrier-grid__top-section {
+						padding-top:0px;
+						width:100%;
+						display:block;
+						.trial-barrier-grid__image {
+							width:70%;
+							margin-bottom:-15px;
+						}
+					}
+					.trial-barrier-grid__channel {
+						height: 2px;
+						background-color: oColorsGetPaletteColor('warm-2');
+						display:block;
+					}
+					.trial-barrier-grid__secondary {
+						width:70%;
+						display:block;
+						margin:auto;
+						padding:30px;
+						padding-top:10px;
+					}
+				}
+			}
 		}
 
 		.trial-barrier-grid__option-inner--redesign {
@@ -174,6 +225,12 @@
 				padding: 30px;
 				padding-top:10px;
 				margin-bottom: -15px;
+				@include oGridRespondTo(S) {
+					&.trial-barrier-grid__image-team {
+						margin:auto;
+						width:50%;
+					}
+				}
 			}
 
 			.trial-barrier-grid__primary--redesign {
