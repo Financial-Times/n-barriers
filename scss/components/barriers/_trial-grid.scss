@@ -13,6 +13,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .trial-barrier-grid__header {
 	background-color: oColorsGetPaletteColor('warm-2');
+
 	h2 {
 		@include oTypographySansBold(m);
 		@include oGridColspan((default: full-width, L: three-quarters));
