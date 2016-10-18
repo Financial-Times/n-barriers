@@ -245,14 +245,13 @@
 				
 				a {
 					border-bottom: none;
-					font-size: 20px;
+					font-size: 18px;
 					letter-spacing: 0.2px;
 				}	
 			}
 
 			.trial-barrier-grid__image--redesign {
-				padding: 30px;
-				padding-top:10px;
+				padding: 10px 10px 30px 10px;
 				margin-bottom: -15px;
 				@include oGridRespondTo(S) {
 					&.trial-barrier-grid__image-team {
@@ -372,7 +371,7 @@
 				height:40px;	
 				a {
 					border-bottom: none;
-					font-size: 20px;
+					font-size: 18px;
 					letter-spacing: 0.2px;
 				}	
 			}
