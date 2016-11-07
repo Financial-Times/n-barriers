@@ -236,6 +236,7 @@
 			}
 		}
 
+
 		.trial-barrier-grid__option-inner--redesign {
 			padding-top:25px;
 			h3 {
@@ -300,6 +301,14 @@
 				}
 			}
 
+		}
+	}
+
+	.trial-barrier-grid__option-discount {
+		.trial-barrier-grid__option-inner {
+			.trial-barrier-grid__image a img {
+				width: 84.5%;
+			}
 		}
 	}
 
