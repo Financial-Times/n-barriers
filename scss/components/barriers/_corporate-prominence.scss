@@ -153,7 +153,6 @@
 
 	.trial-barrier-grid__option--redesign {
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
-		background: white;
 		color: black;
 		border-right: none;
 		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
@@ -237,6 +236,7 @@
 			}
 		}
 
+
 		.trial-barrier-grid__option-inner--redesign {
 			padding-top:25px;
 			h3 {
@@ -266,7 +266,8 @@
 				margin-bottom: 30px;
 				color: oColorsGetPaletteColor('cold-1');;
 			
-				.trial-barrier-grid__price--redesign {
+				.trial-barrier-grid__price--redesign,
+			        .trial-barrier-grid__price--redesignstandout {
 					font-size: 17px;
 					display: block;
 					margin-bottom: 15px;
@@ -300,6 +301,14 @@
 				}
 			}
 
+		}
+	}
+
+	.trial-barrier-grid__option-discount {
+		.trial-barrier-grid__option-inner {
+			.trial-barrier-grid__image a img {
+				width: 84.5%;
+			}
 		}
 	}
 
