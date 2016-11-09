@@ -40,4 +40,50 @@
 		@include oGridColspan(12);
     padding-left: 0;
 	}
+
+	.trial-barrier-grid--redesign {
+		.trial-barrier-grid__options-team {
+			width: 100%;
+			max-width: 100%;
+			min-width: 100%;
+		}
+
+		.trial-barrier-grid__offer-container {
+			display: block;
+		}
+		
+		.trial-barrier-grid__team {
+			width: 100%;
+			margin-top: 20px;
+			min-width: 100%;
+			display: block;
+			float: left;
+			clear: both;
+			margin-left: 0;
+		}
+		
+		.trial-barrier-grid__option--redesign.trial-barrier-grid__option--team {
+			.trial-barrier-grid__option-inner {
+				display: flex;
+				padding-top: 0;
+				
+				.trial-barrier-grid__top-section {
+					padding-top: 25px;
+					
+					.trial-barrier-grid__channel {
+						background: transparent;
+					}
+				}
+
+				.trial-barrier-grid__secondary {
+					width: 50%;
+					max-width: 50%;
+					min-width: 50%;
+					margin: 0;
+					padding: 25px 0 0 25px;
+					border-left: 1px solid #f6e9d8;
+				}
+			}
+		}
+	}
 }
