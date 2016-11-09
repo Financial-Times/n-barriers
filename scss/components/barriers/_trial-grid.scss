@@ -223,9 +223,15 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 		.trial-barrier-grid__option-inner {
 			background: #f5f5f5;
+			
+			.trial-barrier-grid__price {
+				.terms-and-conditions__marker {
+					color: #fff;
+				}
+			}
 		}
-	}
 
+	}
 }
 
 
