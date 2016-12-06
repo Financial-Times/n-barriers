@@ -152,5 +152,5 @@
 }
 
 .premium-barrier-simple__subscribe-link {
-	margin-bottom: 30px;
+	margin-bottom: 30px !important; // win specificity war
 }
