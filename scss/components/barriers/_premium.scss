@@ -137,7 +137,7 @@
 
 .premium-barrier-simple__other-option--corporate a {
 	&:before {
-		@include oIconsGetIcon('section-business-life', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('corporate', oColorsGetPaletteColor(link-1), 35);
 	}
 }
 
