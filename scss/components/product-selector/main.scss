@@ -252,7 +252,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .product-selector__other-option--corporate a {
 	&:before {
-		@include oIconsGetIcon('section-business-life', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('corporate', oColorsGetPaletteColor(link-1), 35);
 	}
 }
 
@@ -270,6 +270,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .product-selector__other-option--weekend a {
 	&:before {
-		@include oIconsGetIcon('ipad-portrait', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('ipad', oColorsGetPaletteColor(link-1), 35);
 	}
 }

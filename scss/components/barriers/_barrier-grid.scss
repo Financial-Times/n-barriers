@@ -328,7 +328,7 @@
 
 .barrier-grid__other-option--corporate a {
 	&:before {
-		@include oIconsGetIcon('section-business-life', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('corporate', oColorsGetPaletteColor(link-1), 35);
 	}
 }
 
@@ -340,6 +340,6 @@
 
 .barrier-grid__other-option--weekend a {
 	&:before {
-		@include oIconsGetIcon('ipad-portrait', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('ipad', oColorsGetPaletteColor(link-1), 35);
 	}
 }
