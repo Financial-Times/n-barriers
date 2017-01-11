@@ -22,3 +22,76 @@
 	top: 0;
 	left: 0;
 }
+
+h1.barrier-grid__heading {
+	margin-bottom: 0px;
+	font-weight: bold;
+	max-width: 75%;
+	min-width: 75%;
+	padding: 0 0 10px 10px;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+div .barrier-grid__heading {
+	margin-bottom: 0px;
+	font-weight: bold;
+	max-width: 75%;
+	min-width: 75%;
+	padding: 0 0 0px 10px;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+h1 .barrier-grid__article-title {
+	font-weight: normal;
+	display: block;
+}
+
+
+.barrier-grid__header p.barrier-grid__sign-in {
+	min-width: 100%;
+}
+
+.trial-barrier-grid__header p.trial-barrier-grid__sign-in {
+	min-width: 100%;
+	background-color: getColor('pink-tint3'); //to match other barriers
+}
+
+@include oGridRespondTo($from: L) {
+	.trial-barrier-grid__header p.trial-barrier-grid__sign-in {
+		background-color: getColor('warm-2');
+	}
+}
+
+p .barrier-grid__article-title {
+	margin-bottom: 10px;
+	font-weight: 700;
+	max-width: 75%;
+	min-width: 75%;
+	padding: 0 0 10px 10px;
+	font-size: 20px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h2.barrier-grid__suspended-header {
+	font-size: 20px;
+	line-height: initial;
+}
+
+h2.barrier-grid__section-heading {
+	font-size: 20px;
+}
+
+.trial-barrier-grid__other-options {
+	h2{
+		font-family: MetricWeb, sans-serif;
+		line-height: 17px;
+		font-size: 15px;
+		font-weight: 600;
+		text-align: center;
+		padding-bottom: 10px;
+		border-bottom: 1px solid getColor('pink-tint1');
+	}
+}
