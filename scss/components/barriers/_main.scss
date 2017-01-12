@@ -103,3 +103,10 @@ h2.barrier-grid__section-heading {
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
+
+.barrier {
+	:focus {
+		outline: 4px solid getColor('claret');
+		outline-offset: -4px;
+	}
+}
