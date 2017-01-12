@@ -94,3 +94,12 @@ h2.barrier-grid__section-heading {
 		border-bottom: 1px solid getColor('pink-tint1');
 	}
 }
+
+.trial-barrier-grid__title {
+	color: getColor("teal-1");
+	font-size: 1.17em;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
