@@ -269,11 +269,18 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	background-color: oColorsGetPaletteColor('white');
 }
 
-.trial-barrier-grid__other-options h3 {
+.trial-barrier-grid__other-options h3,
+.trial-barrier-grid__other-options p {
 	@include oTypographySansBold(s);
 	text-align: center;
 	padding-bottom: 10px;
 	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+}
+
+// Avoiding refactoring due to hairy yak fear 🙈
+.trial-barrier-grid__other-options div p {
+	border: 0;
+	margin: 15px 0;
 }
 
 .trial-barrier-grid__other-option {
