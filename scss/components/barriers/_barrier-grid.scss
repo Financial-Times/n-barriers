@@ -65,7 +65,7 @@
 }
 
 .barrier-grid__section {
-	padding: 18px 25px !important;
+	padding: 18px 25px;
 	background-color: oColorsGetPaletteColor('white');
 	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
 	text-align: left !important;
@@ -81,7 +81,7 @@
 }
 
 .barrier-grid__section-heading {
-	margin-bottom: 20px !important;
+	margin-bottom: 20px;
 }
 
 .barrier-grid__section-logo-column {
