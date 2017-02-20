@@ -226,7 +226,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 		.trial-barrier-grid__option-inner {
 			background: #f5f5f5;
-
 		}
 
 	}
@@ -336,8 +335,8 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	&:before {
 		// TODO: this is temporary before the feature is permanent and then we
 		// can add the icon to oIcons (fticons) as with the others
-		background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fwww.ft.com%2F__assets%2Fcreatives%2Ficons%2Fweekend-print-premium.svg?source=next&tint=%2326747A,%2326747A&format=svg");
-		background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fwww.ft.com%2F__assets%2Fcreatives%2Ficons%2Fweekend-print-premium.svg?source=next&tint=%2326747A,%2326747A&format=png&width=35") \9;
+		background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fwww.ft.com%2F__assets%2Fcreatives%2Ficons%2Fweekend-premium.svg?source=next&tint=%2326747A,%2326747A&format=svg");
+		background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fwww.ft.com%2F__assets%2Fcreatives%2Ficons%2Fweekend-premium.svg?source=next&tint=%2326747A,%2326747A&format=png&width=35") \9;
 		width: 35px;
 		height: 35px;
 		display: inline-block;
