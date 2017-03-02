@@ -126,6 +126,7 @@
 	.premium-a-barrier-grid__subscribe-btn-container {
 		margin-top: 0;
 		margin-bottom: 10px;
+		text-align: center;
 
 		@include oGridRespondTo(M) {
 			margin: 0;
