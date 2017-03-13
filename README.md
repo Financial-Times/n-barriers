@@ -11,5 +11,5 @@ Also see inline barriers on the article page.
 
 ![](demos/src/trial-barrier.png)
 
-![](demos/src/trial-barrier-inline.png)
+![](demos/src/fast-ft-barrier-inline.png)
 
