@@ -137,6 +137,10 @@
 
 	.barrier-grid__description-para {
 		margin: 16px 0;
+
+		@include oGridRespondTo(L) {
+			min-height: 34px;
+		}
 	}
 
 	.barrier-grid__article-card-col {
