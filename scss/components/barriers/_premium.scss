@@ -71,6 +71,16 @@
 		border-bottom: 1px solid #cecece;
 	}
 
+	.barrier-grid__lead {
+		@include oGridRespondTo(L) {
+			min-height: 266px;
+		}
+
+		@include oGridRespondTo(XL) {
+			min-height: 238px;
+		}
+	}
+
 	.barrier-grid__premium-inclusions {
 		padding-bottom: 20px;
 
@@ -101,25 +111,27 @@
 	}
 
 	.barrier-grid__cta {
-		overflow: auto;
 		padding: 10px 15px;
 		// TODO: Add #f1f1f1 to o-colors
 		background-color: #f1f1f1;
 		text-align: center;
 
 		@include oGridRespondTo(M) {
+			height: 36px;
 			text-align: initial;
 		}
 	}
 
 	.barrier-grid__cta-price-diff-text {
-		margin-bottom: 0;
-		line-height: 36px;
+		margin-top: 15px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
 		text-transform: uppercase;
 
 		@include oGridRespondTo(M) {
-			margin: 0;
 			display: inline-block;
+			margin-top: 0;
 		}
 	}
 
@@ -135,12 +147,16 @@
 
 	}
 
+	.barrier-grid__cta-btn {
+		min-width: 150px;
+	}
+
+	.barrier-grid__cta-btn--disabled {
+		pointer-events: none;
+	}
+
 	.barrier-grid__description-para {
 		margin: 16px 0;
-
-		@include oGridRespondTo(L) {
-			min-height: 34px;
-		}
 	}
 
 	.barrier-grid__article-card-col {
@@ -289,13 +305,15 @@
 		@include oGridRespondTo(M) {
 			float: right;
 
-			div {
+			.barrier-grid__cta-suffix-text-container {
 				display: inline-block;
 				vertical-align: middle;
+			}
 
-				&:last-child {
-					padding-left: 25px;
-				}
+			.premium-a-barrier-grid__subscribe-btn-container {
+				display: inline-block;
+				vertical-align: middle;
+				padding-left: 25px;
 			}
 		}
 	}
@@ -324,9 +342,58 @@
 
 	.barrier-grid__emphasis-text {
 		font-weight: 600;
+		margin: 0;
 	}
 
 	.barrier-grid__extra-emphasis-text {
 		color: oColorsGetPaletteColor('teal-1');
 	}
+
+	@media print {
+		.barrier-grid__skeleton-cta-text,
+		.barrier-grid__skeleton-cta-button {
+			display: none !important;
+		}
+	}
+
+	@mixin skeleton-line($width, $animation, $base-color, $variant-color) {
+		width: $width;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		animation-name: $animation;
+		animation-timing-function: linear;
+		background-image: linear-gradient(to left, $base-color 0%, $variant-color 50%, $base-color 100%);
+		background-repeat: no-repeat;
+		background-size: $width 18px;
+		height: 18px;
+	}
+
+	@keyframes bodyPulse {
+		0% {
+			background-position: -250px 0;
+		}
+		100% {
+			background-position: 250px 0;
+		}
+	}
+
+	.barrier-grid__skeleton-cta-text {
+		@include skeleton-line(250px, bodyPulse, #f1f1f1, #dadada);
+
+		display: inline-block;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-top: 12px;
+
+		@include oGridRespondTo(M) {
+			margin-top: 0;
+		}
+	}
+
+	.barrier-grid__skeleton-cta-button {
+		@include skeleton-line(112px, bodyPulse, oColorsGetPaletteColor('teal-1'), oColorsGetPaletteColor('teal-2'));
+	}
+
 }
