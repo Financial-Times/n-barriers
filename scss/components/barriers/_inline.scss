@@ -10,10 +10,17 @@
 	.subscription-barrier-grid,
 	.trial-barrier-grid {
 		z-index: auto;
+		margin: 0 0 20px 0;
 	}
 }
 
 /* Inline in article barrier styling */
+
+.inline-barrier {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
 
 .inline-barrier__fader {
 	// scss-lint:disable DuplicateProperty
