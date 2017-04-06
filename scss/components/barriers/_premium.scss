@@ -175,6 +175,10 @@
 		width: 100%;
 		height: calc(100% + 50px);
 		background-color: transparent;
+
+		@include oGridRespondTo(XL) {
+			height: calc(100% + 42px);
+		}
 	}
 
 	.barrier-grid__article-card-container {
