@@ -91,6 +91,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			color: #A02D4F;
 			text-align: center;
 		}
+		.trial-barrier-grid__title {
+			margin: 10px 0;
+		}
+		.trial-barrier-grid__secondary-description-title {
+			text-align: left;
+			text-transform: none;
+		}
 	}
 
 	.trial-barrier-grid__image {
