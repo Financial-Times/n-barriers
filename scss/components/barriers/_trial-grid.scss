@@ -115,6 +115,11 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		margin-bottom: 20px;
 	}
 
+	.trial-barrier-grid__primary--sub-offer {
+		border-top: 1px solid oColorsGetPaletteColor('warm-2');
+		padding-top: 10px;
+	}
+
 	.trial-barrier-grid__price,
 	.trial-barrier-grid__select {
 		display: inline-block;
