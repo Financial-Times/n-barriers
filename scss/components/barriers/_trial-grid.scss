@@ -423,3 +423,61 @@ p .barrier-grid__article-subtext {
 	font-size: 15px;
 	display: block;
 }
+
+// styles for multiple trials on trial-grid
+
+.trial-barrier-grid .trial-barrier-grid__options .trial-barrier-grid__title.trial-barrier-grid__title__secondary {
+	text-align: left;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+
+.trial-barrier-grid .trial-barrier-grid__options .trial-barrier-grid__price.trial-barrier-grid__price__secondary {
+	text-align: left;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+
+.trial-barrier-grid__primary--sub-offer {
+	border-bottom-color: getColor('pink');
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.trial-barrier-grid__select__secondary::before {
+	content: 'OR';
+	position: absolute;
+	top: -20px;
+	right: 35px;
+	background: white;
+	padding: 0 10px;
+	color: getColor('grey-tint4');
+}
+
+.trial-barrier-grid__primary .trial-barrier-grid__select.trial-barrier-grid__select__test {
+	margin-top: 10px;
+}
+.trial-barrier-grid__primary .trial-barrier-grid__select.trial-barrier-grid__select__secondary {
+	margin-top: 10px;
+	font-size: 13px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.trial-barrier-grid__price__transparency {
+	color: getColor('grey-tint4');
+	text-align: left;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.trial-barrier-gird__secondary.trial-barrier-grid__price__transparency {
+	margin: 0 20px 15px 20px;
+	padding: 0;
+}
+
+.trial-barrier-grid__secondary h2 {
+	font-size: 14px;
+}
