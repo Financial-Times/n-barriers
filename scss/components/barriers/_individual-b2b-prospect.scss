@@ -2,6 +2,11 @@
 	margin-top: 15px;
 }
 
+.individual-b2b-prospect__sign-in {
+	@include oTypographySansBold(s);
+	text-align: right;
+}
+
 .individual-b2b-prospect__container {
 	background: oColorsGetPaletteColor('white');
 	margin-bottom: 45px;
