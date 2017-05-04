@@ -61,6 +61,7 @@
 		align-items: flex-start;
 		display: flex;
 	}
+	margin-bottom: 30px;
 }
 
 .individual-b2b-prospect__quote__container {
@@ -81,7 +82,7 @@
 		content: '';
 		display: block;
 		height: 3px;
-		margin-bottom: 20px;
+		margin: 30px 40px 30px 40px;
 		width: 95px;
 	}
 }
@@ -103,6 +104,7 @@
 	color: oColorsGetPaletteColor('grey-tint2');
 	list-style: none;
 	padding: 0;
+	margin-top: 0;
 
 	.individual-b2b-prospect__list__item {
 		margin-bottom: 25px;
@@ -118,7 +120,7 @@
 .individual-b2b-prospect__content__footer {
 	background: oColorsGetPaletteColor('teal-1');
 	color: oColorsGetPaletteColor('white');
-	margin-top: 40px;
+	margin-top: 10px;
 	padding: 30px;
 
 	.individual-b2b-prospect__content__footer__title,
