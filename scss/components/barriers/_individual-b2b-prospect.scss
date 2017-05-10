@@ -153,26 +153,24 @@
 .individual-b2b-prospect__footer__subtitle {
 	color: oColorsGetPaletteColor('grey-tint2');
 	display: inline-block;
-
-	@include oGridRespondTo(M) {
-		margin-left: 5px;
-	}
 }
 
 .individual-b2b-prospect__button-container {
-	display: flex;
-	flex-direction: column;
-
 	@include oGridRespondTo(M) {
+		display: flex;
 		flex-direction: row;
 	}
 }
 
 .individual-b2b-prospect__button-container__content {
-	flex-grow: 1;
 	margin-bottom: 10px;
 
+	> strong {
+		margin-right: 5px;
+	}
+
 	@include oGridRespondTo(M) {
+		flex: 1;
 		margin-bottom: 0;
 	}
 }
@@ -181,8 +179,10 @@
 	@include oButtons();
 	@include oButtonsSize(big);
 	
-	align-self: flex-start;
-	flex-shrink: 0;
+	@include oGridRespondTo(M) {
+		align-self: flex-start;
+		flex-shrink: 0;
+	}
 }
 
 .individual-b2b-prospect__footer {
