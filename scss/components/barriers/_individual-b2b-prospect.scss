@@ -97,7 +97,7 @@
 
 .individual-b2b-prospect__quote__text {
 	@include oTypographySerif(m);
-	color: oColorsGetPaletteColor('grey-tint3');
+	color: oColorsGetPaletteColor('grey-tint4');
 }
 
 .individual-b2b-prospect__quote__footer {
@@ -109,7 +109,7 @@
 }
 
 .individual-b2b-prospect__list {
-	color: oColorsGetPaletteColor('grey-tint2');
+	color: oColorsGetPaletteColor('grey-tint4');
 	flex: 1;
 	list-style: none;
 	padding: 0;
