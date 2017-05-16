@@ -1,5 +1,10 @@
 .individual-b2b-prospect {
 	margin-top: 15px;
+	text-align:center;
+
+	@include oGridRespondTo(M) {
+		text-align:left;
+	}
 }
 
 .individual-b2b-prospect__sign-in {
@@ -20,6 +25,7 @@
 	.barrier-grid__heading {
 		font-weight: normal;
 		margin-top: 0;
+		margin-right: 25px;
 		padding-left: 0;
 	}
 
@@ -33,6 +39,10 @@
 		&:after {
 			content: '”';
 		}
+	}
+
+	.individual-b2b-prospect__button {
+		@include oButtonsTheme(inverse);
 	}
 }
 
@@ -52,8 +62,12 @@
 		content: '';
 		display: block;
 		height: 5px;
-		margin-bottom: 20px;
+		margin: 0px auto 20px auto;
 		width: 200px;
+
+		@include oGridRespondTo(M) {
+			margin-left: 0px;
+		}
 	}
 }
 
@@ -90,8 +104,12 @@
 		content: '';
 		display: block;
 		height: 3px;
-		margin: 30px 0;
+		margin: 30px auto;
 		width: 95px;
+
+		@include oGridRespondTo(M) {
+			margin: 30px 0;
+		}
 	}
 }
 
@@ -101,7 +119,10 @@
 }
 
 .individual-b2b-prospect__quote__footer {
-	text-align: right;
+	text-align: center;
+	@include oGridRespondTo(M) {
+		text-align: right;
+	}
 }
 
 .individual-b2b-prospect__quote__company {
@@ -156,9 +177,13 @@
 }
 
 .individual-b2b-prospect__button-container {
+	text-align: center;
+
 	@include oGridRespondTo(M) {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
+		text-align: left;
 	}
 }
 
@@ -178,9 +203,9 @@
 .individual-b2b-prospect__button {
 	@include oButtons();
 	@include oButtonsSize(big);
-	
+
 	@include oGridRespondTo(M) {
-		align-self: flex-start;
+		align-self: center;
 		flex-shrink: 0;
 	}
 }
