@@ -16,7 +16,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	background-color: getColor('black-5');
 	padding: 10px;
 	h1 {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 2);
 		@include oGridColspan((default: full-width, L: three-quarters));
 		text-align: center;
 		margin-bottom: 10px;
@@ -29,7 +29,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.product-selector__sign-in {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: one-quarter));
 		text-align: center;
 		padding-right: 10px;
@@ -52,7 +52,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 .product-selector {
 	.product-selector__options {
 		h2 {
-			@include oTypographySans(s);
+			@include oTypographySans($scale: 0);
 			text-align: center;
 			text-transform: uppercase;
 			margin-bottom: 10px;
@@ -120,13 +120,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		padding-right: 30px;
 
 		h4 {
-			@include oTypographySansBold(s);
+			@include oTypographySansBold($scale: 0);
 			margin-bottom: 3px;
 			margin-top: 0;
 		}
 
 		ul {
-			@include oTypographySansBold(s);
+			@include oTypographySansBold($scale: 0);
 			list-style: none;
 			font-weight: normal;
 			margin: 0 0 20px;
@@ -179,7 +179,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.product-selector__learn-more {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: 0);
 
 		a {
 			text-decoration: none;
@@ -215,7 +215,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .product-selector__other-options h2 {
-	@include oTypographySansBold(s);
+	@include oTypographySansBold($scale: 0);
 	text-align: center;
 	padding-bottom: 10px;
 	border-bottom: 1px solid getColor('black-5');
@@ -231,7 +231,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	a {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: 0);
 		text-decoration: none;
 		color: getColor('teal-40');
 		overflow: hidden;

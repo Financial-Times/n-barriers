@@ -15,7 +15,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	background-color: getColor('black-5');
 
 	h2 {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 2);
 		@include oGridColspan((default: full-width, L: three-quarters));
 	}
 
@@ -36,7 +36,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.trial-barrier-grid__sign-in {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: one-quarter));
 
 		padding: 10px;
@@ -75,7 +75,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	.trial-barrier-grid__options {
 		h3 {
 			position: relative;
-			@include oTypographySans(s);
+			@include oTypographySans($scale: 0);
 			text-align: center;
 			text-transform: uppercase;
 			margin-bottom: 10px;
@@ -166,13 +166,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		padding-right: 30px;
 
 		h4 {
-			@include oTypographySansBold(s);
+			@include oTypographySansBold($scale: 0);
 			margin-bottom: 3px;
 			margin-top: 0;
 		}
 
 		ul {
-			@include oTypographySansBold(s);
+			@include oTypographySansBold($scale: 0);
 			list-style: none;
 			font-weight: normal;
 			margin: 0 0 20px;
@@ -228,7 +228,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.trial-barrier-grid__learn-more {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: 0);
 
 		a {
 			text-decoration: none;
@@ -284,7 +284,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .trial-barrier-grid__other-options h3,
 .trial-barrier-grid__other-options p {
-	@include oTypographySansBold(s);
+	@include oTypographySansBold($scale: 0);
 	text-align: center;
 	padding-bottom: 10px;
 	border-bottom: 1px solid getColor('black-5');
@@ -304,7 +304,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	a {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: 0);
 		border: 0;
 		overflow: hidden;
 

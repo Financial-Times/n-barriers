@@ -41,7 +41,7 @@
 }
 
 .inline-barrier__bridge {
-	@include oTypographySansBold('s');
+	@include oTypographySansBold($scale: 0);
 	background: getColor('white');
 	color: getColor('black-70');
 	margin: -15px -15px 15px;
@@ -49,7 +49,7 @@
 }
 
 .inline-barrier__heading {
-	@include oTypographySansBold('m');
+	@include oTypographySansBold($scale: 2);
 	color: getColor('black-70');
 	margin: 0 0 5px;
 }
@@ -70,7 +70,7 @@
 }
 
 .inline-barrier__cta-secondary {
-	@include oTypographySansSize('s');
+	@include oTypographySize($scale: 0);
 	margin: 0 0 10px;
 }
 

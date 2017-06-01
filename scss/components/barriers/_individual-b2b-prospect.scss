@@ -8,7 +8,7 @@
 }
 
 .individual-b2b-prospect__sign-in {
-	@include oTypographySansBold(s);
+	@include oTypographySansBold($scale: 0);
 	text-align: right;
 }
 
@@ -30,7 +30,7 @@
 	}
 
 	.barrier-grid__article-title {
-		@include oTypographySerif(l)
+		@include oTypographySerif($scale: 4)
 
 		&:before {
 			content: '“';
@@ -51,11 +51,11 @@
 }
 
 .individual-b2b-prospect__title {
-	@include oTypographySansBold(l)
+	@include oTypographySansBold($scale: 4)
 }
 
 .individual-b2b-prospect__subtitle {
-	@include oTypographySans(l)
+	@include oTypographySans($scale: 4)
 
 	&:before {
 		background: getColor('teal-40');
@@ -72,7 +72,7 @@
 }
 
 .individual-b2b-prospect__lead {
-	@include oTypographySans(m);
+	@include oTypographySans($scale: 2);
 }
 
 .individual-b2b-prospect__quote-list-container {
@@ -114,7 +114,7 @@
 }
 
 .individual-b2b-prospect__quote__text {
-	@include oTypographySerif(m);
+	@include oTypographySerif($scale: 2);
 	color: getColor('black-70');
 }
 
@@ -126,7 +126,7 @@
 }
 
 .individual-b2b-prospect__quote__company {
-	@include oTypographySansBold(m);
+	@include oTypographySansBold($scale: 2);
 }
 
 .individual-b2b-prospect__list {
@@ -142,7 +142,7 @@
 }
 
 .individual-b2b-prospect__list__title {
-	@include oTypographySansBold(m);
+	@include oTypographySansBold($scale: 2);
 	color: getColor('black-80');
 	margin-bottom: 15px;
 }
@@ -163,7 +163,7 @@
 	}
 
 	.individual-b2b-prospect__content__footer__subtitle {
-		@include oTypographySans(s);
+		@include oTypographySans($scale: 0);
 	}
 
 	.individual-b2b-prospect__button {

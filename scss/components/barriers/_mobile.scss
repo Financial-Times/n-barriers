@@ -7,18 +7,18 @@
 	background-color: getColor('black-5');
 
 	h2 {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 2);
 		@include oGridColspan((default: full-width, L: three-quarters));
 		margin: 0;
 
 		.mobile-barrier-grid__heading-pretext {
-			@include oTypographySans(m);
+			@include oTypographySans($scale: 2);
 		}
 	}
 }
 
 .mobile-barrier-grid__sign-in {
-	@include oTypographySansBold(s);
+	@include oTypographySansBold($scale: 0);
 	width: 100%;
 	text-align: center;
 	color: #636363;
@@ -34,7 +34,7 @@
 	color: getColor('white');
 
 	h3 {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 2);
 		margin: 0;
 	}
 	p {
@@ -68,7 +68,7 @@
 }
 
 .mobile-barrier-grid__price {
-	@include oTypographySans(m);
+	@include oTypographySans($scale: 2);
 	display: inline-block;
 	font-weight: bold;
 
