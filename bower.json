@@ -16,7 +16,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "n-ui-foundations": "^1.0.0",
+    "n-ui-foundations": "^2.0.0-alpha",
     "o-buttons": "^4.5.4"
+  },
+  "resolutions": {
+    "o-colors": "^4.0.1"
   }
 }
