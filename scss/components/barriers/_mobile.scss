@@ -4,7 +4,8 @@
 .mobile-barrier-grid__header {
     margin-top: 10px;
 	padding: 5px 10px;
-	background-color: oColorsGetPaletteColor('warm-2');
+	background-color: getColor('black-5');
+
 	h2 {
 		@include oTypographySansBold(m);
 		@include oGridColspan((default: full-width, L: three-quarters));
@@ -30,7 +31,8 @@
 .mobile-barrier-grid__option-inner {
 	padding: 10px 10px 10px 0;
 	text-align: center;
-	color: #ffffff;
+	color: getColor('white');
+
 	h3 {
 		@include oTypographySansBold(m);
 		margin: 0;
@@ -69,6 +71,7 @@
 	@include oTypographySans(m);
 	display: inline-block;
 	font-weight: bold;
+
 	span {
 		font-weight: normal;
 	}

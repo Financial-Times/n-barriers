@@ -13,13 +13,13 @@
 }
 
 .individual-b2b-prospect__container {
-	background: oColorsGetPaletteColor('white');
+	background: getColor('white');
 	margin-bottom: 45px;
 }
 
 .individual-b2b-prospect__header {
-	background: oColorsGetPaletteColor('teal-1');
-	color: oColorsGetPaletteColor('white');
+	background: getColor('teal-40');
+	color: getColor('white');
 	padding: 25px 0;
 
 	.barrier-grid__heading {
@@ -58,7 +58,7 @@
 	@include oTypographySans(l)
 
 	&:before {
-		background: oColorsGetPaletteColor('teal-1');
+		background: getColor('teal-40');
 		content: '';
 		display: block;
 		height: 5px;
@@ -100,7 +100,7 @@
 	margin-right: 30px;
 
 	&:before {
-		background: oColorsGetPaletteColor('teal-1');
+		background: getColor('teal-40');
 		content: '';
 		display: block;
 		height: 3px;
@@ -115,7 +115,7 @@
 
 .individual-b2b-prospect__quote__text {
 	@include oTypographySerif(m);
-	color: oColorsGetPaletteColor('grey-tint4');
+	color: getColor('black-70');
 }
 
 .individual-b2b-prospect__quote__footer {
@@ -130,7 +130,7 @@
 }
 
 .individual-b2b-prospect__list {
-	color: oColorsGetPaletteColor('grey-tint4');
+	color: getColor('black-70');
 	flex: 1;
 	list-style: none;
 	padding: 0;
@@ -143,13 +143,13 @@
 
 .individual-b2b-prospect__list__title {
 	@include oTypographySansBold(m);
-	color: oColorsGetPaletteColor('grey-tint5');
+	color: getColor('black-80');
 	margin-bottom: 15px;
 }
 
 .individual-b2b-prospect__content__footer {
-	background: oColorsGetPaletteColor('teal-1');
-	color: oColorsGetPaletteColor('white');
+	background: getColor('teal-40');
+	color: getColor('white');
 	margin-top: 10px;
 	padding: 30px;
 
@@ -172,7 +172,7 @@
 }
 
 .individual-b2b-prospect__footer__subtitle {
-	color: oColorsGetPaletteColor('grey-tint4');
+	color: getColor('black-70');
 	display: inline-block;
 }
 
@@ -211,6 +211,6 @@
 }
 
 .individual-b2b-prospect__footer {
-	background: oColorsGetPaletteColor('white');
+	background: getColor('white');
 	padding: 30px;
 }

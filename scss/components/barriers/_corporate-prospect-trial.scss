@@ -91,7 +91,7 @@
 			min-height: 910px;
 		}
 
-		background-color: oColorsGetPaletteColor('warm-5');
+		background-color: getColor('white-60');
 	}
 
 	@include oGridRespondTo(M) {
@@ -112,7 +112,7 @@
 
 	div {
 		@include corporateProspectTrialSection();
-		background-color: oColorsGetPaletteColor('warm-1');
+		background-color: getColor('wheat');
 	}
 
 	span {
@@ -124,7 +124,7 @@
 .corporate-prospect-trial__description {
 
 	@include corporateProspectTrialSection();
-	background-color: oColorsGetPaletteColor('white');
+	background-color: getColor('white');
 
 	img {
 		display: none;
@@ -158,10 +158,10 @@
 	@include oGridRespondTo(M) {
 		padding: 15px;
 		text-align: right;
-		background-color: oColorsGetPaletteColor('warm-2');
+		background-color: getColor('black-5');
 	}
 
 
-	background-color: oColorsGetPaletteColor('warm-3');
+	background-color: getColor('black-20');
 	padding: 10px;
 }

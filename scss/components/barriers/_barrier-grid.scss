@@ -10,7 +10,7 @@
 }
 
 .barrier-grid__header {
-	background-color: oColorsGetPaletteColor('warm-2');
+	background-color: getColor('black-5');
 	h2 {
 		@include oTypographySansBold(m);
 		@include oGridColspan((default: full-width, L: three-quarters));
@@ -35,11 +35,11 @@
 		@include oTypographySansBold(s);
 		@include oGridColspan((default: full-width, L: one-quarter));
 
-		background-color: oColorsGetPaletteColor('warm-3');
+		background-color: getColor('black-20');
 		padding: 10px 25px;
 
 		@include oGridRespondTo(L) {
-			background-color: oColorsGetPaletteColor('warm-2');
+			background-color: getColor('black-5');
 			text-align: right;
 			padding-top: 20px;
 			padding-bottom: 20px;
@@ -55,9 +55,9 @@
 }
 
 .barrier-grid__sub-header {
-	background-color: oColorsGetPaletteColor('white');
+	background-color: getColor('white');
 	padding: 18px 25px !important;
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	border-bottom: 1px solid getColor('black-5');
 
 	.barrier-grid__sub-header-title {
 		@include oTypographySansBold(m);
@@ -66,8 +66,8 @@
 
 .barrier-grid__section {
 	padding: 18px 25px;
-	background-color: oColorsGetPaletteColor('white');
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	background-color: getColor('white');
+	border-bottom: 1px solid getColor('black-5');
 	text-align: left !important;
 
 	p {
@@ -215,14 +215,14 @@
 	}
 
 	.barrier-grid__option-inner {
-		background-color: oColorsGetPaletteColor('white');
+		background-color: getColor('white');
 		padding-top: 20px;
 	}
 
 	.barrier-grid__option--option1,
 	.barrier-grid__option--option3 {
 		@include oGridRespondTo(S) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			border-right: 1px solid getColor('black-5');
 		}
 	}
 
@@ -230,14 +230,14 @@
 	.barrier-grid__option--option2,
 	.barrier-grid__option--option3 {
 		@include oGridRespondTo(L) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			border-right: 1px solid getColor('black-5');
 		}
 	}
 
 
 	.barrier-grid__option {
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
-		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+		border-bottom: 1px solid getColor('black-5');
 		padding-bottom: 20px;
 	}
 
@@ -255,7 +255,7 @@
 	.barrier-grid__option--option2 .barrier-grid__option-inner,
 	.barrier-grid__option--option3 .barrier-grid__option-inner {
 		@include oGridRespondTo(M) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			border-right: 1px solid getColor('black-5');
 		}
 	}
 
@@ -279,14 +279,14 @@
 
 .barrier-grid__other-options {
 	padding-top: 10px;
-	background-color: oColorsGetPaletteColor('white');
+	background-color: getColor('white');
 }
 
 .barrier-grid__other-options h3 {
 	@include oTypographySansBold(s);
 	text-align: center;
 	padding-bottom: 10px;
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	border-bottom: 1px solid getColor('black-5');
 }
 
 .barrier-grid__other-option {
@@ -328,18 +328,18 @@
 
 .barrier-grid__other-option--corporate a {
 	&:before {
-		@include oIconsGetIcon('corporate', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .barrier-grid__other-option--newspaper a {
 	&:before {
-		@include oIconsGetIcon('newspaper', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
 .barrier-grid__other-option--weekend a {
 	&:before {
-		@include oIconsGetIcon('ipad', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }

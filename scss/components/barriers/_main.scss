@@ -16,7 +16,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: oColorsGetPaletteColor('warm-4');
+	background-color: getColor('black-90');
 	opacity: 0.6;
 	top: 0;
 	left: 0;
@@ -54,12 +54,12 @@ h1 .barrier-grid__article-title {
 
 .trial-barrier-grid__header .trial-barrier-grid__sign-in {
 	min-width: 100%;
-	background-color: getColor('pink-tint3'); //to match other barriers
+	background-color: getColor('black-20'); //to match other barriers
 }
 
 @include oGridRespondTo($from: L) {
 	.trial-barrier-grid__header .trial-barrier-grid__sign-in {
-		background-color: getColor('warm-2');
+		background-color: getColor('black-5');
 	}
 }
 
@@ -89,12 +89,12 @@ p .barrier-grid__article-title {
 		font-weight: 600;
 		text-align: center;
 		padding-bottom: 10px;
-		border-bottom: 1px solid getColor('pink-tint1');
+		border-bottom: 1px solid getColor('black-5');
 	}
 }
 
 .trial-barrier-grid__title {
-	color: getColor("teal-1");
+	color: getColor('teal-40');
 	font-size: 1em;
 	font-weight: 700;
 	text-align: center;

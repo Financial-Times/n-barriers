@@ -10,7 +10,8 @@
 }
 
 .subscription-barrier-grid__header {
-	background-color: oColorsGetPaletteColor('warm-2');
+	background-color: getColor('black-5');
+
 	h2 {
 		@include oTypographySansBold(m);
 		@include oGridColspan((default: full-width, L: three-quarters));
@@ -127,10 +128,10 @@
 	}
 
 	.subscription-barrier-grid__option-inner {
-		background-color: oColorsGetPaletteColor('white');
+		background-color: getColor('white');
 		padding-top: 10px;
 		padding-bottom: 10px;
-		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+		border-bottom: 1px solid getColor('black-5');
 		flex: 1;
 	}
 
@@ -140,7 +141,7 @@
 		&.subscription-barrier-grid__option--option1,
 		&.subscription-barrier-grid__option--option3 {
 			@include oGridRespondTo(S) {
-				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+				border-right: 1px solid getColor('black-5');
 			}
 		}
 
@@ -148,7 +149,7 @@
 		&.subscription-barrier-grid__option--option2,
 		&.subscription-barrier-grid__option--option3 {
 			@include oGridRespondTo(L) {
-				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+				border-right: 1px solid getColor('black-5');
 			}
 		}
 	}
@@ -166,14 +167,14 @@
 
 .subscription-barrier-grid__other-options {
 	padding-top: 10px;
-	background-color: oColorsGetPaletteColor('white');
+	background-color: getColor('white');
 }
 
 .subscription-barrier-grid__other-options h3 {
 	@include oTypographySansBold(s);
 	text-align: center;
 	padding-bottom: 10px;
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	border-bottom: 1px solid getColor('black-5');
 }
 
 .subscription-barrier-grid__other-option {
@@ -205,18 +206,18 @@
 
 .subscription-barrier-grid__other-option--corporate a {
 	&:before {
-		@include oIconsGetIcon('corporate', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .subscription-barrier-grid__other-option--newspaper a {
 	&:before {
-		@include oIconsGetIcon('newspaper', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
 .subscription-barrier-grid__other-option--weekend a {
 	&:before {
-		@include oIconsGetIcon('ipad', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }

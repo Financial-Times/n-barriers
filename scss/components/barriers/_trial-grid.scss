@@ -12,7 +12,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .trial-barrier-grid__header {
-	background-color: oColorsGetPaletteColor('warm-2');
+	background-color: getColor('black-5');
 
 	h2 {
 		@include oTypographySansBold(m);
@@ -119,7 +119,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.trial-barrier-grid__primary--sub-offer {
-		border-top: 1px solid oColorsGetPaletteColor('warm-2');
+		border-top: 1px solid getColor('black-5');
 		padding-top: 10px;
 	}
 
@@ -139,10 +139,10 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 			&.standout {
 				background-color: #9e2f50;
-				color: white;
+				color: getColor('white');
 				padding: 5px;
 				.terms-and-conditions__marker {
-					color: #ffffff;
+					color: getColor('white');
 				}
 			}
 		}
@@ -196,7 +196,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.trial-barrier-grid__option-inner {
-		background-color: oColorsGetPaletteColor('white');
+		background-color: getColor('white');
 		padding-top: 20px;
 		padding-bottom: 10px;
 
@@ -206,14 +206,14 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	.trial-barrier-grid__option {
 
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
-		background: white;
-		color: black;
-		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+		background: getColor('white');
+		color: getColor('black');
+		border-bottom: 1px solid getColor('black-5');
 
 		&.trial-barrier-grid__option--option0,
 		&.trial-barrier-grid__option--option2 {
 			@include oGridRespondTo(S) {
-				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+				border-right: 1px solid getColor('black-5');
 			}
 		}
 
@@ -221,7 +221,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		&.trial-barrier-grid__option--option1,
 		&.trial-barrier-grid__option--option {
 			@include oGridRespondTo(L) {
-				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+				border-right: 1px solid getColor('black-5');
 			}
 		}
 
@@ -232,7 +232,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 		a {
 			text-decoration: none;
-			color: oColorsGetPaletteColor(link-1);
+			color: getColor('teal-40');
 		}
 	}
 
@@ -254,7 +254,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		&.trial-barrier-grid__option--option2,
 		&.trial-barrier-grid__option--option3 {
 			@include oGridRespondTo(M) {
-				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+				border-right: 1px solid getColor('black-5');
 			}
 		}
 
@@ -279,7 +279,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .trial-barrier-grid__other-options {
 	padding-top: 10px;
-	background-color: oColorsGetPaletteColor('white');
+	background-color: getColor('white');
 }
 
 .trial-barrier-grid__other-options h3,
@@ -287,7 +287,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	@include oTypographySansBold(s);
 	text-align: center;
 	padding-bottom: 10px;
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	border-bottom: 1px solid getColor('black-5');
 }
 
 // Avoiding refactoring due to hairy yak fear 🙈
@@ -335,13 +335,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .trial-barrier-grid__other-option--corporate a {
 	&:before {
-		@include oIconsGetIcon('corporate', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .trial-barrier-grid__other-option--newspaper a {
 	&:before {
-		@include oIconsGetIcon('newspaper', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
@@ -368,7 +368,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			font-size: 10px;
 			line-height: 10px;
 			font-weight: 400;
-			color: #fff;
+			color: getColor('white');
 			background-color: #d66d06;
 			padding: 1px 2px;
 			margin-right: 5px;
@@ -378,7 +378,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .trial-barrier-grid__other-option--weekend a {
 	&:before {
-		@include oIconsGetIcon('ipad', oColorsGetPaletteColor(link-1), 35);
+		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }
 
@@ -443,7 +443,7 @@ p .barrier-grid__article-subtext {
 }
 
 .trial-barrier-grid__primary--sub-offer {
-	border-bottom-color: getColor('pink');
+	border-bottom-color: getColor('paper');
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	padding-bottom: 10px;
@@ -455,9 +455,9 @@ p .barrier-grid__article-subtext {
 	position: absolute;
 	top: -20px;
 	right: 35px;
-	background: white;
+	background: getColor('white');
 	padding: 0 10px;
-	color: getColor('grey-tint4');
+	color: getColor('black-70');
 }
 
 .trial-barrier-grid__primary .trial-barrier-grid__select.trial-barrier-grid__select__test {
@@ -471,7 +471,7 @@ p .barrier-grid__article-subtext {
 }
 
 .trial-barrier-grid__price__transparency {
-	color: getColor('grey-tint4');
+	color: getColor('black-70');
 	text-align: left;
 	padding: 0 10px;
 	font-size: 14px;
