@@ -96,7 +96,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		.trial-barrier-grid__title {
 			margin: 10px 0;
 		}
-		
+
 		.trial-barrier-grid__secondary-description-title {
 			text-align: left;
 			text-transform: none;
@@ -156,7 +156,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	.trial-barrier-grid__select {
 		@include oButtons();
 		@include oButtonsSize(big);
-		@include oButtonsTheme(standout);
+		@include oButtonsTheme(primary);
 		text-transform: none;
 	}
 

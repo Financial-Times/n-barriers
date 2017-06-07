@@ -65,7 +65,7 @@
 	.inline-barrier__button {
 		@include oButtons();
 		@include oButtonsSize(big);
-		@include oButtonsTheme(standout);
+		@include oButtonsTheme(primary);
 	}
 }
 

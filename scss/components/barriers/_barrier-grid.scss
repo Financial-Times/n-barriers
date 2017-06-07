@@ -99,7 +99,7 @@
 .barrier-grid__cta-btn {
 	@include oButtons();
 	@include oButtonsSize(big);
-	@include oButtonsTheme(standout);
+	@include oButtonsTheme(primary);
 	text-transform: none;
 }
 
@@ -174,7 +174,7 @@
 	.barrier-grid__select {
 		@include oButtons();
 		@include oButtonsSize(big);
-		@include oButtonsTheme(standout);
+		@include oButtonsTheme(primary);
 	}
 
 	.barrier-grid__secondary {

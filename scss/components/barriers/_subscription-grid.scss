@@ -87,7 +87,7 @@
 	.subscription-barrier-grid__select {
 		@include oButtons();
 		@include oButtonsSize(big);
-		@include oButtonsTheme(standout);
+		@include oButtonsTheme(primary);
 	}
 
 	.subscription-barrier-grid__secondary {
