@@ -26,14 +26,9 @@
   "private": true,
   "config": {
     "pre-git": {
-      "commit-msg": "simple",
       "pre-commit": [
         "node_modules/.bin/secret-squirrel"
-      ],
-      "pre-push": [],
-      "post-commit": [],
-      "post-checkout": [],
-      "post-merge": []
+      ]
     }
   },
   "scripts": {
