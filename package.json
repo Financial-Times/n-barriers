@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/Financial-Times/n-barriers",
   "devDependencies": {
+    "@financial-times/n-gage": "^1.6.0",
     "babel": "^5.8.23",
     "babelify": "^6.1.2",
     "case": "^1.2.1",
@@ -22,5 +23,20 @@
     "origami-build-tools": "^4.2.0",
     "selenium-webdriver": "^2.46.1"
   },
-  "private": true
+  "private": true,
+  "config": {
+    "pre-git": {
+      "commit-msg": "simple",
+      "pre-commit": [
+        "node_modules/.bin/secret-squirrel"
+      ],
+      "pre-push": [],
+      "post-commit": [],
+      "post-checkout": [],
+      "post-merge": []
+    }
+  },
+  "scripts": {
+    "commit": "commit-wizard"
+  }
 }
