@@ -18,6 +18,11 @@
 	@include oGridRespondTo(L, XL) {
 		margin-left: 20px;
 	}
+
+	// tweak style for fastFT barrier, which doesn't respond to breakpoints as expected
+	.card-openable__article & {
+		padding-left: 20px;
+	}
 }
 
 .individual-b2b-prospect__list__title-amo {
