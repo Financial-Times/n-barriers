@@ -29,7 +29,7 @@
 	}
 
 	.barrier-grid__article-title {
-		@include oTypographySerif($scale: 4);
+		@include oTypographySerif($scale: 3);
 
 		&::before {
 			content: '“';
@@ -50,11 +50,11 @@
 }
 
 .individual-b2b-prospect__title {
-	@include oTypographySansBold($scale: 4);
+	@include oTypographySansBold($scale: 3);
 }
 
 .individual-b2b-prospect__subtitle {
-	@include oTypographySans($scale: 4);
+	@include oTypographySans($scale: 3);
 
 	&::before {
 		background: getColor('teal-40');
@@ -70,7 +70,7 @@
 }
 
 .individual-b2b-prospect__lead {
-	@include oTypographySans($scale: 2);
+	@include oTypographySans($scale: 0);
 }
 
 .individual-b2b-prospect__quote-list-container {
@@ -110,7 +110,7 @@
 }
 
 .individual-b2b-prospect__quote__text {
-	@include oTypographySerif($scale: 2);
+	@include oTypographySerif($scale: 0);
 	color: getColor('black-70');
 }
 
@@ -122,7 +122,7 @@
 }
 
 .individual-b2b-prospect__quote__company {
-	@include oTypographySansBold($scale: 2);
+	@include oTypographySansBold($scale: 0);
 }
 
 .individual-b2b-prospect__list {
@@ -138,7 +138,7 @@
 }
 
 .individual-b2b-prospect__list__title {
-	@include oTypographySansBold($scale: 2);
+	@include oTypographySansBold($scale: 0);
 	color: getColor('black-80');
 	margin-bottom: 15px;
 }
@@ -160,7 +160,7 @@
 	}
 
 	.individual-b2b-prospect__content__footer__subtitle {
-		@include oTypographySans($scale: 0);
+		@include oTypographySans($scale: -1);
 	}
 
 	.individual-b2b-prospect__button {

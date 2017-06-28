@@ -7,12 +7,12 @@
 	background-color: getColor('black-5');
 
 	h2 {
-		@include oTypographySansBold($scale: 2);
+		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: three-quarters));
 		margin: 0;
 
 		.mobile-barrier-grid__heading-pretext {
-			@include oTypographySans($scale: 2);
+			@include oTypographySans($scale: 0);
 		}
 	}
 }
@@ -34,7 +34,7 @@
 	color: getColor('white');
 
 	h3 {
-		@include oTypographySansBold($scale: 2);
+		@include oTypographySansBold($scale: 0);
 		margin: 0;
 	}
 	p {
@@ -68,7 +68,7 @@
 }
 
 .mobile-barrier-grid__price {
-	@include oTypographySans($scale: 2);
+	@include oTypographySans($scale: 0);
 	display: inline-block;
 	font-weight: bold;
 

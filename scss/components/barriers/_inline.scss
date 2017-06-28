@@ -45,7 +45,7 @@
 }
 
 .inline-barrier__heading {
-	@include oTypographySansBold($scale: 2);
+	@include oTypographySansBold($scale: -1);
 	color: getColor('black-70');
 	margin: 0 0 5px;
 }
@@ -66,7 +66,7 @@
 }
 
 .inline-barrier__cta-secondary {
-	@include oTypographySize($scale: 0);
+	@include oTypographySize($scale: -1);
 	margin: 0 0 10px;
 }
 @include oGridRespondTo($until: 'M') {

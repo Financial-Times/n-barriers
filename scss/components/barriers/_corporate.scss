@@ -26,7 +26,7 @@
 }
 
 .individual-b2b-prospect__list__title-amo {
-	@include oTypographySansBold($scale: -1);
+	@include oTypographySansBold($scale: 0);
 	color: getColor('black-80');
 	margin-bottom: 12px;
 }

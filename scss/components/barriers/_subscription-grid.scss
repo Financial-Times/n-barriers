@@ -13,7 +13,7 @@
 	background-color: getColor('black-5');
 
 	h2 {
-		@include oTypographySansBold($scale: 2);
+		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: three-quarters));
 	}
 
@@ -40,7 +40,7 @@
 .subscription-barrier-grid {
 	.subscription-barrier-grid__options {
 		h3 {
-			@include oTypographySans($scale: 0);
+			@include oTypographySans($scale: -1);
 			text-align: center;
 			text-transform: uppercase;
 			margin-bottom: 10px;
