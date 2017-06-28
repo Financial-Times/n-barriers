@@ -32,7 +32,7 @@
 	}
 
 	.barrier-grid__sign-in {
-		@include oTypographySansBold($scale: 0);
+		@include oTypographySansBold($scale: -1);
 		@include oGridColspan((default: full-width, L: one-quarter));
 
 		background-color: getColor('black-20');
@@ -176,13 +176,13 @@
 		padding-right: 23px;
 
 		h4 {
-			@include oTypographySansBold($scale: 0);
+			@include oTypographySansBold($scale: -1);
 			margin-bottom: 3px;
 			margin-top: 0;
 		}
 
 		ul {
-			@include oTypographySansBold($scale: 0);
+			@include oTypographySansBold($scale: -1);
 			list-style: none;
 			font-weight: normal;
 			margin: 0 0 20px;
@@ -235,7 +235,7 @@
 	}
 
 	.barrier-grid__learn-more {
-		@include oTypographySansBold($scale: 0);
+		@include oTypographySansBold($scale: -1);
 	}
 
 }
@@ -276,7 +276,7 @@
 }
 
 .barrier-grid__other-options h3 {
-	@include oTypographySansBold($scale: 0);
+	@include oTypographySansBold($scale: -1);
 	text-align: center;
 	padding-bottom: 10px;
 	border-bottom: 1px solid getColor('black-5');
@@ -290,7 +290,7 @@
 	}
 
 	a {
-		@include oTypographySansBold($scale: 0);
+		@include oTypographySansBold($scale: -1);
 		border: 0;
 		overflow: hidden;
 		.barrier-grid__option-options-text {

@@ -7,7 +7,7 @@
 }
 
 .individual-b2b-prospect__sign-in {
-	@include oTypographySansBold($scale: 0);
+	@include oTypographySansBold($scale: -1);
 	text-align: right;
 }
 

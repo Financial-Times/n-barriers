@@ -37,7 +37,7 @@
 }
 
 .inline-barrier__bridge {
-	@include oTypographySansBold($scale: 0);
+	@include oTypographySansBold($scale: -1);
 	background: getColor('white');
 	color: getColor('black-70');
 	margin: -15px -15px 15px;

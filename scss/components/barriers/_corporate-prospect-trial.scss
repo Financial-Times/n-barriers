@@ -144,7 +144,7 @@
 }
 
 .corporate-prospect-trial__sign-in {
-	@include oTypographySansBold($scale: 0);
+	@include oTypographySansBold($scale: -1);
 	background-color: getColor('black-20');
 	padding: 10px;
 	@include oGridRespondTo(M) {
