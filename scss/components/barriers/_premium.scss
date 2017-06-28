@@ -39,10 +39,9 @@
 
 	.barrier-grid__header-content {
 		margin: 25px;
-
 		@include oGridRespondTo(M) {
 			margin-left: 50px;
-			margin-right: 0px;
+			margin-right: 0;
 		}
 	}
 
@@ -67,15 +66,13 @@
 	}
 
 	.barrier-grid__divider-row {
-		// TODO: Add #cecece to o-colors
-		border-bottom: 1px solid #cecece;
+		border-bottom: 1px solid $greyCE;
 	}
 
 	.barrier-grid__lead {
 		@include oGridRespondTo(L) {
 			min-height: 266px;
 		}
-
 		@include oGridRespondTo(XL) {
 			min-height: 238px;
 		}
@@ -83,7 +80,6 @@
 
 	.barrier-grid__premium-inclusions {
 		padding-bottom: 20px;
-
 		@include oGridRespondTo(M) {
 			padding-bottom: 40px;
 		}
@@ -91,8 +87,7 @@
 
 	.barrier-grid__section {
 		color: getColor('black-70');
-		border: none;
-
+		border: 0;
 		@include oGridRespondTo(M) {
 			padding: 25px 50px;
 		}
@@ -107,15 +102,13 @@
 	.barrier-grid__description {
 		font-size: 20px;
 		line-height: 28px;
-		margin: 20px 0 40px 0;
+		margin: 20px 0 40px;
 	}
 
 	.barrier-grid__cta {
 		padding: 10px 15px;
-		// TODO: Add #f1f1f1 to o-colors
-		background-color: #f1f1f1;
+		background-color: $greyF1;
 		text-align: center;
-
 		@include oGridRespondTo(M) {
 			height: 36px;
 			text-align: initial;
@@ -128,7 +121,6 @@
 		top: 50%;
 		transform: translateY(-50%);
 		text-transform: uppercase;
-
 		@include oGridRespondTo(M) {
 			display: inline-block;
 			margin-top: 0;
@@ -139,12 +131,10 @@
 		margin-top: 0;
 		margin-bottom: 10px;
 		text-align: center;
-
 		@include oGridRespondTo(M) {
 			margin: 0;
 			float: right;
 		}
-
 	}
 
 	.barrier-grid__cta-btn {
@@ -161,7 +151,6 @@
 
 	.barrier-grid__article-card-col {
 		display: none;
-
 		@include oGridRespondTo(L) {
 			display: block;
 			position: relative;
@@ -175,7 +164,6 @@
 		width: 100%;
 		height: calc(100% + 50px);
 		background-color: transparent;
-
 		@include oGridRespondTo(XL) {
 			height: calc(100% + 42px);
 		}
@@ -187,8 +175,7 @@
 	}
 
 	.barrier-grid__article-card {
-		// TODO: Add #fbe9da to o-colors
-		background-color: #fbe9da;
+		background-color: getColor('white-10');
 		height: calc(100% - 20px);
 		padding: 10px;
 		box-shadow: 36px 12px 0 -12px rgba(0, 0, 0, 0.2);
@@ -204,12 +191,12 @@
 		// TODO: Add #dadada to o-colors
 		background-color: #dadada;
 
-		&:before {
+		&::before {
 			content: '';
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			background: url('https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo:brand-ft?source=next&tint=999999,999999') 50%/20% no-repeat transparent;
+			background: url('https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo:brand-ft?source=next&tint=999999,999999') 50% / 20% no-repeat transparent;
 		}
 	}
 
@@ -240,17 +227,15 @@
 		margin-bottom: 7px;
 		height: 20px;
 		background-color: rgba(204, 193, 179, 0.4);
-
-		&:first-child {
-			width: 20%;
-		}
-
 		@include oGridRespondTo(XL) {
 			margin-bottom: 5px;
 
 			&:nth-child(n+4):nth-child(-n+6) {
 				display: none;
 			}
+		}
+		&:first-child {
+			width: 20%;
 		}
 	}
 
@@ -277,7 +262,7 @@
 	.barrier-grid__most-read-sub-heading {
 		margin: 0 0 44px;
 
-		&:after {
+		&::after {
 			content: '';
 			color: getColor('teal-40');
 			display: block;
@@ -325,7 +310,6 @@
 	.barrier-grid__cta-suffix-text-container {
 		margin-bottom: 20px;
 		text-align: center;
-
 		@include oGridRespondTo(M) {
 			margin-bottom: 0;
 		}
@@ -338,7 +322,6 @@
 	.barrier-grid__cta-suffix-sidenote-text {
 		margin: 0;
 		font-size: 14px;
-
 		@include oGridRespondTo(M) {
 			text-align: right;
 		}
@@ -352,14 +335,12 @@
 	.barrier-grid__extra-emphasis-text {
 		color: getColor('teal-40');
 	}
-
 	@media print {
-		.barrier-grid__skeleton-cta-text,
-		.barrier-grid__skeleton-cta-button {
+		.barrier-grid__skeleton-cta-button,
+		.barrier-grid__skeleton-cta-text {
 			display: none !important;
 		}
 	}
-
 	@mixin skeleton-line($width, $animation, $base-color, $variant-color) {
 		width: $width;
 		animation-duration: 1s;
@@ -372,11 +353,11 @@
 		background-size: $width 18px;
 		height: 18px;
 	}
-
 	@keyframes bodyPulse {
 		0% {
 			background-position: -250px 0;
 		}
+
 		100% {
 			background-position: 250px 0;
 		}
@@ -384,13 +365,11 @@
 
 	.barrier-grid__skeleton-cta-text {
 		@include skeleton-line(250px, bodyPulse, #f1f1f1, #dadada);
-
 		display: inline-block;
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
 		margin-top: 12px;
-
 		@include oGridRespondTo(M) {
 			margin-top: 0;
 		}
@@ -399,5 +378,4 @@
 	.barrier-grid__skeleton-cta-button {
 		@include skeleton-line(112px, bodyPulse, getColor('teal-40'), getColor('teal-80'));
 	}
-
 }

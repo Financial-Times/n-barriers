@@ -1,21 +1,17 @@
 /*********************************************
 * Styling for inline rendering of barriers
 **********************************************/
-
 /* inline class hacked into to app that results in barrier being invoked*/
-
 .inline {
-	.barrier-overlay,
 	.barrier-grid,
+	.barrier-overlay,
 	.subscription-barrier-grid,
 	.trial-barrier-grid {
 		z-index: auto;
-		margin: 0 0 20px 0;
+		margin: 0 0 20px;
 	}
 }
-
 /* Inline in article barrier styling */
-
 .inline-barrier {
 	display: inline-block;
 	width: 100%;
@@ -73,15 +69,14 @@
 	@include oTypographySize($scale: 0);
 	margin: 0 0 10px;
 }
-
 @include oGridRespondTo($until: 'M') {
 	.inline-barrier__button {
 		display: block;
 	}
 }
 
-// Horrible hack for an MVT, to avoid shaving a humongous yak. Sorry, Internet.
-// scss-lint:disable QualifyingElement
-p.barrier-grid__heading-pretext {
-	margin-top: 15px;
+p {
+	&.barrier-grid__heading-pretext {
+		margin-top: 15px;
+	}
 }

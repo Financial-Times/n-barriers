@@ -50,15 +50,13 @@
 	}
 
 	li {
+		position: relative;
+		margin-left: 20px;
 		@include oGridRespondTo(M) {
 			margin: 8px 0;
 		}
-
-		position: relative;
-		margin-left: 20px;
-
-		&:before {
-			@include oIconsGetIcon('tick', #35bd14, 14);
+		&::before {
+			@include oIconsGetIcon('tick', getColor('jade'), 14);
 			content: '';
 			margin-right: 4px;
 			position: absolute;
@@ -76,30 +74,23 @@
 }
 
 .corporate-prospect-trial__form {
-
-	& > div {
-
-		@include oGridRespondTo(M) {
-			min-height: 800px;
-		}
-
-		@include oGridRespondTo(L) {
-			min-height: 990px;
-		}
-
-		@include oGridRespondTo(XL) {
-			min-height: 910px;
-		}
-
-		background-color: getColor('white-60');
-	}
-
 	@include oGridRespondTo(M) {
 		padding: {
 			left: 0;
 		}
 	}
-
+	& > div {
+		background-color: getColor('white-60');
+		@include oGridRespondTo(M) {
+			min-height: 800px;
+		}
+		@include oGridRespondTo(L) {
+			min-height: 990px;
+		}
+		@include oGridRespondTo(XL) {
+			min-height: 910px;
+		}
+	}
 }
 
 .corporate-prospect-trial__contact {
@@ -154,14 +145,11 @@
 
 .corporate-prospect-trial__sign-in {
 	@include oTypographySansBold($scale: 0);
-
+	background-color: getColor('black-20');
+	padding: 10px;
 	@include oGridRespondTo(M) {
 		padding: 15px;
 		text-align: right;
 		background-color: getColor('black-5');
 	}
-
-
-	background-color: getColor('black-20');
-	padding: 10px;
 }

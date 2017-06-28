@@ -141,8 +141,8 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		position: relative;
 		margin-left: 20px;
 
-		&:before {
-			@include oIconsGetIcon('tick', #35bd14, 14);
+		&::before {
+			@include oIconsGetIcon('tick', getColor('jade'), 14);
 			content: '';
 			margin-right: 4px;
 			position: absolute;
@@ -201,7 +201,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	@include oGridRespondTo($until: S) {
 		padding-left: 0;
 		padding-right: 0;
-		background-color: #00a000;
+		background-color: getColor('jade');
 	}
 }
 
@@ -241,7 +241,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			display: block;
 		}
 
-		&:before {
+		&::before {
 			content: '';
 			display: block;
 			margin-left: auto;
@@ -251,25 +251,25 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .product-selector__other-option--corporate a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .product-selector__other-option--epaper a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('section-magazine', getColor('teal-40'), 35);
 	}
 }
 
 .product-selector__other-option--newspaper a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
 .product-selector__other-option--weekend a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }

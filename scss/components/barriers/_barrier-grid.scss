@@ -98,7 +98,7 @@
 
 .barrier-grid__cta-text {
 	font-weight: 600;
-	color: #27757b;
+	color: getColor('teal-50');
 	font-size: 20px;
 }
 
@@ -117,7 +117,7 @@
 
 .barrier-grid {
 	.barrier-grid__options {
-		background-color: white;
+		background-color: getColor('white');
 
 		h3 {
 			@include oTypographySans($scale: 0);
@@ -197,8 +197,8 @@
 		position: relative;
 		margin-left: 20px;
 
-		&:before {
-			@include oIconsGetIcon('tick', #35bd14, 14);
+		&::before {
+			@include oIconsGetIcon('tick', getColor('jade'), 14);
 			content: '';
 			margin-right: 4px;
 			position: absolute;
@@ -297,7 +297,7 @@
 			display: block;
 		}
 
-		&:before {
+		&::before {
 			content: '';
 			display: block;
 			margin-left: auto;
@@ -307,12 +307,11 @@
 }
 
 .barrier-grid__other-option--digital a {
-	&:before {
+	&::before {
 		display: inline-block;
 		width: 40px;
 		height: 25px;
 		background-image: url(https://www.ft.com/__assets/creatives/desktop_laptop_tablet.png);
-		background: rgba(0, 0, 0, 0.0001) url(https://www.ft.com/__assets/creatives/desktop_laptop_tablet.png);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		background-color: transparent;
@@ -320,19 +319,19 @@
 }
 
 .barrier-grid__other-option--corporate a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .barrier-grid__other-option--newspaper a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
 .barrier-grid__other-option--weekend a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }

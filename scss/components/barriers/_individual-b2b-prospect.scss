@@ -1,9 +1,8 @@
 .individual-b2b-prospect {
 	margin-top: 15px;
-	text-align:center;
-
+	text-align: center;
 	@include oGridRespondTo(M) {
-		text-align:left;
+		text-align: left;
 	}
 }
 
@@ -30,13 +29,13 @@
 	}
 
 	.barrier-grid__article-title {
-		@include oTypographySerif($scale: 4)
+		@include oTypographySerif($scale: 4);
 
-		&:before {
+		&::before {
 			content: '“';
 		}
 
-		&:after {
+		&::after {
 			content: '”';
 		}
 	}
@@ -51,22 +50,21 @@
 }
 
 .individual-b2b-prospect__title {
-	@include oTypographySansBold($scale: 4)
+	@include oTypographySansBold($scale: 4);
 }
 
 .individual-b2b-prospect__subtitle {
-	@include oTypographySans($scale: 4)
+	@include oTypographySans($scale: 4);
 
-	&:before {
+	&::before {
 		background: getColor('teal-40');
 		content: '';
 		display: block;
 		height: 5px;
-		margin: 0px auto 20px auto;
+		margin: 0 auto 20px;
 		width: 200px;
-
 		@include oGridRespondTo(M) {
-			margin-left: 0px;
+			margin-left: 0;
 		}
 	}
 }
@@ -76,37 +74,35 @@
 }
 
 .individual-b2b-prospect__quote-list-container {
+	margin-bottom: 30px;
 	@include oGridRespondTo(L) {
 		align-items: flex-start;
 		display: flex;
 	}
-	margin-bottom: 30px;
 }
 
 .individual-b2b-prospect__quote__container {
-	background: #f1f1f1;
+	//TODO: migrate to o-quote in next-product
+	background: $greyF1;
 	overflow: hidden;
-
 	@include oGridRespondTo(L) {
 		flex-shrink: 0;
 		margin-left: 25px;
 		width: 375px;
 	}
-
 }
 
 .individual-b2b-prospect__quote {
 	margin-left: 30px;
 	margin-right: 30px;
 
-	&:before {
+	&::before {
 		background: getColor('teal-40');
 		content: '';
 		display: block;
 		height: 3px;
 		margin: 30px auto;
 		width: 95px;
-
 		@include oGridRespondTo(M) {
 			margin: 30px 0;
 		}
@@ -153,8 +149,8 @@
 	margin-top: 10px;
 	padding: 30px;
 
-	.individual-b2b-prospect__content__footer__title,
-	.individual-b2b-prospect__content__footer__subtitle {
+	.individual-b2b-prospect__content__footer__subtitle,
+	.individual-b2b-prospect__content__footer__title {
 		margin: 0;
 	}
 
@@ -179,7 +175,6 @@
 
 .individual-b2b-prospect__button-container {
 	text-align: center;
-
 	@include oGridRespondTo(M) {
 		display: flex;
 		flex-direction: row;
@@ -190,21 +185,18 @@
 
 .individual-b2b-prospect__button-container__content {
 	margin-bottom: 10px;
-
-	> strong {
-		margin-right: 5px;
-	}
-
 	@include oGridRespondTo(M) {
 		flex: 1;
 		margin-bottom: 0;
+	}
+	> strong {
+		margin-right: 5px;
 	}
 }
 
 .individual-b2b-prospect__button {
 	@include oButtons();
 	@include oButtonsSize(big);
-
 	@include oGridRespondTo(M) {
 		align-self: center;
 		flex-shrink: 0;

@@ -8,8 +8,6 @@ Other apps can fetch `ft.com/products?fragment=true` to get an html fragment ver
 
 Also see inline barriers on the article page.
 
-
 ![](demos/src/trial-barrier.png)
 
 ![](demos/src/fast-ft-barrier-inline.png)
-

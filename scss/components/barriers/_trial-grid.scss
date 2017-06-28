@@ -27,7 +27,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	h2 .trial-barrier-grid__heading-pretext {
 		display: block;
 		padding-top: 10px;
-
 	}
 
 	h2 .trial-barrier-grid__article-title {
@@ -38,14 +37,11 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	.trial-barrier-grid__sign-in {
 		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: one-quarter));
-
 		padding: 10px;
-
 		@include oGridRespondTo(L) {
 			text-align: right;
 			padding-top: 12px;
 		}
-
 	}
 
 	.trial-barrier-grid__pretext {
@@ -54,28 +50,26 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		}
 	}
 }
-
 /*****************************************
 * Main options
 *****************************************/
-
-
-
 .trial-barrier-grid {
 	.trial-barrier-grid__options--2 .trial-barrier-grid__option {
 		min-width: 50%;
 	}
+
 	.trial-barrier-grid__options--3 .trial-barrier-grid__option {
 		min-width: 33.33%;
 	}
+
 	.trial-barrier-grid__options--4 .trial-barrier-grid__option {
 		min-width: 25%;
 	}
 
 	.trial-barrier-grid__options {
 		h3 {
-			position: relative;
 			@include oTypographySans($scale: 0);
+			position: relative;
 			text-align: center;
 			text-transform: uppercase;
 			margin-bottom: 10px;
@@ -89,7 +83,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			top: 14px;
 			display: block;
 			text-transform: uppercase;
-			color: #A02D4F;
+			color: getColor('claret-60');
 			text-align: center;
 		}
 
@@ -105,6 +99,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 	.trial-barrier-grid__image {
 		margin-bottom: 10px;
+
 		img {
 			width: 80%;
 			display: block;
@@ -138,9 +133,10 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			margin-bottom: 10px;
 
 			&.standout {
-				background-color: #9e2f50;
+				background-color: getColor('claret-60');
 				color: getColor('white');
 				padding: 5px;
+
 				.terms-and-conditions__marker {
 					color: getColor('white');
 				}
@@ -161,7 +157,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.trial-barrier-grid__secondary {
-
 		padding-left: 30px;
 		padding-right: 30px;
 
@@ -178,15 +173,14 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			margin: 0 0 20px;
 			padding: 0;
 		}
-
 	}
 
 	.trial-barrier-grid__option li {
 		position: relative;
 		margin-left: 20px;
 
-		&:before {
-			@include oIconsGetIcon('tick', #35bd14, 14);
+		&::before {
+			@include oIconsGetIcon('tick', getColor('jade'), 14);
 			content: '';
 			margin-right: 4px;
 			position: absolute;
@@ -199,12 +193,10 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		background-color: getColor('white');
 		padding-top: 20px;
 		padding-bottom: 10px;
-
 		flex: 1;
 	}
 
 	.trial-barrier-grid__option {
-
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
 		background: getColor('white');
 		color: getColor('black');
@@ -217,14 +209,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			}
 		}
 
+		&.trial-barrier-grid__option--option,
 		&.trial-barrier-grid__option--option0,
-		&.trial-barrier-grid__option--option1,
-		&.trial-barrier-grid__option--option {
+		&.trial-barrier-grid__option--option1 {
 			@include oGridRespondTo(L) {
 				border-right: 1px solid getColor('black-5');
 			}
 		}
-
 	}
 
 	.trial-barrier-grid__learn-more {
@@ -237,17 +228,15 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.trial-barrier-grid__option-discount {
-		background: #f5f5f5;
+		background: $greyF5;
 
 		.trial-barrier-grid__option-inner {
-			background: #f5f5f5;
+			background: $greyF5;
 		}
-
 	}
 }
 
 .trial-barrier-grid--missing-newspaper {
-
 	.trial-barrier-grid__option {
 		@include oGridColspan((default: full-width, M: one-third));
 
@@ -272,11 +261,9 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		}
 	}
 }
-
 /*****************************************
 * Other options
 *****************************************/
-
 .trial-barrier-grid__other-options {
 	padding-top: 10px;
 	background-color: getColor('white');
@@ -289,15 +276,14 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	padding-bottom: 10px;
 	border-bottom: 1px solid getColor('black-5');
 }
-
 // Avoiding refactoring due to hairy yak fear 🙈
+
 .trial-barrier-grid__other-options div p {
 	border: 0;
 	margin: 15px 0;
 }
 
 .trial-barrier-grid__other-option {
-
 	.trial-barrier-grid__other-option-inner {
 		text-align: center;
 		padding-bottom: 18px;
@@ -312,7 +298,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			display: block;
 		}
 
-		&:before {
+		&::before {
 			content: '';
 			display: block;
 			margin-left: auto;
@@ -334,19 +320,19 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .trial-barrier-grid__other-option--corporate a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .trial-barrier-grid__other-option--newspaper a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
 .trial-barrier-grid__other-option--weekend-paper a {
-	&:before {
+	&::before {
 		// TODO: this is temporary before the feature is permanent and then we
 		// can add the icon to oIcons (fticons) as with the others
 		background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fwww.ft.com%2F__assets%2Fcreatives%2Ficons%2Fweekend-premium.svg?source=next&tint=%2326747A,%2326747A&format=svg");
@@ -362,14 +348,14 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.trial-barrier-grid__option-options-text {
-		&:before {
+		&::before {
 			content: 'new';
 			text-transform: uppercase;
 			font-size: 10px;
 			line-height: 10px;
 			font-weight: 400;
 			color: getColor('white');
-			background-color: #d66d06;
+			background-color: getColor('mandarin');
 			padding: 1px 2px;
 			margin-right: 5px;
 		}
@@ -377,13 +363,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .trial-barrier-grid__other-option--weekend a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }
 
 .mock-overlay {
-	background: rgba(0, 0, 0, 0.5);
+	background: $transparentBlack50;
 	position: fixed;
 	height: 100%;
 	width: 100%;
@@ -426,7 +412,6 @@ p .barrier-grid__article-subtext {
 	font-size: 15px;
 	display: block;
 }
-
 // styles for multiple trials on trial-grid
 
 .trial-barrier-grid .trial-barrier-grid__options .trial-barrier-grid__title.trial-barrier-grid__title__secondary {
@@ -463,6 +448,7 @@ p .barrier-grid__article-subtext {
 .trial-barrier-grid__primary .trial-barrier-grid__select.trial-barrier-grid__select__test {
 	margin-top: 10px;
 }
+
 .trial-barrier-grid__primary .trial-barrier-grid__select.trial-barrier-grid__select__secondary {
 	margin-top: 10px;
 	font-size: 13px;
@@ -478,7 +464,7 @@ p .barrier-grid__article-subtext {
 }
 
 .trial-barrier-grid__secondary.trial-barrier-grid__price__transparency {
-	margin: 0 20px 15px 20px;
+	margin: 0 20px 15px;
 	padding: 0;
 }
 

@@ -117,8 +117,8 @@
 		position: relative;
 		margin-left: 20px;
 
-		&:before {
-			@include oIconsGetIcon('tick', #35bd14, 14);
+		&::before {
+			@include oIconsGetIcon('tick', getColor('jade'), 14);
 			content: '';
 			margin-right: 4px;
 			position: absolute;
@@ -195,7 +195,7 @@
 			display: block;
 		}
 
-		&:before {
+		&::before {
 			content: '';
 			display: block;
 			margin-left: auto;
@@ -205,19 +205,19 @@
 }
 
 .subscription-barrier-grid__other-option--corporate a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .subscription-barrier-grid__other-option--newspaper a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
 .subscription-barrier-grid__other-option--weekend a {
-	&:before {
+	&::before {
 		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }

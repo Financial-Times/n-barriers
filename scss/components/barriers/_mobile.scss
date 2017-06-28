@@ -21,7 +21,7 @@
 	@include oTypographySansBold($scale: 0);
 	width: 100%;
 	text-align: center;
-	color: #636363;
+	color: $grey63;
 	margin-bottom: 0;
 }
 
@@ -43,19 +43,19 @@
 }
 
 .mobile-barrier-grid__option--option0 {
-	background: #06374c;
+	background: getColor('oxford-30');
 }
 
 .mobile-barrier-grid__option--option1 {
-	background: #094965;
+	background: getColor('oxford-40');
 }
 
 .mobile-barrier-grid__option--option2 {
-	background: #0d5b7e;
+	background: getColor('oxford-50');
 }
 
 .mobile-barrier-grid__option--option3 {
-	background: #116e98;
+	background: getColor('oxford-60');
 }
 
 .mobile-barrier-grid__options {

@@ -3,7 +3,7 @@
   "main": [
     "main.scss"
   ],
-  "description": "Next FT - barriers",
+  "description": "Next FT - Barrier Styling",
   "homepage": "https://github.com/Financial-Times/n-barriers",
   "ignore": [
     "**/.*",
@@ -17,6 +17,6 @@
   "private": true,
   "dependencies": {
     "n-ui-foundations": "^2.0.0-beta",
-    "o-buttons": "^5.0.1"
+    "o-buttons": "^5.0.2"
   }
 }
