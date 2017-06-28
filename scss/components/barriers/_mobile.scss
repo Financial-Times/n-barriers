@@ -4,23 +4,24 @@
 .mobile-barrier-grid__header {
     margin-top: 10px;
 	padding: 5px 10px;
-	background-color: oColorsGetPaletteColor('warm-2');
+	background-color: getColor('black-5');
+
 	h2 {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: three-quarters));
 		margin: 0;
 
 		.mobile-barrier-grid__heading-pretext {
-			@include oTypographySans(m);
+			@include oTypographySans($scale: 0);
 		}
 	}
 }
 
 .mobile-barrier-grid__sign-in {
-	@include oTypographySansBold(s);
+	@include oTypographySansBold($scale: -1);
 	width: 100%;
 	text-align: center;
-	color: #636363;
+	color: $grey63;
 	margin-bottom: 0;
 }
 
@@ -30,9 +31,10 @@
 .mobile-barrier-grid__option-inner {
 	padding: 10px 10px 10px 0;
 	text-align: center;
-	color: #ffffff;
+	color: getColor('white');
+
 	h3 {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 0);
 		margin: 0;
 	}
 	p {
@@ -41,19 +43,19 @@
 }
 
 .mobile-barrier-grid__option--option0 {
-	background: #06374c;
+	background: getColor('oxford-30');
 }
 
 .mobile-barrier-grid__option--option1 {
-	background: #094965;
+	background: getColor('oxford-40');
 }
 
 .mobile-barrier-grid__option--option2 {
-	background: #0d5b7e;
+	background: getColor('oxford-50');
 }
 
 .mobile-barrier-grid__option--option3 {
-	background: #116e98;
+	background: getColor('oxford-60');
 }
 
 .mobile-barrier-grid__options {
@@ -66,9 +68,10 @@
 }
 
 .mobile-barrier-grid__price {
-	@include oTypographySans(m);
+	@include oTypographySans($scale: 0);
 	display: inline-block;
 	font-weight: bold;
+
 	span {
 		font-weight: normal;
 	}

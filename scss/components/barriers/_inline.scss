@@ -1,21 +1,17 @@
 /*********************************************
 * Styling for inline rendering of barriers
 **********************************************/
-
 /* inline class hacked into to app that results in barrier being invoked*/
-
 .inline {
-	.barrier-overlay,
 	.barrier-grid,
+	.barrier-overlay,
 	.subscription-barrier-grid,
 	.trial-barrier-grid {
 		z-index: auto;
-		margin: 0 0 20px 0;
+		margin: 0 0 20px;
 	}
 }
-
 /* Inline in article barrier styling */
-
 .inline-barrier {
 	display: inline-block;
 	width: 100%;
@@ -24,33 +20,33 @@
 
 .inline-barrier__fader {
 	// scss-lint:disable DuplicateProperty
-	background: getColor('pink');
+	background: getColor('paper');
 	//Super verbose in order to keep Safari happy
-	background: linear-gradient(to bottom, rgba(getColor('pink'), 0), rgba(getColor('pink'), 0.8), rgba(getColor('pink'), 1));
+	background: linear-gradient(to bottom, rgba(getColor('paper'), 0), rgba(getColor('paper'), 0.8), rgba(getColor('paper'), 1));
 	height: 160px;
 	margin-top: -200px;
 	position: relative;
 }
 
 .inline-barrier__content {
-	background-color: getColor('warm-5');
-	border: 1px solid getColor('warm-3');
+	background-color: getColor('white-60');
+	border: 1px solid getColor('black-20');
 	box-sizing: border-box;
 	padding: 15px 15px 0;
 	text-align: center;
 }
 
 .inline-barrier__bridge {
-	@include oTypographySansBold('s');
+	@include oTypographySansBold($scale: -1);
 	background: getColor('white');
-	color: getColor('cold-1');
+	color: getColor('black-70');
 	margin: -15px -15px 15px;
 	padding: 10px;
 }
 
 .inline-barrier__heading {
-	@include oTypographySansBold('m');
-	color: getColor('cold-1');
+	@include oTypographySansBold($scale: -1);
+	color: getColor('black-70');
 	margin: 0 0 5px;
 }
 
@@ -65,23 +61,22 @@
 	.inline-barrier__button {
 		@include oButtons();
 		@include oButtonsSize(big);
-		@include oButtonsTheme(standout);
+		@include oButtonsTheme(primary);
 	}
 }
 
 .inline-barrier__cta-secondary {
-	@include oTypographySansSize('s');
+	@include oTypographySize($scale: -1);
 	margin: 0 0 10px;
 }
-
 @include oGridRespondTo($until: 'M') {
 	.inline-barrier__button {
 		display: block;
 	}
 }
 
-// Horrible hack for an MVT, to avoid shaving a humongous yak. Sorry, Internet.
-// scss-lint:disable QualifyingElement
-p.barrier-grid__heading-pretext {
-	margin-top: 15px;
+p {
+	&.barrier-grid__heading-pretext {
+		margin-top: 15px;
+	}
 }

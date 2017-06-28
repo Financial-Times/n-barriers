@@ -10,9 +10,9 @@
 }
 
 .barrier-grid__header {
-	background-color: oColorsGetPaletteColor('warm-2');
+	background-color: getColor('black-5');
 	h2 {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: three-quarters));
 	}
 
@@ -32,14 +32,14 @@
 	}
 
 	.barrier-grid__sign-in {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: -1);
 		@include oGridColspan((default: full-width, L: one-quarter));
 
-		background-color: oColorsGetPaletteColor('warm-3');
+		background-color: getColor('black-20');
 		padding: 10px 25px;
 
 		@include oGridRespondTo(L) {
-			background-color: oColorsGetPaletteColor('warm-2');
+			background-color: getColor('black-5');
 			text-align: right;
 			padding-top: 20px;
 			padding-bottom: 20px;
@@ -55,19 +55,19 @@
 }
 
 .barrier-grid__sub-header {
-	background-color: oColorsGetPaletteColor('white');
+	background-color: getColor('white');
 	padding: 18px 25px !important;
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	border-bottom: 1px solid getColor('black-5');
 
 	.barrier-grid__sub-header-title {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 0);
 	}
 }
 
 .barrier-grid__section {
 	padding: 18px 25px;
-	background-color: oColorsGetPaletteColor('white');
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	background-color: getColor('white');
+	border-bottom: 1px solid getColor('black-5');
 	text-align: left !important;
 
 	p {
@@ -92,13 +92,13 @@
 .barrier-grid__cta-btn {
 	@include oButtons();
 	@include oButtonsSize(big);
-	@include oButtonsTheme(standout);
+	@include oButtonsTheme(primary);
 	text-transform: none;
 }
 
 .barrier-grid__cta-text {
 	font-weight: 600;
-	color: #27757b;
+	color: getColor('teal-50');
 	font-size: 20px;
 }
 
@@ -117,10 +117,10 @@
 
 .barrier-grid {
 	.barrier-grid__options {
-		background-color: white;
+		background-color: getColor('white');
 
 		h3 {
-			@include oTypographySans(s);
+			@include oTypographySans($scale: -1);
 			text-align: center;
 			text-transform: uppercase;
 			margin-bottom: 10px;
@@ -167,7 +167,7 @@
 	.barrier-grid__select {
 		@include oButtons();
 		@include oButtonsSize(big);
-		@include oButtonsTheme(standout);
+		@include oButtonsTheme(primary);
 	}
 
 	.barrier-grid__secondary {
@@ -176,13 +176,13 @@
 		padding-right: 23px;
 
 		h4 {
-			@include oTypographySansBold(s);
+			@include oTypographySansBold($scale: -1);
 			margin-bottom: 3px;
 			margin-top: 0;
 		}
 
 		ul {
-			@include oTypographySansBold(s);
+			@include oTypographySansBold($scale: -1);
 			list-style: none;
 			font-weight: normal;
 			margin: 0 0 20px;
@@ -197,8 +197,8 @@
 		position: relative;
 		margin-left: 20px;
 
-		&:before {
-			@include oIconsGetIcon('tick', #35bd14, 14);
+		&::before {
+			@include oIconsGetIcon('tick', getColor('jade'), 14);
 			content: '';
 			margin-right: 4px;
 			position: absolute;
@@ -208,14 +208,14 @@
 	}
 
 	.barrier-grid__option-inner {
-		background-color: oColorsGetPaletteColor('white');
+		background-color: getColor('white');
 		padding-top: 20px;
 	}
 
 	.barrier-grid__option--option1,
 	.barrier-grid__option--option3 {
 		@include oGridRespondTo(S) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			border-right: 1px solid getColor('black-5');
 		}
 	}
 
@@ -223,19 +223,19 @@
 	.barrier-grid__option--option2,
 	.barrier-grid__option--option3 {
 		@include oGridRespondTo(L) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			border-right: 1px solid getColor('black-5');
 		}
 	}
 
 
 	.barrier-grid__option {
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
-		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+		border-bottom: 1px solid getColor('black-5');
 		padding-bottom: 20px;
 	}
 
 	.barrier-grid__learn-more {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: -1);
 	}
 
 }
@@ -248,7 +248,7 @@
 	.barrier-grid__option--option2 .barrier-grid__option-inner,
 	.barrier-grid__option--option3 .barrier-grid__option-inner {
 		@include oGridRespondTo(M) {
-			border-right: 1px solid oColorsGetPaletteColor('warm-2');
+			border-right: 1px solid getColor('black-5');
 		}
 	}
 
@@ -272,14 +272,14 @@
 
 .barrier-grid__other-options {
 	padding-top: 10px;
-	background-color: oColorsGetPaletteColor('white');
+	background-color: getColor('white');
 }
 
 .barrier-grid__other-options h3 {
-	@include oTypographySansBold(s);
+	@include oTypographySansBold($scale: -1);
 	text-align: center;
 	padding-bottom: 10px;
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	border-bottom: 1px solid getColor('black-5');
 }
 
 .barrier-grid__other-option {
@@ -290,14 +290,14 @@
 	}
 
 	a {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: -1);
 		border: 0;
 		overflow: hidden;
 		.barrier-grid__option-options-text {
 			display: block;
 		}
 
-		&:before {
+		&::before {
 			content: '';
 			display: block;
 			margin-left: auto;
@@ -307,12 +307,11 @@
 }
 
 .barrier-grid__other-option--digital a {
-	&:before {
+	&::before {
 		display: inline-block;
 		width: 40px;
 		height: 25px;
 		background-image: url(https://www.ft.com/__assets/creatives/desktop_laptop_tablet.png);
-		background: rgba(0, 0, 0, 0.0001) url(https://www.ft.com/__assets/creatives/desktop_laptop_tablet.png);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		background-color: transparent;
@@ -320,19 +319,19 @@
 }
 
 .barrier-grid__other-option--corporate a {
-	&:before {
-		@include oIconsGetIcon('corporate', oColorsGetPaletteColor(link-1), 35);
+	&::before {
+		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .barrier-grid__other-option--newspaper a {
-	&:before {
-		@include oIconsGetIcon('newspaper', oColorsGetPaletteColor(link-1), 35);
+	&::before {
+		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
 .barrier-grid__other-option--weekend a {
-	&:before {
-		@include oIconsGetIcon('ipad', oColorsGetPaletteColor(link-1), 35);
+	&::before {
+		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }

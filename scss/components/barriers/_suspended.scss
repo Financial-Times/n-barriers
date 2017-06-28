@@ -9,6 +9,6 @@
 .suspended-barrier__select {
 	@include oButtons();
 	@include oButtonsSize(big);
-	@include oButtonsTheme(standout);
+	@include oButtonsTheme(primary);
 	text-transform: none;
 }

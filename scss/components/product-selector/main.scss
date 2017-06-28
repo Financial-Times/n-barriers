@@ -13,10 +13,10 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .product-selector__header {
-	background-color: oColorsGetPaletteColor('warm-2');
+	background-color: getColor('black-5');
 	padding: 10px;
 	h1 {
-		@include oTypographySansBold(m);
+		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: three-quarters));
 		text-align: center;
 		margin-bottom: 10px;
@@ -29,7 +29,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.product-selector__sign-in {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: -1);
 		@include oGridColspan((default: full-width, L: one-quarter));
 		text-align: center;
 		padding-right: 10px;
@@ -40,7 +40,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.product-selector__sign-in a {
-		color: oColorsGetPaletteColor('link-1');
+		color: getColor('teal-40');
 		text-decoration: none;
 	}
 }
@@ -52,7 +52,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 .product-selector {
 	.product-selector__options {
 		h2 {
-			@include oTypographySans(s);
+			@include oTypographySans($scale: -1);
 			text-align: center;
 			text-transform: uppercase;
 			margin-bottom: 10px;
@@ -97,7 +97,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		}
 
 		a {
-			color: black;
+			color: getColor('black');
 			text-decoration: none;
 			border-bottom-width: 0;
 
@@ -110,7 +110,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	.product-selector__select {
 		@include oButtons();
 		@include oButtonsSize(big);
-		@include oButtonsTheme(standout);
+		@include oButtonsTheme(primary);
 		text-transform: none;
 	}
 
@@ -120,13 +120,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		padding-right: 30px;
 
 		h4 {
-			@include oTypographySansBold(s);
+			@include oTypographySansBold($scale: -1);
 			margin-bottom: 3px;
 			margin-top: 0;
 		}
 
 		ul {
-			@include oTypographySansBold(s);
+			@include oTypographySansBold($scale: -1);
 			list-style: none;
 			font-weight: normal;
 			margin: 0 0 20px;
@@ -141,8 +141,8 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		position: relative;
 		margin-left: 20px;
 
-		&:before {
-			@include oIconsGetIcon('tick', #35bd14, 14);
+		&::before {
+			@include oIconsGetIcon('tick', getColor('jade'), 14);
 			content: '';
 			margin-right: 4px;
 			position: absolute;
@@ -152,10 +152,10 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	.product-selector__option-inner {
-		background-color: oColorsGetPaletteColor('white');
+		background-color: getColor('white');
 		padding-top: 20px;
 		padding-bottom: 10px;
-		border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+		border-bottom: 1px solid getColor('black-5');
 		flex: 1;
 	}
 
@@ -165,7 +165,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		&.product-selector__option--option1,
 		&.product-selector__option--option3 {
 			@include oGridRespondTo(S) {
-				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+				border-right: 1px solid getColor('black-5');
 			}
 		}
 
@@ -173,17 +173,17 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		&.product-selector__option--option2,
 		&.product-selector__option--option3 {
 			@include oGridRespondTo(L) {
-				border-right: 1px solid oColorsGetPaletteColor('warm-2');
+				border-right: 1px solid getColor('black-5');
 			}
 		}
 	}
 
 	.product-selector__learn-more {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: -1);
 
 		a {
 			text-decoration: none;
-			color: oColorsGetPaletteColor(link-1);
+			color: getColor('teal-40');
 		}
 	}
 
@@ -201,13 +201,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	@include oGridRespondTo($until: S) {
 		padding-left: 0;
 		padding-right: 0;
-		background-color: #00a000;
+		background-color: getColor('jade');
 	}
 }
 
 .product-selector__other-options {
 	padding-top: 10px;
-	background-color: oColorsGetPaletteColor('white');
+	background-color: getColor('white');
 	@include oGridRespondTo(S) {
 		margin-left: -5px;
 		margin-right: -5px;
@@ -215,10 +215,10 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .product-selector__other-options h2 {
-	@include oTypographySansBold(s);
+	@include oTypographySansBold($scale: -1);
 	text-align: center;
 	padding-bottom: 10px;
-	border-bottom: 1px solid oColorsGetPaletteColor('warm-2');
+	border-bottom: 1px solid getColor('black-5');
 }
 
 .product-selector__other-option {
@@ -231,9 +231,9 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	}
 
 	a {
-		@include oTypographySansBold(s);
+		@include oTypographySansBold($scale: -1);
 		text-decoration: none;
-		color: oColorsGetPaletteColor(link-1);
+		color: getColor('teal-40');
 		overflow: hidden;
 		border-bottom-style: none;
 
@@ -241,7 +241,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			display: block;
 		}
 
-		&:before {
+		&::before {
 			content: '';
 			display: block;
 			margin-left: auto;
@@ -251,25 +251,25 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .product-selector__other-option--corporate a {
-	&:before {
-		@include oIconsGetIcon('corporate', oColorsGetPaletteColor(link-1), 35);
+	&::before {
+		@include oIconsGetIcon('corporate', getColor('teal-40'), 35);
 	}
 }
 
 .product-selector__other-option--epaper a {
-	&:before {
-		@include oIconsGetIcon('section-magazine', oColorsGetPaletteColor(link-1), 35);
+	&::before {
+		@include oIconsGetIcon('section-magazine', getColor('teal-40'), 35);
 	}
 }
 
 .product-selector__other-option--newspaper a {
-	&:before {
-		@include oIconsGetIcon('newspaper', oColorsGetPaletteColor(link-1), 35);
+	&::before {
+		@include oIconsGetIcon('newspaper', getColor('teal-40'), 35);
 	}
 }
 
 .product-selector__other-option--weekend a {
-	&:before {
-		@include oIconsGetIcon('ipad', oColorsGetPaletteColor(link-1), 35);
+	&::before {
+		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
 	}
 }

@@ -1,7 +1,7 @@
 .amo-b2b__list {
-	padding: 0;
-	margin-top: 0;
 	list-style: none;
+	margin-top: 0;
+	padding: 0;
 }
 
 .amo-b2b__list__item::before {
@@ -26,8 +26,8 @@
 }
 
 .individual-b2b-prospect__list__title-amo {
-	@include oTypographySansBold(m);
-	color: oColorsGetPaletteColor('grey-tint5');
+	@include oTypographySansBold($scale: 0);
+	color: getColor('black-80');
 	margin-bottom: 12px;
 }
 
@@ -62,30 +62,32 @@
 }
 
 .b2b-amo__button {
+	@include oButtons();
+	@include oButtonsSize(big);
+	@include oButtonsTheme(standard);
+	background-color: getColor('white');
+	color: getColor('teal');
+	border: getColor('white');
 	@include oGridRespondTo(M) {
 		align-self: center;
 		flex-shrink: 0;
 	}
-	@include oButtons();
-	@include oButtonsSize(big);
-	@include oButtonsTheme(standard);
-	background-color: oColorsGetPaletteColor('white');
-	color: oColorsGetPaletteColor('teal');
-	border: oColorsGetPaletteColor('white');
-	&:focus, &:hover {
-		color: oColorsGetPaletteColor('white');
-		border: oColorsGetPaletteColor('white');
+	&:focus,
+	&:hover {
+		color: getColor('white');
+		border: getColor('white');
 	}
 }
 
 .amo-b2b__sign-in {
-	color: oColorsGetPaletteColor('white');
+	color: getColor('white');
 	text-decoration: underline;
-	&:focus, &:hover {
-		color: oColorsGetPaletteColor('white');
+	&:focus,
+	&:hover {
+		color: getColor('white');
 	}
 }
 
 .amo-b2b__footer__help {
-	margin: 16px 0 16px 0;
+	margin: 16px 0;
 }
