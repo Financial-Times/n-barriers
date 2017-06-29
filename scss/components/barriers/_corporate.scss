@@ -15,13 +15,15 @@
 
 .individual-b2b-prospect__title-amo {
 	margin-bottom: 0;
-	@include oGridRespondTo(L, XL) {
+	@include oGridRespondTo($from: L) {
 		margin-left: 20px;
 	}
 
 	// tweak style for fastFT barrier, which doesn't respond to breakpoints as expected
 	.card-openable__article & {
-		padding-left: 20px;
+		@include oGridRespondTo($from: M) {
+			padding-left: 30px;
+		}
 	}
 }
 
