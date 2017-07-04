@@ -13,17 +13,13 @@
 	margin: 0 5px -7px 0;
 }
 
-.individual-b2b-prospect__title-amo {
-	margin-bottom: 0;
-	@include oGridRespondTo($from: L) {
-		margin-left: 20px;
-	}
+.barrier-grid__section-logo.barrier-grid__section-logo--amo {
+	margin: 25px auto 20px;
 
-	// tweak style for fastFT barrier, which doesn't respond to breakpoints as expected
-	.card-openable__article & {
-		@include oGridRespondTo($from: M) {
-			padding-left: 30px;
-		}
+	@include oGridRespondTo(M) {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
 	}
 }
 
@@ -34,6 +30,11 @@
 }
 
 .individual-b2b-prospect__lead-amo {
+	margin-top: 16px;
+	font-weight: 100;
+}
+
+.individual-b2b-prospect__subtitle--amo {
 	margin-top: 16px;
 }
 

@@ -161,6 +161,7 @@
 
 	.individual-b2b-prospect__content__footer__subtitle {
 		@include oTypographySans($scale: -1);
+		font-weight: 100;
 	}
 
 	.individual-b2b-prospect__button {
