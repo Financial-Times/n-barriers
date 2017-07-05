@@ -3,7 +3,11 @@ machine:
     version: 4.2.1
 
 dependencies:
-  post:
-    - npm install bower
-    - bower install
+  override:
+    - make install
+compile:
+  override:
     - make build
+test:
+  override:
+    - make test

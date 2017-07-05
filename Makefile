@@ -10,6 +10,7 @@ clean:
 	git clean -fxd -e .idea
 
 install:
+	npm install origami-build-tools
 	obt install --verbose
 
 build:
