@@ -17,6 +17,7 @@
   "private": true,
   "dependencies": {
     "n-ui-foundations": "^2.0.0-beta",
-    "o-buttons": "^5.0.2"
+    "o-buttons": "^5.0.2",
+    "o-colors": "^4.0.4"
   }
 }
