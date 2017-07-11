@@ -7,7 +7,6 @@
 @import 'suspended';
 @import 'concurrency';
 @import 'corporate';
-@import 'inline';
 @import 'narrow';
 @import 'mobile';
 @import 'corporate-prospect-trial';
@@ -31,6 +30,7 @@
 	padding: 0 0 10px 10px;
 	font-size: 20px;
 	box-sizing: border-box;
+	@include oTypographySans();
 }
 
 div .barrier-grid__heading {
@@ -44,7 +44,7 @@ div .barrier-grid__heading {
 }
 
 h1 .barrier-grid__article-title {
-	font-weight: normal;
+	@include oTypographySans($scale: 2);
 	display: block;
 }
 
@@ -65,6 +65,7 @@ h1 .barrier-grid__article-title {
 }
 
 p .barrier-grid__article-title {
+	@include oTypographySans($scale: 2);
 	margin-bottom: 10px;
 	max-width: 100%;
 	min-width: 75%;
@@ -73,13 +74,8 @@ p .barrier-grid__article-title {
 	box-sizing: border-box;
 }
 
-.barrier-grid__suspended-header {
-	font-size: 20px;
-	line-height: initial;
-}
-
 .barrier-grid__section-heading {
-	font-size: 20px;
+	@include oTypographySansBold($scale: 2);
 }
 
 .trial-barrier-grid__other-options {
@@ -95,11 +91,10 @@ p .barrier-grid__article-title {
 }
 
 .trial-barrier-grid__title {
+	@include oTypographySansBold($scale: 1);
 	color: getColor('teal-40');
-	font-size: 1em;
-	font-weight: 700;
-	text-align: center;
 	text-transform: uppercase;
+	text-align: center;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }

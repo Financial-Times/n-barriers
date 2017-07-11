@@ -1,6 +1,11 @@
 .barrier-grid {
 	position: relative;
 	margin: 20px 0;
+
+	p {
+		@include oTypographySans($scale: 0);
+	}
+
 }
 
 .barrier-grid h2,
@@ -85,7 +90,7 @@
 }
 
 .barrier-grid__bigger-text {
-	font-size: 20px;
+	@include oTypographySans($scale: 2);
 	margin-bottom: 0;
 }
 
@@ -97,9 +102,8 @@
 }
 
 .barrier-grid__cta-text {
-	font-weight: 600;
 	color: getColor('teal-50');
-	font-size: 20px;
+	@include oTypographySansBold($scale: 2);
 }
 
 .barrier-grid__cto-btn--style2 {
@@ -108,7 +112,7 @@
 }
 
 .barrier-grid__para-heading {
-	font-weight: bold;
+	@include oTypographySansBold($scale: 0);
 }
 
 /*****************************************
@@ -150,8 +154,8 @@
 
 	.barrier-grid__price {
 		margin-right: 4px;
-		font-weight: bold;
-		font-size: 20px;
+		@include oTypographySansBold($scale: 2);
+
 		@include oGridRespondTo(L) {
 			display: block;
 			margin-right: 0;
@@ -159,8 +163,7 @@
 		}
 
 		span {
-			font-weight: normal;
-			font-size: 18px;
+			@include oTypographySans($scale: 1);
 		}
 	}
 

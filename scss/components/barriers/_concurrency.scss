@@ -1,9 +1,9 @@
 .barrier-grid__concurrency {
 	p {
-		font: 18px/1.4 Georgia, serif;
+		@include oTypographyDisplay($scale: 1);
 		margin: 0.3em 0 0.8em;
 	}
 	h2 {
-		font-size: 32px;
+		@include oTypographySansBold($scale: 5);
 	}
 }

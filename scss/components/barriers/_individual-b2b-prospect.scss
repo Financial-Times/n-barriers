@@ -115,6 +115,7 @@
 }
 
 .individual-b2b-prospect__quote__footer {
+	@include oTypographySans($scale: -1);
 	text-align: center;
 	@include oGridRespondTo(M) {
 		text-align: right;
@@ -126,6 +127,7 @@
 }
 
 .individual-b2b-prospect__list {
+	@include oTypographySans($scale: -1);
 	color: getColor('black-70');
 	flex: 1;
 	list-style: none;
@@ -155,6 +157,7 @@
 	}
 
 	.individual-b2b-prospect__content__footer__title {
+		@include oTypographySansBold($scale: -1);
 		margin-bottom: 5px;
 		margin-right: 20px;
 	}
@@ -205,6 +208,7 @@
 }
 
 .individual-b2b-prospect__footer {
+	@include oTypographySans($scale: -1);
 	background: getColor('white');
 	padding: 30px;
 }

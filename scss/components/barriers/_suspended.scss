@@ -1,9 +1,10 @@
 .barrier-grid__suspended {
 	text-align: center;
+	@include oTypographySans($scale: 0);
 }
 
 .barrier-grid__suspended-header {
-	line-height: 40px;
+	@include oTypographySansBold($scale: 4);
 }
 
 .suspended-barrier__select {

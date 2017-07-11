@@ -1,4 +1,5 @@
 .amo-b2b__list {
+	@include oTypographySans($scale: -1);
 	list-style: none;
 	margin-top: 0;
 	padding: 0;
@@ -92,5 +93,14 @@
 }
 
 .amo-b2b__footer__help {
+	@include oTypographySans($scale: -1);
 	margin: 16px 0;
+}
+
+.corporate-special__section {
+	@include oTypographySans($scale: 0);
+
+	h2 {
+		@include oTypographySansBold($scale: 1);
+	}
 }

@@ -13,7 +13,9 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 .trial-barrier-grid__header {
 	background-color: getColor('black-5');
+	padding: 10px 0;
 
+	h1,
 	h2 {
 		@include oTypographySansBold($scale: 2);
 		@include oGridColspan((default: full-width, L: three-quarters));
@@ -24,14 +26,13 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		margin-bottom: 10px;
 	}
 
-	h2 .trial-barrier-grid__heading-pretext {
-		display: block;
-		padding-top: 10px;
+	.barrier-grid__heading-pretext.barrier-grid__heading {
+		padding: 0 0 0 10px;
+		margin: 0;
 	}
 
-	h2 .trial-barrier-grid__article-title {
-		font-weight: normal;
-		display: block;
+	.trial-barrier-grid__article-title {
+		@include oTypographySansBold($scale: 1);
 	}
 
 	.trial-barrier-grid__sign-in {
@@ -114,13 +115,12 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		top: 5vh;
 		right: 11vw;
 		background-color: getColor(claret);
-		color: white;
+		color: getColor('white');
 		display: block;
 		border-radius: 50%;
 		padding: 0.7em;
 		text-align: center;
-		@include oTypographySize($scale: 0);
-		line-height: 1em;
+		@include oTypographySans($scale: 0, $line-height: 17px);
 
 		@include oGridRespondTo(S) {
 			top: 20px;
@@ -161,8 +161,8 @@ $o-grid-gutters: (default: 0px, M: 0px);
 
 	.trial-barrier-grid__price {
 		margin-right: 4px;
-		font-weight: bold;
-		font-size: 20px;
+		@include oTypographySansBold($scale: 2);
+
 		@include oGridRespondTo(L) {
 			display: block;
 			margin-right: 0;
@@ -196,6 +196,7 @@ $o-grid-gutters: (default: 0px, M: 0px);
 		padding-left: 30px;
 		padding-right: 30px;
 
+		h2,
 		h4 {
 			@include oTypographySansBold($scale: -1);
 			margin-bottom: 3px;

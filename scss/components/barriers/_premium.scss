@@ -3,13 +3,13 @@
 }
 
 .premium-barrier-simple__subscribe-link {
+	@include oTypographySansBold($scale: 0);
 	margin-bottom: 30px !important; // win specificity war
 }
 
 .barrier-grid--premium {
 	position: relative;
 	margin: 20px 0;
-	-webkit-font-smoothing: antialiased;
 
 	.barrier-grid__header {
 		color: getColor('white');
@@ -50,7 +50,7 @@
 		padding: 2px 0;
 		font-size: 2em;
 		font-weight: 500;
-		font-family: $o-typography-display;
+		@include oTypographySansBold($scale: 0);
 	}
 
 	.barrier-grid__sub-heading {
@@ -58,7 +58,7 @@
 		margin: 0;
 		padding-top: 4px;
 		font-size: 18px;
-		font-family: $o-typography-sans;
+		@include oTypographySansBold($scale: 0);
 	}
 
 	.barrier-grid__body {
@@ -95,8 +95,7 @@
 
 	.barrier-grid__section-heading {
 		margin: 0;
-		font-size: 26px;
-		font-weight: 500;
+		@include oTypographySansBold($scale: 3);
 	}
 
 	.barrier-grid__description {
@@ -244,7 +243,7 @@
 	}
 
 	.barrier-grid__features-item-heading {
-		font-size: 22px;
+		@include oTypographySansBold($scale: 2);
 	}
 
 	.barrier-grid__most-read {
