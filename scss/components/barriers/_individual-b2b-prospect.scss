@@ -127,7 +127,7 @@
 }
 
 .individual-b2b-prospect__list {
-	@include oTypographySans($scale: -1);
+	@include oTypographySans($scale: 0);
 	color: getColor('black-70');
 	flex: 1;
 	list-style: none;
@@ -140,9 +140,9 @@
 }
 
 .individual-b2b-prospect__list__title {
-	@include oTypographySansBold($scale: 0);
+	@include oTypographySansBold($scale: 1);
 	color: getColor('black-80');
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .individual-b2b-prospect__content__footer {

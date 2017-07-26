@@ -21,7 +21,7 @@
 		content: '';
 		display: block;
 		height: 5px;
-		margin: 24px auto 24px;
+		margin: 24px auto;
 		width: 60px;
 		@include oGridRespondTo(M) {
 			margin-left: 0;
