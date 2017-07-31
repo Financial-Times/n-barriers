@@ -171,7 +171,7 @@
 
 	.individual-b2b__packshot--mobile {
 		float: right;
-		margin-right: 20px;
+		margin: 0 20px 12px 0;
 
 		@include oGridRespondTo(M) {
 			display: none;
