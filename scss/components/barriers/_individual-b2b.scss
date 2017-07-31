@@ -50,7 +50,7 @@
 .individual-b2b__options {
 
 	.individual-b2b__option {
-		margin: 10px 0;
+		margin: 10px 0 10px 10px;
 
 		@include oGridRespondTo(M) {
 			margin: 0;
@@ -63,9 +63,18 @@
 	text-align: center;
 	padding: 20px;
 
-	@include oGridRespondTo(M) {
-		min-height: 198px;
+	@include oGridRespondTo(S) {
+		min-height: 110px;
 	}
+
+	@include oGridRespondTo(M) {
+		min-height: 227px;
+	}
+
+	@include oGridRespondTo(L) {
+		min-height: 208px;
+	}
+
 }
 
 .individual-b2b__option-title {
@@ -151,7 +160,7 @@
 		display: none;
 
 		@include oGridRespondTo(M) {
-			margin-top: 45px;
+			margin-top: 32px;
 			margin-right: 20px;
 			float: right;
 			display: inline-block;
