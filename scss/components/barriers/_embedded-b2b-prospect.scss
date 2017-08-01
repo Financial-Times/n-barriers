@@ -24,6 +24,10 @@
 	@include oGridRespondTo(M) {
 		padding: 20px 50px;
 	};
+
+	@include oGridRespondTo(L) {
+		width: 520px;
+	};
 }
 
 .individual-b2b-prospect__content-header {
@@ -34,7 +38,7 @@
 	flex-grow: 1;
 	position: relative;
 	font-size: 18px;
-	padding-top: 24px;
+	padding-top: 40px;
 }
 
 .embedded-b2b-prospect__quote-list-container:before {
@@ -53,7 +57,8 @@
 	margin: 0 auto;
 
 	@include oGridRespondTo(S) {
-		min-width: 380px;
+		min-width: 400px;
+		width: 400px;
 	}
 
 	@include oGridRespondTo(L) {
@@ -62,7 +67,7 @@
 }
 
 .embedded-b2b-prospect__form iframe {
-	height: 720px;
+	height: 800px;
 	border: 0;
 }
 
