@@ -14,6 +14,14 @@
 	}
 }
 
+.embedded-b2b-prospect__pretext {
+	@include oTypographySans($scale: 2);
+	font-weight: normal;
+	box-sizing: border-box;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
 .embedded-b2b-prospect__content {
 	display: flex;
 	flex-direction: column;
@@ -30,7 +38,7 @@
 	};
 }
 
-.individual-b2b-prospect__content-header {
+.embedded-b2b-prospect__content-header {
 	margin-bottom: 30px;
 }
 
