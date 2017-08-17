@@ -1,6 +1,5 @@
 @import 'colors';
 @import 'premium';
-@import 'subscription-grid';
 @import 'trial-grid';
 @import 'barrier-grid';
 @import 'registration';
@@ -78,27 +77,6 @@ p .barrier-grid__article-title {
 
 .barrier-grid__section-heading {
 	@include oTypographySansBold($scale: 2);
-}
-
-.trial-barrier-grid__other-options {
-	h2 {
-		font-family: MetricWeb, sans-serif;
-		line-height: 17px;
-		font-size: 15px;
-		font-weight: 600;
-		text-align: center;
-		padding-bottom: 10px;
-		border-bottom: 1px solid getColor('black-5');
-	}
-}
-
-.trial-barrier-grid__title {
-	@include oTypographySansBold($scale: 1);
-	color: getColor('teal-40');
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 10px;
-	margin-top: 10px;
 }
 
 .barrier {
