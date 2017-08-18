@@ -1,21 +1,17 @@
 @mixin corporateProspectTrialHeading() {
-		padding: 0 10%;
-
-		@include oGridRespondTo(M) {
-			padding: 0 44px;
-		}
-
-		@include oGridRespondTo(L) {
-			padding: 0 80px;
-		}
+	padding: 0 10%;
+	@include oGridRespondTo(M) {
+		padding: 0 44px;
+	}
+	@include oGridRespondTo(L) {
+		padding: 0 80px;
+	}
 }
 
 .corporate-prospect__subtitle {
 	@include oTypographySans($scale: 3);
-	@include corporateProspectTrialHeading();
-
+	padding: 0 20px;
 	margin-top: 25px;
-
 	&::after {
 		background: getColor('teal-40');
 		content: '';
@@ -29,12 +25,11 @@
 	}
 }
 
-
 .barrier-grid__company-title {
 	@include corporateProspectTrialHeading();
 	@include oTypographySerif($scale: 3);
-	display: block;
 	font-weight: normal;
+	display: block;
 	text-align: left;
 }
 
@@ -43,58 +38,46 @@
 }
 
 .corporate-prospect-trial {
-
 	position: relative;
 	margin: {
 		top: 20px;
 		bottom: 60px;
 	}
-
 	background: getColor('white');
-
 	h1 {
 		@include corporateProspectTrialHeading();
 		@include oTypographySans($scale: 1);
 		font-weight: normal;
 		text-align: left;
 	}
-
 	h2 {
 		margin: 36px 0;
 		text-align: center;
-
 		@include oGridRespondTo(M) {
 			text-align: left;
-			width: 100%;
 		}
 	}
-
 	h3 {
 		@include oTypographySansBold($scale: 1);
 		padding-top: 0;
 		width: 100%;
 		margin: 10px 0 -10px;
 		text-align: left;
-
 	}
-
 	p {
 		@include oTypographySans($scale: 0);
 		width: 100%;
 		margin: 10px 0;
 		padding: 0;
 	}
-
 	ul {
 		@include oTypographySans($scale: 1);
 		padding-left: 0;
 		list-style: none;
-
 		@include oGridRespondTo(L) {
 			padding-left: 20px;
 		}
 	}
-
 	li {
 		@include oTypographySans($scale: 1);
 		position: relative;
@@ -111,13 +94,11 @@
 			left: -24px;
 		}
 	}
-
 	iframe {
 		min-height: 1000px;
 		display: block;
 		border: 0;
 	}
-
 }
 
 .corporate-prospect-trial__header {
@@ -128,20 +109,15 @@
 }
 
 .corporate-prospect-trial__form {
-
 	background-color: getColor('white');
-
 	padding: 24px 10% 36px;
-
 	@include oGridRespondTo(M) {
 		padding: 0 24px 60px 0;
 	}
-
 	@include oGridRespondTo(L) {
 		padding: 0 60px 60px 0;
 	}
-
-	& > div {
+	&>div {
 		background-color: getColor('white-60');
 		@include oGridRespondTo(M) {
 			min-height: 800px;
@@ -156,16 +132,13 @@
 }
 
 .corporate-prospect-trial__contact {
-
 	background-color: getColor('wheat');
 	margin-top: 45px;
 	padding: 10px 28px 28px;
-
 	span {
 		@include oTypographySansBold($scale: 0);
 		padding-right: 5px;
 	}
-
 }
 
 .corporate-prospect-trial__contact.corporate-prospect-trial__contact--p1 {
@@ -183,29 +156,22 @@
 }
 
 .corporate-prospect-trial__description {
-
 	background-color: getColor('white');
-
 	padding: 0 10%;
-
 	@include oGridRespondTo(M) {
 		padding: 0 24px;
 	}
-
 	@include oGridRespondTo(L) {
 		padding: 0 60px;
 	}
-
 	img {
 		display: none;
 		margin: 0 auto 30px;
-
 		@include oGridRespondTo(L) {
 			display: block;
 			text-align: left;
 		}
 	}
-
 	p {
 		@include oTypographySans($scale: 1);
 		text-align: center;
@@ -213,12 +179,11 @@
 			text-align: left;
 		}
 	}
-
 }
 
 .corporate-prospect__list__title {
 	@include oTypographySans($scale: 1);
+	font-weight: normal;
 	color: getColor('black-80');
 	margin: 12px 0;
-	font-weight: normal;
 }

@@ -1,8 +1,6 @@
 $o-grid-gutters: (default: 0px, M: 0px);
-
 @import '../package-grid';
 @import '../other-options';
-
 .trial-barrier-grid {
 	position: relative;
 	margin: 20px 0;
@@ -16,27 +14,22 @@ $o-grid-gutters: (default: 0px, M: 0px);
 .trial-barrier-grid__header {
 	background-color: getColor('black-5');
 	padding: 10px 0;
-
 	h1,
 	h2 {
 		@include oTypographySansBold($scale: 2);
 		@include oGridColspan((default: full-width, L: three-quarters));
 	}
-
 	h2 {
 		padding-left: 10px;
 		margin-bottom: 10px;
 	}
-
 	.barrier-grid__heading-pretext.barrier-grid__heading {
 		padding: 0 0 0 10px;
 		margin: 0;
 	}
-
 	.trial-barrier-grid__article-title {
 		@include oTypographySansBold($scale: 1);
 	}
-
 	.trial-barrier-grid__sign-in {
 		@include oTypographySansBold($scale: -1);
 		@include oGridColspan((default: full-width, L: one-quarter));
@@ -46,7 +39,6 @@ $o-grid-gutters: (default: 0px, M: 0px);
 			padding-top: 12px;
 		}
 	}
-
 	.trial-barrier-grid__pretext {
 		@include oGridRespondTo(L) {
 			display: block;
@@ -69,12 +61,11 @@ $o-grid-gutters: (default: 0px, M: 0px);
 }
 
 .barrier-grid__heading {
+	@include oTypographySansBold($scale: 2);
 	margin-bottom: 10px;
-	font-weight: bold;
 	max-width: 75%;
 	min-width: 75%;
 	padding: 0 0 10px 10px;
-	font-size: 20px;
 	box-sizing: border-box;
 }
 
@@ -83,13 +74,12 @@ p .barrier-grid__heading-pretext {
 	display: block;
 }
 
-p .barrier-grid__article-title {
+.barrier-grid__article-title {
 	font-weight: normal;
 	display: block;
 }
 
-p .barrier-grid__article-subtext {
-	font-weight: normal;
-	font-size: 15px;
+.barrier-grid__article-subtext {
+	@include oTypographySans($scale: 0);
 	display: block;
 }

@@ -1,3 +1,4 @@
+@import 'mixins';
 @import 'colors';
 @import 'premium';
 @import 'trial-grid';
@@ -12,6 +13,8 @@
 @import 'individual-b2b-prospect'; // TODO: remove
 @import 'individual-b2b';
 @import 'embedded-b2b-prospect';
+@import 'colour-trial-grid';
+@import 'common';
 
 .barrier-overlay {
 	position: fixed;
@@ -25,30 +28,26 @@
 
 .barrier-grid__heading {
 	margin-bottom: 0px;
-	font-weight: bold;
 	max-width: 75%;
 	min-width: 75%;
 	padding: 0 0 10px 10px;
-	font-size: 20px;
 	box-sizing: border-box;
-	@include oTypographySans();
+	@include oTypographySansBold($scale: 2);
 }
 
 div .barrier-grid__heading {
 	margin-bottom: 0px;
-	font-weight: bold;
 	max-width: 100%;
 	min-width: 75%;
 	padding: 0 0 0px 10px;
-	font-size: 20px;
 	box-sizing: border-box;
+	@include oTypographySansBold($scale: 2);
 }
 
 h1 .barrier-grid__article-title {
 	@include oTypographySans($scale: 2);
 	display: block;
 }
-
 
 .barrier-grid__header .barrier-grid__sign-in {
 	min-width: 100%;
@@ -65,13 +64,12 @@ h1 .barrier-grid__article-title {
 	}
 }
 
-p .barrier-grid__article-title {
+.barrier-grid__article-title {
 	@include oTypographySans($scale: 2);
 	margin-bottom: 10px;
 	max-width: 100%;
 	min-width: 75%;
 	padding: 0 0 10px 10px;
-	font-size: 20px;
 	box-sizing: border-box;
 }
 

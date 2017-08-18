@@ -10,33 +10,27 @@
 .barrier-grid--premium {
 	position: relative;
 	margin: 20px 0;
-
 	.barrier-grid__header {
 		color: getColor('white');
 		background-color: getColor('teal-40');
-
 		.barrier-grid__sign-in {
 			padding: 15px 25px;
 			text-align: right;
 			background-color: transparent;
 		}
-
 		.barrier-grid__pretext {
 			display: inline;
 		}
 	}
-
 	.barrier-grid__sign-in-link {
 		color: getColor('white');
 		border-bottom: 1px dotted getColor('white');
 		display: inline;
 		margin-left: 5px;
-
 		&:hover {
 			border-bottom-color: transparent;
 		}
 	}
-
 	.barrier-grid__header-content {
 		margin: 25px;
 		@include oGridRespondTo(M) {
@@ -44,31 +38,23 @@
 			margin-right: 0;
 		}
 	}
-
 	.barrier-grid__heading {
 		margin: 0;
 		padding: 2px 0;
-		font-size: 2em;
-		font-weight: 500;
 		@include oTypographySansBold($scale: 0);
 	}
-
 	.barrier-grid__sub-heading {
 		display: block;
 		margin: 0;
 		padding-top: 4px;
-		font-size: 18px;
 		@include oTypographySansBold($scale: 0);
 	}
-
 	.barrier-grid__body {
 		background-color: getColor('white');
 	}
-
 	.barrier-grid__divider-row {
 		border-bottom: 1px solid $greyCE;
 	}
-
 	.barrier-grid__lead {
 		@include oGridRespondTo(L) {
 			min-height: 266px;
@@ -77,14 +63,12 @@
 			min-height: 238px;
 		}
 	}
-
 	.barrier-grid__premium-inclusions {
 		padding-bottom: 20px;
 		@include oGridRespondTo(M) {
 			padding-bottom: 40px;
 		}
 	}
-
 	.barrier-grid__section {
 		color: getColor('black-70');
 		border: 0;
@@ -92,18 +76,15 @@
 			padding: 25px 50px;
 		}
 	}
-
 	.barrier-grid__section-heading {
 		margin: 0;
 		@include oTypographySansBold($scale: 3);
 	}
-
 	.barrier-grid__description {
-		font-size: 20px;
+		@include oTypographySize(2);
 		line-height: 28px;
 		margin: 20px 0 40px;
 	}
-
 	.barrier-grid__cta {
 		padding: 10px 15px;
 		background-color: $greyF1;
@@ -113,7 +94,6 @@
 			text-align: initial;
 		}
 	}
-
 	.barrier-grid__cta-price-diff-text {
 		margin-top: 15px;
 		position: relative;
@@ -125,7 +105,6 @@
 			margin-top: 0;
 		}
 	}
-
 	.premium-a-barrier-grid__subscribe-btn-container {
 		margin-top: 0;
 		margin-bottom: 10px;
@@ -135,19 +114,15 @@
 			float: right;
 		}
 	}
-
 	.barrier-grid__cta-btn {
 		min-width: 150px;
 	}
-
 	.barrier-grid__cta-btn--disabled {
 		pointer-events: none;
 	}
-
 	.barrier-grid__description-para {
 		margin: 16px 0;
 	}
-
 	.barrier-grid__article-card-col {
 		display: none;
 		@include oGridRespondTo(L) {
@@ -155,7 +130,6 @@
 			position: relative;
 		}
 	}
-
 	.barrier-grid__section-article-card {
 		position: absolute;
 		bottom: 0;
@@ -167,29 +141,23 @@
 			height: calc(100% + 42px);
 		}
 	}
-
 	.barrier-grid__article-card-container {
 		padding: 0 60px;
 		height: 100%;
 	}
-
 	.barrier-grid__article-card {
 		background-color: getColor('white-10');
 		height: calc(100% - 20px);
 		padding: 10px;
 		box-shadow: 36px 12px 0 -12px rgba(0, 0, 0, 0.2);
 	}
-
 	.barrier-grid__article-card-img {
 		margin-bottom: 10px;
 	}
-
 	.barrier-grid__article-card-img-placeholder {
 		position: relative;
 		padding-bottom: 56.25%;
-		// TODO: Add #dadada to o-colors
-		background-color: #dadada;
-
+		background-color: $greyDA;
 		&::before {
 			content: '';
 			position: absolute;
@@ -198,7 +166,6 @@
 			background: url('https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo:brand-ft?source=next&tint=999999,999999') 50% / 20% no-repeat transparent;
 		}
 	}
-
 	.barrier-grid__article-card-social {
 		margin-bottom: 6px;
 		padding: 5px 0;
@@ -206,29 +173,24 @@
 		border-top: 1px solid getColor('black-20');
 		border-bottom: 1px solid getColor('black-20');
 	}
-
 	.barrier-grid__article-card-skeleton--social {
 		display: inline-block;
 		height: 20px;
 		background-color: rgba(204, 193, 179, 0.4);
-
 		&:first-child {
 			width: 40%;
 		}
-
 		&:last-child {
 			width: 30%;
 			float: right;
 		}
 	}
-
 	.barrier-grid__article-card-skeleton--body {
 		margin-bottom: 7px;
 		height: 20px;
 		background-color: rgba(204, 193, 179, 0.4);
 		@include oGridRespondTo(XL) {
 			margin-bottom: 5px;
-
 			&:nth-child(n+4):nth-child(-n+6) {
 				display: none;
 			}
@@ -237,30 +199,22 @@
 			width: 20%;
 		}
 	}
-
 	.barrier-grid__features-item:not(:last-child) {
 		margin-bottom: 40px;
 	}
-
 	.barrier-grid__features-item-heading {
 		@include oTypographySansBold($scale: 2);
 	}
-
 	.barrier-grid__most-read {
-		// TODO: Add #f1f1f1 to o-colors
-		background-color: #f1f1f1;
+		background-color: $greyF1;
 		padding: 20px;
 	}
-
 	.barrier-grid__most-read-heading {
 		margin-bottom: 20px;
-		font-size: 24px;
-		font-weight: 600;
+		@include oTypographySansBold($scale: 2);
 	}
-
 	.barrier-grid__most-read-sub-heading {
 		margin: 0 0 44px;
-
 		&::after {
 			content: '';
 			color: getColor('teal-40');
@@ -271,33 +225,25 @@
 			position: absolute;
 		}
 	}
-
 	.barrier-grid__most-read-item {
 		margin-bottom: 30px;
-
 		div {
 			margin: 5px 0;
 		}
 	}
-
 	.barrier-grid__most-read-headline {
-		font-size: 20px;
-		font-family: $o-typography-display;
+		@include oTypographyDisplay($scale: 2);
 	}
-
 	.barrier-grid__most-read-standfirst {
-		font-size: 18px;
+		@include oTypographySize($scale: 1);
 	}
-
 	.barrier-grid__cta-suffix {
 		@include oGridRespondTo(M) {
 			float: right;
-
 			.barrier-grid__cta-suffix-text-container {
 				display: inline-block;
 				vertical-align: middle;
 			}
-
 			.premium-a-barrier-grid__subscribe-btn-container {
 				display: inline-block;
 				vertical-align: middle;
@@ -305,7 +251,6 @@
 			}
 		}
 	}
-
 	.barrier-grid__cta-suffix-text-container {
 		margin-bottom: 20px;
 		text-align: center;
@@ -313,24 +258,20 @@
 			margin-bottom: 0;
 		}
 	}
-
 	.barrier-grid__cta-suffix-text {
 		margin: 0;
 	}
-
 	.barrier-grid__cta-suffix-sidenote-text {
 		margin: 0;
-		font-size: 14px;
+		@include oTypographySize($scale: 0);
 		@include oGridRespondTo(M) {
 			text-align: right;
 		}
 	}
-
 	.barrier-grid__emphasis-text {
 		font-weight: 600;
 		margin: 0;
 	}
-
 	.barrier-grid__extra-emphasis-text {
 		color: getColor('teal-40');
 	}
@@ -340,7 +281,10 @@
 			display: none !important;
 		}
 	}
-	@mixin skeleton-line($width, $animation, $base-color, $variant-color) {
+	@mixin skeleton-line($width,
+	$animation,
+	$base-color,
+	$variant-color) {
 		width: $width;
 		animation-duration: 1s;
 		animation-fill-mode: forwards;
@@ -356,14 +300,15 @@
 		0% {
 			background-position: -250px 0;
 		}
-
 		100% {
 			background-position: 250px 0;
 		}
 	}
-
 	.barrier-grid__skeleton-cta-text {
-		@include skeleton-line(250px, bodyPulse, #f1f1f1, #dadada);
+		@include skeleton-line(250px,
+		bodyPulse,
+		#f1f1f1,
+		#dadada);
 		display: inline-block;
 		position: relative;
 		top: 50%;
@@ -373,8 +318,10 @@
 			margin-top: 0;
 		}
 	}
-
 	.barrier-grid__skeleton-cta-button {
-		@include skeleton-line(112px, bodyPulse, getColor('teal-40'), getColor('teal-80'));
+		@include skeleton-line(112px,
+		bodyPulse,
+		getColor('teal-40'),
+		getColor('teal-80'));
 	}
 }

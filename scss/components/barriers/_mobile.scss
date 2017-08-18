@@ -1,16 +1,15 @@
 /*****************************************
 * Header
 *****************************************/
+
 .mobile-barrier-grid__header {
-    margin-top: 10px;
+	margin-top: 10px;
 	padding: 5px 10px;
 	background-color: getColor('black-5');
-
 	h2 {
 		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: three-quarters));
 		margin: 0;
-
 		.mobile-barrier-grid__heading-pretext {
 			@include oTypographySans($scale: 0);
 		}
@@ -25,14 +24,15 @@
 	margin-bottom: 0;
 }
 
+
 /*****************************************
 * Main options
 *****************************************/
+
 .mobile-barrier-grid__option-inner {
 	padding: 10px 10px 10px 0;
 	text-align: center;
 	color: getColor('white');
-
 	h3 {
 		@include oTypographySansBold($scale: 0);
 		margin: 0;
@@ -62,16 +62,15 @@
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
+
 .mobile-barrier-grid__option {
 	border-radius: 5px;
-    margin: 10px auto 0;
+	margin: 10px auto 0;
 }
 
 .mobile-barrier-grid__price {
-	@include oTypographySans($scale: 0);
+	@include oTypographySansBold($scale: 0);
 	display: inline-block;
-	font-weight: bold;
-
 	span {
 		font-weight: normal;
 	}

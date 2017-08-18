@@ -1,11 +1,9 @@
 .barrier-grid {
 	position: relative;
 	margin: 20px 0;
-
 	p {
 		@include oTypographySans($scale: 0);
 	}
-
 }
 
 .barrier-grid h2,
@@ -20,38 +18,30 @@
 		@include oTypographySansBold($scale: 0);
 		@include oGridColspan((default: full-width, L: three-quarters));
 	}
-
 	h2 {
 		padding-left: 25px;
 	}
-
 	h2 .barrier-grid__heading-pretext {
 		display: block;
 		padding-top: 20px;
 	}
-
 	h2 .barrier-grid__article-title {
 		font-weight: normal;
 		display: block;
 		margin-bottom: 20px;
 	}
-
 	.barrier-grid__sign-in {
 		@include oTypographySansBold($scale: -1);
 		@include oGridColspan((default: full-width, L: one-quarter));
-
 		background-color: getColor('black-20');
 		padding: 10px 25px;
-
 		@include oGridRespondTo(L) {
 			background-color: getColor('black-5');
 			text-align: right;
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
-
 	}
-
 	.barrier-grid__pretext {
 		@include oGridRespondTo(L) {
 			display: block;
@@ -63,7 +53,6 @@
 	background-color: getColor('white');
 	padding: 18px 25px !important;
 	border-bottom: 1px solid getColor('black-5');
-
 	.barrier-grid__sub-header-title {
 		@include oTypographySansBold($scale: 0);
 	}
@@ -74,7 +63,6 @@
 	background-color: getColor('white');
 	border-bottom: 1px solid getColor('black-5');
 	text-align: left !important;
-
 	p {
 		margin-bottom: 20px;
 	}
@@ -95,9 +83,7 @@
 }
 
 .barrier-grid__cta-btn {
-	@include oButtons();
-	@include oButtonsSize(big);
-	@include oButtonsTheme(primary);
+	@include oButtons($size: big, $theme: primary);
 	text-transform: none;
 }
 
@@ -115,6 +101,7 @@
 	@include oTypographySansBold($scale: 0);
 }
 
+
 /*****************************************
 * Main options
 *****************************************/
@@ -122,16 +109,13 @@
 .barrier-grid {
 	.barrier-grid__options {
 		background-color: getColor('white');
-
 		h3 {
-			@include oTypographySans($scale: -1);
+			@include oTypographySansBold($scale: -1);
 			text-align: center;
 			text-transform: uppercase;
 			margin-bottom: 10px;
-			font-weight: bold;
 		}
 	}
-
 	.barrier-grid__image {
 		margin-bottom: 10px;
 		img {
@@ -141,65 +125,49 @@
 			margin-right: auto;
 		}
 	}
-
 	.barrier-grid__primary {
 		text-align: center;
 		margin-bottom: 20px;
 	}
-
 	.barrier-grid__price,
 	.barrier-grid__select {
 		display: inline-block;
 	}
-
 	.barrier-grid__price {
 		margin-right: 4px;
 		@include oTypographySansBold($scale: 2);
-
 		@include oGridRespondTo(L) {
 			display: block;
 			margin-right: 0;
 			margin-bottom: 10px;
 		}
-
 		span {
 			@include oTypographySans($scale: 1);
 		}
 	}
-
 	.barrier-grid__select {
-		@include oButtons();
-		@include oButtonsSize(big);
-		@include oButtonsTheme(primary);
+		@include oButtons($size: big, $theme: primary);
 	}
-
 	.barrier-grid__secondary {
-
 		padding-left: 23px;
 		padding-right: 23px;
-
 		h4 {
 			@include oTypographySansBold($scale: -1);
 			margin-bottom: 3px;
 			margin-top: 0;
 		}
-
 		ul {
-			@include oTypographySansBold($scale: -1);
+			@include oTypographySans($scale: -1);
 			list-style: none;
-			font-weight: normal;
 			margin: 0 0 20px;
 			padding: 0;
 		}
-
 	}
-
 	.barrier-grid__option--option1 li,
 	.barrier-grid__option--option2 li,
 	.barrier-grid__option--option3 li {
 		position: relative;
 		margin-left: 20px;
-
 		&::before {
 			@include oIconsGetIcon('tick', getColor('jade'), 14);
 			content: '';
@@ -209,19 +177,16 @@
 			left: -20px;
 		}
 	}
-
 	.barrier-grid__option-inner {
 		background-color: getColor('white');
 		padding-top: 20px;
 	}
-
 	.barrier-grid__option--option1,
 	.barrier-grid__option--option3 {
 		@include oGridRespondTo(S) {
 			border-right: 1px solid getColor('black-5');
 		}
 	}
-
 	.barrier-grid__option--option1,
 	.barrier-grid__option--option2,
 	.barrier-grid__option--option3 {
@@ -229,36 +194,29 @@
 			border-right: 1px solid getColor('black-5');
 		}
 	}
-
-
 	.barrier-grid__option {
 		@include oGridColspan((default: full-width, S: one-half, L: one-quarter));
 		border-bottom: 1px solid getColor('black-5');
 		padding-bottom: 20px;
 	}
-
 	.barrier-grid__learn-more {
 		@include oTypographySansBold($scale: -1);
 	}
-
 }
 
 .barrier-grid--missing-newspaper {
 	.barrier-grid__option {
 		@include oGridColspan((default: full-width, M: one-third));
 	}
-
 	.barrier-grid__option--option2 .barrier-grid__option-inner,
 	.barrier-grid__option--option3 .barrier-grid__option-inner {
 		@include oGridRespondTo(M) {
 			border-right: 1px solid getColor('black-5');
 		}
 	}
-
 	.barrier-grid__option--option4 .barrier-grid__option-inner {
 		border-right: 0;
 	}
-
 	.barrier-grid__price {
 		margin-right: 4px;
 		@include oGridRespondTo(M) {
@@ -268,6 +226,7 @@
 		}
 	}
 }
+
 
 /*****************************************
 * Other options
@@ -291,7 +250,6 @@
 		padding-bottom: 18px;
 		padding-top: 18px;
 	}
-
 	a {
 		@include oTypographySansBold($scale: -1);
 		border: 0;
@@ -299,7 +257,6 @@
 		.barrier-grid__option-options-text {
 			display: block;
 		}
-
 		&::before {
 			content: '';
 			display: block;

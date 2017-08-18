@@ -11,8 +11,8 @@
 	border-bottom: 1px solid getColor('black-5');
 	margin: 0;
 }
-// Avoiding refactoring due to hairy yak fear 🙈
 
+// Avoiding refactoring due to hairy yak fear 🙈
 .trial-barrier-grid__other-options div p {
 	border: 0;
 	margin: 15px 0;
@@ -23,16 +23,13 @@
 		text-align: center;
 		padding-bottom: 18px;
 	}
-
 	a {
 		@include oTypographySansBold($scale: -1);
 		border: 0;
 		overflow: hidden;
-
 		.trial-barrier-grid__option-options-text {
 			display: block;
 		}
-
 		&::before {
 			content: '';
 			display: block;
@@ -81,14 +78,12 @@
 		background-color: transparent;
 		vertical-align: baseline;
 	}
-
 	.trial-barrier-grid__option-options-text {
 		&::before {
 			content: 'new';
 			text-transform: uppercase;
-			font-size: 10px;
+			@include oTypographySans($scale: -2);
 			line-height: 10px;
-			font-weight: 400;
 			color: getColor('white');
 			background-color: getColor('mandarin');
 			padding: 1px 2px;
@@ -99,6 +94,8 @@
 
 .trial-barrier-grid__other-option--weekend a {
 	&::before {
-		@include oIconsGetIcon('ipad', getColor('teal-40'), 35);
+		@include oIconsGetIcon('ipad',
+		getColor('teal-40'),
+		35);
 	}
 }

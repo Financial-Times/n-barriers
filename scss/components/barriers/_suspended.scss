@@ -8,8 +8,6 @@
 }
 
 .suspended-barrier__select {
-	@include oButtons();
-	@include oButtonsSize(big);
-	@include oButtonsTheme(primary);
+	@include oButtons($size: big, $theme: primary);
 	text-transform: none;
 }

@@ -1,3 +1,4 @@
+//TODO: deprecate in favour of o-grid
 .package-grid--2 .package-grid-option {
 	min-width: 50%;
 }
@@ -34,7 +35,6 @@
 .package-grid-option__image {
 	margin-bottom: 10px;
 	position: relative;
-
 	img {
 		width: 80%;
 		display: block;
@@ -54,18 +54,15 @@
 	padding: 0.7em;
 	text-align: center;
 	@include oTypographySans($scale: 0, $line-height: 17px);
-
 	@include oGridRespondTo(S) {
 		top: 20px;
 		right: 30px;
 	}
-
 	@include oGridRespondTo(L) {
 		@include oTypographySans($scale: -2, $line-height: 12px);
 		top: 10px;
 		right: 25px;
 	}
-
 	@include oGridRespondTo(XL) {
 		top: 17px;
 		right: 30px;
@@ -75,7 +72,6 @@
 .package-grid-option__discount-label {
 	display: block;
 }
-
 
 .package-grid-option__primary {
 	text-align: center;
@@ -93,53 +89,43 @@
 }
 
 .package-grid-option__price {
-
 	@include oTypographySansBold($scale: 2);
 	margin: 0 4px 10px 0;
 	padding: 5px;
-
 	@include oGridRespondTo(L) {
 		display: block;
 		margin-right: 0;
-
 		&.standout {
 			background-color: getColor('claret-60');
 			color: getColor('white');
-
 			.terms-and-conditions__marker {
 				color: getColor('white');
 			}
 		}
 	}
-
 	span {
+		@include oTypographySans($scale: 1);
 		font-weight: normal;
-		font-size: 18px;
 	}
 }
 
 .package-grid-option__select {
-	@include oButtons();
-	@include oButtonsSize(big);
-	@include oButtonsTheme(primary);
+	@include oButtons($size: big, $theme: primary);
 	text-transform: none;
 }
 
 .package-grid-option__secondary {
 	padding-left: 30px;
 	padding-right: 30px;
-
 	h2,
 	h4 {
 		@include oTypographySansBold($scale: -1);
 		margin-bottom: 3px;
 		margin-top: 0;
 	}
-
 	ul {
-		@include oTypographySansBold($scale: -1);
+		@include oTypographySans($scale: -1);
 		list-style: none;
-		font-weight: normal;
 		margin: 0 0 20px;
 		padding: 0;
 	}
@@ -148,7 +134,6 @@
 .package-grid-option li {
 	position: relative;
 	margin-left: 20px;
-
 	&::before {
 		@include oIconsGetIcon('tick', getColor('jade'), 14);
 		content: '';
@@ -168,7 +153,6 @@
 
 .package-grid-option__learn-more {
 	@include oTypographySansBold($scale: 0);
-
 	a {
 		text-decoration: none;
 		color: getColor('teal-40');
@@ -177,10 +161,8 @@
 
 .package-grid-option__other-options {
 	h2 {
-		font-family: MetricWeb, sans-serif;
+		@include oTypographySansBold(0);
 		line-height: 17px;
-		font-size: 15px;
-		font-weight: 600;
 		text-align: center;
 		padding-bottom: 10px;
 		border-bottom: 1px solid getColor('black-5');
@@ -196,7 +178,6 @@
 
 .package-grid-option__discount {
 	background: $greyF5;
-
 	.package-grid-option__inner {
 		background: $greyF5;
 	}
@@ -218,22 +199,18 @@
 }
 
 .package-grid--missing-newspaper {
-
 	.package-grid-option {
 		@include oGridColspan((default: full-width, M: one-third));
 	}
-
 	.package-grid-option--2,
 	.package-grid-option--3 {
 		@include oGridRespondTo(M) {
 			border-right: 1px solid getColor('black-5');
 		}
 	}
-
 	.package-grid-option--4 {
 		border-right: 0;
 	}
-
 	.package-grid-option__price {
 		margin-right: 4px;
 		@include oGridRespondTo(M) {
@@ -242,12 +219,9 @@
 			margin-bottom: 10px;
 		}
 	}
-
 }
 
-
 // styles for multiple trials on trial-grid
-
 .package-grid-option .package-grid-option__options .package-grid-option__title.package-grid-option__title__secondary {
 	text-align: left;
 	padding-left: 10px;
@@ -285,7 +259,7 @@
 
 .package-grid-option__primary .package-grid-option__select.package-grid-option__select__secondary {
 	margin-top: 10px;
-	font-size: 13px;
+	@include oTypographySize(-1);
 	padding-left: 8px;
 	padding-right: 8px;
 }
@@ -294,7 +268,7 @@
 	color: getColor('black-70');
 	text-align: left;
 	padding: 0 10px;
-	font-size: 14px;
+	@include oTypographySize(-1);
 }
 
 .package-grid-option__secondary.package-grid-option__price__transparency {
@@ -303,5 +277,5 @@
 }
 
 .package-grid-option__secondary h2 {
-	font-size: 14px;
+	@include oTypographySize(-1);
 }

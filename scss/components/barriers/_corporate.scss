@@ -16,7 +16,6 @@
 
 .barrier-grid__section-logo.barrier-grid__section-logo--amo {
 	margin: 25px auto 20px;
-
 	@include oGridRespondTo(M) {
 		margin-left: 0;
 		margin-right: 0;
@@ -32,7 +31,7 @@
 
 .individual-b2b-prospect__lead-amo {
 	margin-top: 16px;
-	font-weight: 100;
+	font-weight: normal;
 }
 
 .individual-b2b-prospect__subtitle--amo {
@@ -54,6 +53,7 @@
 .barrier-grid__section-logo-column {
 	text-align: right;
 }
+
 .barrier-grid__section-logo {
 	height: 70px;
 	max-resolution: 20px;
@@ -66,9 +66,7 @@
 }
 
 .b2b-amo__button {
-	@include oButtons();
-	@include oButtonsSize(big);
-	@include oButtonsTheme(standard);
+	@include oButtons($size: big, $theme: primary);
 	background-color: getColor('white');
 	color: getColor('teal');
 	border: getColor('white');
@@ -99,7 +97,6 @@
 
 .corporate-special__section {
 	@include oTypographySans($scale: 0);
-
 	h2 {
 		@include oTypographySansBold($scale: 1);
 	}
