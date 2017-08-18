@@ -186,16 +186,16 @@
 	}
 }
 
-.individual-b2b-prospect__button {
-	@include oButtons($size: big, $theme: inverse);
-	@include oGridRespondTo(M) {
-		align-self: center;
-		flex-shrink: 0;
-	}
-}
-
 .individual-b2b-prospect__footer {
 	@include oTypographySans($scale: -1);
 	background: getColor('white');
 	padding: 30px;
+
+	.individual-b2b-prospect__button {
+		@include oButtons($size: big, $theme: secondary);
+		@include oGridRespondTo(M) {
+			align-self: center;
+			flex-shrink: 0;
+		}
+	}
 }
