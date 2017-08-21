@@ -62,7 +62,7 @@
         @include oTypographySans($scale: 0, $line-height: 17px);
         @include oGridRespondTo($until: M) {
             top: -70px;
-            right: 20px;
+            right: 10px;
         }
         @include oGridRespondTo(L) {
             @include oTypographySans($scale: -2, $line-height: 12px);
