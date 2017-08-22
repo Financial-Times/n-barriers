@@ -19,7 +19,7 @@
     "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg"
   },
   "engines": {
-    "node": "^8.3.0"
+    "node": "^8.4.0"
   },
   "dependencies": {
     "origami-build-tools": "^6.2.5"
