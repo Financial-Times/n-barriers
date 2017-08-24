@@ -11,6 +11,10 @@ $o-grid-gutters: (default: 0px, M: 0px);
 	margin: 0;
 }
 
+.trial-barrier-grid__select {
+	@include oButtons($size: big, $theme: primary);
+}
+
 .trial-barrier-grid__header {
 	background-color: getColor('black-5');
 	padding: 10px 0;
