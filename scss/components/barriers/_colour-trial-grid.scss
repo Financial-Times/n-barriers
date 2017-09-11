@@ -1,5 +1,8 @@
 .trial-subs-card {
     @include oSubsCard;
+	.o-subs-card__select-button {
+        @include oButtonsCustomTheme($background: 'white', $accent: 'teal', $colorizer: secondary);
+    }
     .o-subs-card__copy-title {
         font-size: 22px;
         padding: 0 20px;
