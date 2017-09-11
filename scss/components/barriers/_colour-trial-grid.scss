@@ -1,8 +1,5 @@
 .trial-subs-card {
     @include oSubsCard;
-    .o-subs-card__select-button {
-        @include oButtonsCustomTheme($background: 'white', $accent: 'teal', $colorizer: secondary);
-    }
     .o-subs-card__copy-title {
         font-size: 22px;
         padding: 0 20px;
@@ -17,8 +14,17 @@
     }
 }
 
-.trial-subs-card--premium,
 .trial-subs-card--standard,
+.trial-subs-card--registered {
+    .o-subs-card__top {
+        background-color: getColor('teal-50');
+    }
+    .o-subs-card__select-button {
+        @include oButtonsCustomTheme($background: 'white', $accent: 'teal', $colorizer: secondary);
+    }
+}
+
+.trial-subs-card--premium,
 .trial-subs-card--trial {
     @include oSubsCardPremium;
     .o-subs-card__select-button {
