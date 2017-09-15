@@ -1,5 +1,6 @@
 .corp-trial__header {
-	margin: 24px 0 20px;
+	margin: 24px 0 20px 20px;
+	min-width: 98%;
 	background-color: getColor('teal');
 	color: getColor('white');
 	padding: 24px 0;
@@ -77,29 +78,18 @@
 		@include oTypographySans($scale: 0);
 		margin-top: 8px;
 		list-style: none;
-		padding: 0;
+		padding-left: 0;
+
+		@include oGridRespondTo(S) {
+			padding-left: 17px;
+			list-style: initial;
+		}
+
 	}
 
 	li {
 		padding: 6px;
-
-		@include oGridRespondTo(S) {
-				padding: 0 0 0 17px;
-		}
-
 	}
-
-	li::before {
-		@include oGridRespondTo(S) {
-			content: "\2219";
-			color: getColor('claret');
-			display: inline-block;
-			width: 1em;
-			margin-left: -1em;
-		}
-	}
-
-
 
 	a {
 		@include oButtonsTheme(primary);
@@ -144,16 +134,16 @@
 .corp-trial__organisations {
 	@include oTypographySans($scale: 2);
 	text-align: center;
-	padding: 24px 24px 0;
+	padding: 24px;
+}
 
-	.corp-trial__organisations-icons {
-		display: flex;
-		flex-wrap: nowrap;
-	}
+.corp-trial__organisations-icon-row {
+	justify-content: space-around;
+}
 
-	img {
-		flex-grow: 1;
-	}
+.corp-trial__organisations-icon {
+	flex: 25%;
+	text-align: center;
 }
 
 .corp-trial__enquire {
@@ -170,7 +160,7 @@
 
 		@include oGridRespondTo(M) {
 			@include oTypographySans($scale: 3);
-			padding: 0 0 24px;
+			padding: 0;
 		}
 	}
 
@@ -197,7 +187,7 @@
 
 }
 
-.corp-trial__organisations-contact {
+.corp-trial__contact {
 	@include oTypographySans($scale: 2);
 	background-color: getColor('wheat');
 	padding: 12px;
@@ -209,7 +199,7 @@
 	}
 }
 
-.corp-trial__organisations-phone {
+.corp-trial__contact-phone {
 	text-align: center;
 	display: flex;
 	flex-wrap: nowrap;
