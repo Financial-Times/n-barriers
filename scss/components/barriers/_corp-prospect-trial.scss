@@ -80,7 +80,7 @@
 		list-style: none;
 		padding-left: 0;
 
-		@include oGridRespondTo(S) {
+		@include oGridRespondTo(M) {
 			padding-left: 17px;
 			list-style: initial;
 		}
