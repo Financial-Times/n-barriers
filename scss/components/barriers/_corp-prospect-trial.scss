@@ -10,7 +10,7 @@
 	}
 
 	h1 {
-		@include oTypographySans($scale: 3);
+		@include oTypographySans($scale: 1);
 		font-weight: normal;
 		margin: 0 0 12px;
 	}
@@ -19,7 +19,7 @@
 		@include oTypographySerif($scale: 4);
 
 		@include oGridRespondTo(M) {
-			@include oTypographySerif($scale: 6);
+			@include oTypographySerif($scale: 5);
 			margin-bottom: 36px;
 		}
 	}
