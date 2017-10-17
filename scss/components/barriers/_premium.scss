@@ -2,11 +2,6 @@
 	margin: 20px 0;
 }
 
-.premium-barrier-simple__subscribe-link {
-	@include oTypographySansBold($scale: 0);
-	margin-bottom: 30px !important; // win specificity war
-}
-
 .barrier-grid--premium {
 	position: relative;
 	margin: 20px 0;
