@@ -1,0 +1,86 @@
+
+.barrier {
+	@include oTypographySans($scale: 0);
+	:focus {
+		outline: 4px solid getColor('claret');
+		outline-offset: -4px;
+	}
+}
+
+.barrier__section {
+	&--white {
+		background-color: getColor('white');
+	}
+	&--wheat {
+		background-color: getColor('wheat');
+	}
+}
+
+.barrier__header {
+	@include oTypographySansBold();
+	&-serif {
+		@include oTypographySerifBold();
+	}
+	&--xs {
+		@include oTypographySize($scale: 0);
+	}
+	&--s {
+		@include oTypographySize($scale: 1);
+	}
+	&--m {
+		@include oTypographySize($scale: 2);
+	}
+	&--l {
+		@include oTypographySize($scale: 3);
+	}
+	&--xl {
+		@include oTypographySize($scale: 4);
+	}
+	&--compact {
+		margin: 0;
+	}
+	&--light {
+		font-weight: normal;
+	}
+
+}
+
+.barrier__button {
+	&-primary {
+		&--big {
+			@include oButtons($size: big, $theme: primary);
+		}
+	}
+}
+
+.barrier__helper {
+	&-text {
+		&--center {
+			text-align: center;
+		}
+
+	}
+	&-quotes {
+		&--double{
+			&:before {
+				content: '“';
+			}
+			&:after {
+				content: '”';
+			}
+		}
+	}
+	&-padding {
+		&--single {
+			padding: 20px;
+		}
+		&--double {
+			padding: 40px;
+		}
+	}
+	&-margin {
+		&--top {
+			margin-top: 20px;
+		}
+	}
+}

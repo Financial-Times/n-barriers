@@ -33,8 +33,4 @@
       }
     }
   }
-  .barrier__container {
-    @include oGridColspan(12);
-    padding-left: 0;
-  }
 }

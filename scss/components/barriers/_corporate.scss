@@ -94,10 +94,3 @@
 	@include oTypographySans($scale: -1);
 	margin: 16px 0;
 }
-
-.corporate-special__section {
-	@include oTypographySans($scale: 0);
-	h2 {
-		@include oTypographySansBold($scale: 1);
-	}
-}

@@ -1,4 +1,4 @@
-.trial-subs-card {
+.colour-subs-card {
     @include oSubsCard;
     .o-subs-card__copy-title {
         font-size: 22px;
@@ -14,8 +14,8 @@
     }
 }
 
-.trial-subs-card--standard,
-.trial-subs-card--register {
+.colour-subs-card--standard,
+.colour-subs-card--register {
     .o-subs-card__top {
         background-color: getColor('teal-50');
     }
@@ -24,23 +24,23 @@
     }
 }
 
-.trial-subs-card--premium,
-.trial-subs-card--trial {
+.colour-subs-card--premium,
+.colour-subs-card--trial {
     @include oSubsCardPremium;
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: teal-30, $colorizer: secondary);
     }
 }
 
-.trial-subs-card--premium-plus,
-.trial-subs-card--newspaper_bundle {
+.colour-subs-card--premium-plus,
+.colour-subs-card--newspaper_bundle {
     @include oSubsCardPremiumPlus;
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: teal-40, $colorizer: secondary);
     }
 }
 
-.trial-subs-card--discount {
+.colour-subs-card--discount {
     @include oSubsCardDiscount;
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: claret-30, $colorizer: secondary);
@@ -49,7 +49,7 @@
     }
 }
 
-.trial-subs-card__copy {
+.colour-subs-card__copy {
     &-title {
         &-discount {
             margin: 0;
@@ -96,7 +96,7 @@
     }
 }
 
-.trial-subs__heading {
+.colour-subs__heading {
     text-align: center;
     margin: 30px 0 10px;
     &-pretext {
@@ -118,23 +118,23 @@
     }
 }
 
-.trial-subs-grid {
+.colour-subs-grid {
     margin-bottom: 40px;
 }
 
-.trial-subs__secondary-offers {
+.colour-subs__secondary-offers {
     margin: 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.trial-subs__secondary-offers__button {
+.colour-subs__secondary-offers__button {
     @include oButtons($size: big, $theme: secondary);
     margin: 5px auto;
     clear: both;
 }
 
-.trial-subs__terms {
+.colour-subs__terms {
     text-align: center;
 }

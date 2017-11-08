@@ -3,29 +3,16 @@
 @import 'premium';
 @import 'trial-grid';
 @import 'barrier-grid';
-@import 'registration';
-@import 'suspended';
-@import 'concurrency';
 @import 'corporate';
 @import 'narrow';
 @import 'mobile';
-@import 'corporate-prospect-trial'; // TODO: remove once old form is down
 @import 'corp-prospect-trial'; // new corp prospect trial
 @import 'individual-b2b-prospect'; // TODO: remove
 @import 'individual-b2b';
 @import 'embedded-b2b-prospect';
 @import 'colour-trial-grid';
 @import 'common';
-
-.barrier-overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: getColor('black-90');
-	opacity: 0.6;
-	top: 0;
-	left: 0;
-}
+@import 'barrier';
 
 .barrier-grid__heading {
 	margin-bottom: 0px;
@@ -78,9 +65,3 @@ h1 .barrier-grid__article-title {
 	@include oTypographySansBold($scale: 2);
 }
 
-.barrier {
-	:focus {
-		outline: 4px solid getColor('claret');
-		outline-offset: -4px;
-	}
-}
