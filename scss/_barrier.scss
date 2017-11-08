@@ -16,7 +16,7 @@
 	}
 }
 
-.barrier__header {
+.barrier__heading {
 	@include oTypographySansBold();
 	&-serif {
 		@include oTypographySerifBold();
@@ -42,6 +42,9 @@
 	&--light {
 		font-weight: normal;
 	}
+	&--inline {
+		display: inline;
+	}
 
 }
 
@@ -51,14 +54,26 @@
 			@include oButtons($size: big, $theme: primary);
 		}
 	}
+	&-secondary {
+		&--big {
+			@include oButtons($size: big, $theme: secondary);
+		}
+	}
+	&-inverse {
+		&--big {
+			@include oButtons($size: big, $theme: inverse);
+		}
+	}
 }
 
-.barrier__helper {
+.barrier__util {
 	&-text {
 		&--center {
 			text-align: center;
 		}
-
+		&--right {
+			text-align: right;
+		}
 	}
 	&-quotes {
 		&--double {
@@ -81,6 +96,16 @@
 	&-margin {
 		&--top {
 			margin-top: 20px;
+		}
+		&--left {
+			margin-left: 20px;
+		}
+	}
+	&-hide {
+		&--s {
+			@include oGridRespondTo($until: M) {
+				display: none;
+			}
 		}
 	}
 }

@@ -1,5 +1,6 @@
 @import 'helpers/mixins';
 @import 'helpers/colors';
+@import 'barrier';
 @import 'barriers/premium';
 @import 'barriers/trial-grid';
 @import 'barriers/barrier-grid';
@@ -10,9 +11,9 @@
 @import 'barriers/individual-b2b-prospect'; // TODO: remove
 @import 'barriers/individual-b2b';
 @import 'barriers/embedded-b2b-prospect';
-@import 'barriers/colour-trial-grid';
 @import 'components/cta-strip';
-@import 'barrier';
+@import 'components/secondary-messaging';
+@import 'components/package-card-colour';
 
 .barrier-grid__heading {
 	margin-bottom: 0px;

@@ -1,4 +1,4 @@
-@mixin responsiveIcon($icon, $color, $large: 64, $medium: 64, $small: 32) {
+@mixin responsiveIcon($icon, $color, $large: 56, $medium: 48, $small: 32) {
     &-#{$icon} {
         @include oGridRespondTo($until: S) {
             @include oIconsGetIcon($icon, getColor($color), $small);
