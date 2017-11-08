@@ -1,17 +1,17 @@
-@import 'mixins';
-@import 'colors';
-@import 'premium';
-@import 'trial-grid';
-@import 'barrier-grid';
-@import 'corporate';
-@import 'narrow';
-@import 'mobile';
-@import 'corp-prospect-trial'; // new corp prospect trial
-@import 'individual-b2b-prospect'; // TODO: remove
-@import 'individual-b2b';
-@import 'embedded-b2b-prospect';
-@import 'colour-trial-grid';
-@import 'common';
+@import 'helpers/mixins';
+@import 'helpers/colors';
+@import 'barriers/premium';
+@import 'barriers/trial-grid';
+@import 'barriers/barrier-grid';
+@import 'barriers/corporate';
+@import 'barriers/narrow';
+@import 'barriers/mobile';
+@import 'barriers/corp-prospect-trial'; // new corp prospect trial
+@import 'barriers/individual-b2b-prospect'; // TODO: remove
+@import 'barriers/individual-b2b';
+@import 'barriers/embedded-b2b-prospect';
+@import 'barriers/colour-trial-grid';
+@import 'components/cta-strip';
 @import 'barrier';
 
 .barrier-grid__heading {

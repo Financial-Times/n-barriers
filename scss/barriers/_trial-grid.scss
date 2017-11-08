@@ -99,3 +99,27 @@
 		35);
 	}
 }
+
+.barrier-grid__heading {
+	@include oTypographySansBold($scale: 2);
+	margin-bottom: 10px;
+	max-width: 75%;
+	min-width: 75%;
+	padding: 0 0 10px 10px;
+	box-sizing: border-box;
+}
+
+p .barrier-grid__heading-pretext {
+	padding-top: 10px;
+	display: block;
+}
+
+.barrier-grid__article-title {
+	font-weight: normal;
+	display: block;
+}
+
+.barrier-grid__article-subtext {
+	@include oTypographySans($scale: 0);
+	display: block;
+}
