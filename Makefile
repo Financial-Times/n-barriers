@@ -5,13 +5,7 @@ node_modules/@financial-times/n-gage/index.mk:
 -include node_modules/@financial-times/n-gage/index.mk
 
 .PHONY: test
-
-clean:
-	git clean -fxd -e .idea
-
-install:
-	npm install origami-build-tools
-	obt install --verbose
+export IGNORE_A11Y = true
 
 build:
 	obt build
@@ -25,5 +19,5 @@ watch:
 test:
 	@echo "No tests yet!"
 
-verify:
+verify-css:
 	obt verify
