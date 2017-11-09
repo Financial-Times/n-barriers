@@ -14,6 +14,17 @@
 	&--wheat {
 		background-color: getColor('wheat');
 	}
+	&--teal {
+		background: getColor('teal');
+		color: getColor('white');
+	}
+	&--teal-dark {
+		background: getColor('teal-40');
+		color: getColor('white');
+	}
+	&--bleed-down {
+		margin-bottom: -40px;
+	}
 }
 
 .barrier__heading {
@@ -36,8 +47,14 @@
 	&--xl {
 		@include oTypographySize($scale: 4);
 	}
+	&--xxl {
+		@include oTypographySize($scale: 5);
+	}
 	&--compact {
 		margin: 0;
+	}
+	&--tight {
+		margin: 5px 0;
 	}
 	&--light {
 		font-weight: normal;
@@ -62,6 +79,12 @@
 	&-inverse {
 		&--big {
 			@include oButtons($size: big, $theme: inverse);
+		}
+	}
+	&-white {
+		&--big {
+			@include oButtons($size: big, $theme: inverse);
+			@include oButtonsCustomTheme($background: 'white', $accent: 'teal', $colorizer: secondary);
 		}
 	}
 }
@@ -96,6 +119,12 @@
 	&-margin {
 		&--top {
 			margin-top: 20px;
+		}
+		&--right {
+			margin-right: 20px;
+		}
+		&--bottom {
+			margin-bottom: 20px;
 		}
 		&--left {
 			margin-left: 20px;

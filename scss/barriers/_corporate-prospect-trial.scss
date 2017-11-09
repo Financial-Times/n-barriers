@@ -1,0 +1,23 @@
+.barrier__corporate-prospect {
+
+	&__benefits {
+		list-style: none;
+		padding-left: 0;
+
+		@include oGridRespondTo(M) {
+			padding-left: 17px;
+			list-style: initial;
+		}
+	
+		li {
+			padding: 6px;
+		}
+	}
+
+	&__separator {
+		border: 0;
+		height: 0;
+		border-top: 1px solid getColor('wheat');
+	}
+
+}

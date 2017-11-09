@@ -22,9 +22,9 @@
     "node": "^8.4.0"
   },
   "dependencies": {
-    "origami-build-tools": "^6.2.5"
+    "origami-build-tools": "^7.2.1"
   },
   "devDependencies": {
-    "@financial-times/n-gage": "^1.8.25"
+    "@financial-times/n-gage": "^1.16.0"
   }
 }
