@@ -1,0 +1,55 @@
+.barrier__corporate {
+
+	&__content {
+		margin-top: 40px;
+		padding-top: 5px;
+		&::before {
+			position: absolute;
+			height: 4px;
+			width: 200px;
+			background: getColor('teal');
+			top: 0;
+			left: 20px;
+			content: '';
+		}
+	}
+
+	&__cta-strip {
+		align-items: center;
+		justify-content: center;
+		padding: 20px 40px;
+		&__column {
+			@include oGridRespondTo($until: M) {
+				text-align: center;
+			}
+		}
+	}
+
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 40px;
+		li {
+			margin-bottom: 12px;
+			&::before {
+				content: '';
+				background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1%3Atick?source=next-product&tint=%2300B359');
+				width: 24px;
+				height: 24px;
+				display: inline-block;
+				margin: 0 5px -7px 0;
+			}
+		}
+	}
+
+	&__contact-strip {
+		margin-bottom: 20px;
+	}
+
+	&__logo {
+		height: 70px;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+}

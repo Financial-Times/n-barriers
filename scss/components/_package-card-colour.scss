@@ -1,4 +1,4 @@
-.trial-subs-card {
+.barrier__package-card--colour {
     @include oSubsCard;
     .o-subs-card__copy-title {
         font-size: 22px;
@@ -14,8 +14,8 @@
     }
 }
 
-.trial-subs-card--standard,
-.trial-subs-card--register {
+.barrier__package-card--colour--standard,
+.barrier__package-card--colour--register {
     .o-subs-card__top {
         background-color: getColor('teal-50');
     }
@@ -24,32 +24,32 @@
     }
 }
 
-.trial-subs-card--premium,
-.trial-subs-card--trial {
+.barrier__package-card--colour--premium,
+.barrier__package-card--colour--trial {
     @include oSubsCardPremium;
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: teal-30, $colorizer: secondary);
     }
 }
 
-.trial-subs-card--premium-plus,
-.trial-subs-card--newspaper_bundle {
+.barrier__package-card--colour--premium-plus,
+.barrier__package-card--colour--newspaper_bundle {
     @include oSubsCardPremiumPlus;
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: teal-40, $colorizer: secondary);
     }
 }
 
-.trial-subs-card--discount {
+.barrier__package-card--colour--discount {
     @include oSubsCardDiscount;
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: claret-30, $colorizer: secondary);
-        border-color: getColor(claret-80);
-        color: getColor(claret-80);
+        border-color: getColor('claret-80');
+        color: getColor('claret-80');
     }
 }
 
-.trial-subs-card__copy {
+.barrier__package-card--colour__copy {
     &-title {
         &-discount {
             margin: 0;
@@ -62,22 +62,22 @@
         }
     }
     &-discount-roundel {
+		@include oTypographySize($scale: 0, $line-height: 17px);
         position: absolute;
         top: 5vh;
         right: 11vw;
-        background-color: getColor(claret-80);
+        background-color: getColor('claret-80');
         color: getColor('white');
         display: block;
         border-radius: 50%;
         padding: 0.7em;
         text-align: center;
-        @include oTypographySans($scale: 0, $line-height: 17px);
         @include oGridRespondTo($until: M) {
             top: -70px;
             right: 10px;
         }
         @include oGridRespondTo(L) {
-            @include oTypographySans($scale: -2, $line-height: 12px);
+            @include oTypographySize($scale: -2, $line-height: 12px);
             top: 10px;
             right: 25px;
         }
@@ -89,52 +89,11 @@
     &-discount-label {
         display: block;
     }
-    &-benefits-headline {
+    &-benefits__title {
         padding: 0 20px;
-        @include oTypographySansBold($scale: 0);
-        margin: 20px 0 3px;
     }
 }
 
-.trial-subs__heading {
-    text-align: center;
-    margin: 30px 0 10px;
-    &-pretext {
-        @include oTypographySansBold($scale: 2);
-    }
-    &-article-title {
-        @include oTypographySans($scale: 2);
-        display: block;
-        &::before {
-            content: '“';
-        }
-        &::after {
-            content: '”';
-        }
-    }
-    &-article-subtext {
-        @include oTypographySans($scale: 1);
-        display: block;
-    }
-}
-
-.trial-subs-grid {
+.barrier__package-card-grid {
     margin-bottom: 40px;
-}
-
-.trial-subs__secondary-offers {
-    margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.trial-subs__secondary-offers__button {
-    @include oButtons($size: big, $theme: secondary);
-    margin: 5px auto;
-    clear: both;
-}
-
-.trial-subs__terms {
-    text-align: center;
 }

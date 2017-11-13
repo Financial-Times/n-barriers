@@ -1,9 +1,0 @@
-.barrier-concurrency {
-	p {
-		@include oTypographySans($scale: 1);
-		margin: 0.3em 0 0.8em;
-	}
-	h2 {
-		@include oTypographySansBold($scale: 5);
-	}
-}

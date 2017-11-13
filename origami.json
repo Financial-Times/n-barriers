@@ -1,23 +1,8 @@
 {
-    "description": "Next FT - Barrier Styling",
+    "description": "FT.com barrier styling",
     "origamiType": "module",
     "origamiVersion": 1,
     "keywords": "barriers,next",
     "support": "next.team@ft.com",
-    "supportStatus": "experimental",
-    "demosDefaults": {
-        "sass": "demos/src/demo.scss",
-        "js": "demos/src/demo.js"
-    },
-    "demos": [
-        {
-            "name": "demo",
-            "js": "demos/src/demo.js",
-            "template": "demos/src/demo.html",
-            "sass": "demos/src/demo.scss",
-            "description": "Barrier demo",
-            "hidden": true,
-            "path": "/demos/demo.html"
-        }
-    ]
+    "supportStatus": "active"
 }

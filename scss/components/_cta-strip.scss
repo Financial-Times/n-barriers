@@ -1,0 +1,27 @@
+.barrier__cta-strip {
+	align-items: center;
+	justify-content: center;
+   
+    &__benefits {
+		@include oGridRespondTo($until: M) {
+			margin-bottom: 10px;
+		}
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			margin-right: 10px;
+			@include oGridRespondTo($from: M) {
+				display: inline;
+			}
+			&:before {
+				content: '\2022';
+				margin-right: 10px;
+			}
+		}
+    }
+  
+    &__icon {
+        @include responsiveIcon('users', 'white');
+    }
+}

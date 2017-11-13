@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<title>{{#title}}{{{this}}}{{/title}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> {{>favicon}}
+		<link rel="stylesheet" href="/{{__name}}/main.css">
+	</head>
+	<body>
+		<div class="o-grid-row demo__nav">
+			<div data-o-grid-colspan="12 M6">
+				<h1>B2C</h1>
+				<a class="demo__button" href="{{{env.TRIAL}}}">Trial</a>
+				<a class="demo__button" href="{{{env.SUSPENDED}}}">Suspended</a>
+				<a class="demo__button" href="{{{env.CONCURRENCY}}}">Concurrency</a>
+			</div>
+			<div data-o-grid-colspan="12 M6">
+				<h1>B2B</h1>
+				<a class="demo__button" href="{{{env.B2B_SUBSCRIBE}}}">B2B subscribe</a>
+				<a class="demo__button" href="{{{env.CORPORATE_PROSPECT_TRIAL}}}">Corporate prospect trial</a>
+				<a class="demo__button" href="{{{env.CORPORATE}}}">Corporate</a>
+				<a class="demo__button" href="{{{env.CHANNEL}}}">Channel referrer</a>
+				<a class="demo__button" href="{{{env.NIKKEI}}}">Nikkei</a>
+			</div>
+		</div>
+		{{{body}}}
+	</body>
+</html>

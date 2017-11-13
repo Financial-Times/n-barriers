@@ -1,0 +1,93 @@
+.barrier__embedded-b2b-prospect {
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		@include oGridRespondTo(L) {
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		@include oGridRespondTo(L) {
+			width: 520px;
+		}
+	}
+
+	&__separator {
+		border: 0;
+		height: 0;
+		border-top: 1px solid getColor('black-40');
+	}
+
+	&__corporate-list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		li {
+			flex-basis: 50%;
+			box-sizing: border-box;
+			@include oGridRespondTo(S) {
+				flex-basis: 25%;
+			}
+		}
+		img {
+			display: block;
+			width: 80%;
+			margin: 5px auto;
+		}
+	}
+
+	&__quote-list {
+		@include oTypographySize(2);
+		margin: 40px 0;
+		padding: 40px 0;
+		position: relative;
+		flex-grow: 1;
+		list-style: none;
+		&:before {
+			position: absolute;
+			height: 4px;
+			width: 54px;
+			background: getColor('teal');
+			top: 0;
+			left: 0;
+			content: '';
+		}
+		li {
+			@include oTypographySize($scale: 1);
+			margin-bottom: 25px;
+		}
+	}
+
+	&__form {
+		padding: 20px 0;
+		min-width: 305px;
+		margin: 0 auto;
+		@include oGridRespondTo(S) {
+			min-width: 380px;
+			width: 380px;
+		}
+		@include oGridRespondTo(L) {
+			padding: 0 20px;
+		}
+		iframe {
+			height: 830px;
+			margin: 0 auto;
+			border: 0;
+		}
+	}
+
+	&__cta-strip {
+		align-items: center;
+		justify-content: center;
+	}
+
+}
