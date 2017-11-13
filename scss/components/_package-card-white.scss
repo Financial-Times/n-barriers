@@ -1,0 +1,62 @@
+.barrier__package-card--white {
+	@include oSubsCard;
+	margin: 0 0 20px;
+    &__header {
+		&-copy {
+			padding: 0 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&-title {
+			min-height: 52px;
+
+			&:first-child {
+				padding-top: 16px;
+			}
+		}
+		&-benefits {
+			min-height: 60px;
+		}
+		&-charge {
+			padding: 0;
+		}
+	}
+
+	&__benefits {
+		list-style: none;
+		margin: 10px 0;
+		padding: 0;
+		li {
+			margin-bottom: 10px;
+			padding: 0;
+		}
+	}
+
+	&__expander {
+		border: 0;
+		background-color: transparent;
+		color: getColor('teal');
+		&::after {
+			background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-down?source=o-icons&tint=%230D7680,%230D7680&format=png&width=24');
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 50%;
+			background-color: transparent;
+			content: '';
+			position: relative;
+			vertical-align: middle;
+		}
+	}
+
+	.o-subs-card__read-more {
+		padding: 5px;
+	}
+
+	.o-subs-card__copy-details {
+		padding: 10px 20px;
+	}
+}

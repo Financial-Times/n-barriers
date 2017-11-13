@@ -1,0 +1,7 @@
+.barrier__subscribe {
+	&__hero-image {
+		@include oGridRespondTo($until: M) {
+			margin-top: -52px;
+		}
+	}
+}

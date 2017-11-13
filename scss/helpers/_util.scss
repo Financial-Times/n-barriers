@@ -45,5 +45,17 @@
 				display: none;
 			}
 		}
+		&--m {
+			@include oGridRespondTo($until: L) {
+				display: none;
+			}
+		}
+		&--gt {
+			&-m {
+				@include oGridRespondTo($from: L) {
+					display: none;
+				}
+			}
+		}
 	}
 }
