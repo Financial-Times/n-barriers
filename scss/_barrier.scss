@@ -9,9 +9,6 @@
 
 .barrier__section {
 	&--white {
-		background-color: getColor('white');
-	}
-	&--white-60 {
 		background-color: getColor('white-60');
 	}
 	&--wheat {
@@ -27,6 +24,7 @@
 	}
 	&--bleed-down {
 		margin-bottom: -40px;
+		padding-bottom: 20px;
 	}
 }
 
