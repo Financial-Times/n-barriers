@@ -1,6 +1,7 @@
 
 .barrier {
 	@include oTypographySans($scale: 0);
+
 	:focus {
 		outline: 4px solid getColor('claret');
 		outline-offset: -4px;
@@ -11,17 +12,21 @@
 	&--white {
 		background-color: getColor('white-60');
 	}
+
 	&--wheat {
 		background-color: getColor('wheat');
 	}
+
 	&--teal {
 		background: getColor('teal');
 		color: getColor('white');
 	}
+
 	&--teal-dark {
 		background: getColor('teal-40');
 		color: getColor('white');
 	}
+
 	&--bleed-down {
 		margin-bottom: -40px;
 		padding-bottom: 20px;
@@ -30,36 +35,47 @@
 
 .barrier__heading {
 	@include oTypographySansBold();
+
 	&-serif {
 		@include oTypographySerifBold();
 	}
+
 	&--xs {
 		@include oTypographySize($scale: 0);
 	}
+
 	&--s {
 		@include oTypographySize($scale: 1);
 	}
+
 	&--m {
 		@include oTypographySize($scale: 2);
 	}
+
 	&--l {
 		@include oTypographySize($scale: 3);
 	}
+
 	&--xl {
 		@include oTypographySize($scale: 4);
 	}
+
 	&--xxl {
 		@include oTypographySize($scale: 5);
 	}
+
 	&--compact {
 		margin: 0;
 	}
+
 	&--tight {
 		margin: 5px 0;
 	}
+
 	&--light {
 		font-weight: normal;
 	}
+
 	&--inline {
 		display: inline;
 	}
@@ -72,19 +88,23 @@
 			@include oButtons($size: big, $theme: primary);
 		}
 	}
+
 	&-secondary {
 		&--big {
 			@include oButtons($size: big, $theme: secondary);
 		}
+
 		&--darker {
 			color: getColor('teal-40');
 		}
 	}
+
 	&-inverse {
 		&--big {
 			@include oButtons($size: big, $theme: inverse);
 		}
 	}
+
 	&-white {
 		&--big {
 			@include oButtons($size: big, $theme: inverse);

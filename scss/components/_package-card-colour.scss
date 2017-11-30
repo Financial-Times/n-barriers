@@ -1,5 +1,6 @@
 .barrier__package-card--colour {
     @include oSubsCard;
+
     .o-subs-card__copy-title {
         font-size: 22px;
         padding: 0 20px;
@@ -8,6 +9,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         &:first-child {
             padding-top: 16px;
         }
@@ -19,6 +21,7 @@
     .o-subs-card__top {
         background-color: getColor('teal-50');
     }
+
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: 'teal', $colorizer: secondary);
     }
@@ -27,6 +30,7 @@
 .barrier__package-card--colour--premium,
 .barrier__package-card--colour--trial {
     @include oSubsCardPremium;
+
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: teal-30, $colorizer: secondary);
     }
@@ -35,6 +39,7 @@
 .barrier__package-card--colour--premium-plus,
 .barrier__package-card--colour--newspaper_bundle {
     @include oSubsCardPremiumPlus;
+
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: teal-40, $colorizer: secondary);
     }
@@ -42,6 +47,7 @@
 
 .barrier__package-card--colour--discount {
     @include oSubsCardDiscount;
+
     .o-subs-card__select-button {
         @include oButtonsCustomTheme($background: 'white', $accent: claret-30, $colorizer: secondary);
         border-color: getColor('claret-80');
@@ -55,12 +61,15 @@
             margin: 0;
         }
     }
+
     &-image {
         width: 80%;
+
         &-container {
             position: relative;
         }
     }
+
     &-discount-roundel {
 		@include oTypographySize($scale: 0, $line-height: 17px);
         position: absolute;
@@ -86,9 +95,11 @@
             right: 30px;
         }
     }
+
     &-discount-label {
         display: block;
     }
+
     &-benefits__title {
         padding: 0 20px;
     }

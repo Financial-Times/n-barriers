@@ -18,15 +18,13 @@
     "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg"
   },
   "engines": {
-    "node": "^8.8.0"
-  },
-  "dependencies": {
-    "origami-build-tools": "^7.2.1"
+    "node": "^9.2.0"
   },
   "devDependencies": {
-    "@financial-times/n-gage": "^1.16.0",
+    "@financial-times/n-gage": "^1.17.0",
     "@financial-times/n-internal-tool": "^2.2.1",
     "autoprefixer": "^7.1.6",
+    "bower": "^1.8.2",
     "node-sass": "^4.6.0",
     "postcss-cli": "^4.1.1",
     "postcss-discard-duplicates": "^2.1.0",

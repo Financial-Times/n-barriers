@@ -1,12 +1,9 @@
 .barrier__embedded-b2b-prospect {
-
 	&__container {
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		flex-flow: column wrap;
 		@include oGridRespondTo(L) {
-			flex-direction: row;
-			flex-wrap: nowrap;
+			flex-flow: row nowrap;
 		}
 	}
 
@@ -31,6 +28,7 @@
 		align-items: center;
 		list-style: none;
 		padding: 0;
+
 		li {
 			flex-basis: 50%;
 			box-sizing: border-box;
@@ -38,6 +36,7 @@
 				flex-basis: 25%;
 			}
 		}
+
 		img {
 			display: block;
 			width: 80%;
@@ -52,7 +51,8 @@
 		position: relative;
 		flex-grow: 1;
 		list-style: none;
-		&:before {
+
+		&::before {
 			position: absolute;
 			height: 4px;
 			width: 54px;
@@ -61,6 +61,7 @@
 			left: 0;
 			content: '';
 		}
+
 		li {
 			@include oTypographySize($scale: 1);
 			margin-bottom: 25px;
@@ -78,6 +79,7 @@
 		@include oGridRespondTo(L) {
 			padding: 0 20px;
 		}
+
 		iframe {
 			height: 830px;
 			margin: 0 auto;

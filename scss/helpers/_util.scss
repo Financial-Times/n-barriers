@@ -3,58 +3,68 @@
 		&--center {
 			text-align: center;
 		}
+
 		&--right {
 			text-align: right;
 		}
 	}
+
 	&-quotes {
 		&--double {
-			&:before {
+			&::before {
 				content: '“';
 			}
-			&:after {
+
+			&::after {
 				content: '”';
 			}
 		}
 	}
+
 	&-padding {
 		&--single {
 			padding: 20px;
 		}
+
 		&--double {
 			padding: 40px;
 		}
 	}
+
 	&-margin {
 		&--top {
 			margin-top: 20px;
 		}
+
 		&--right {
 			margin-right: 20px;
 		}
+
 		&--bottom {
 			margin-bottom: 20px;
 		}
+
 		&--left {
 			margin-left: 20px;
 		}
 	}
+
 	&-hide {
 		&--s {
 			@include oGridRespondTo($until: M) {
 				display: none;
 			}
 		}
+
 		&--m {
 			@include oGridRespondTo($until: L) {
 				display: none;
 			}
 		}
-		&--gt {
-			&-m {
-				@include oGridRespondTo($from: L) {
-					display: none;
-				}
+
+		&--gt-m {
+			@include oGridRespondTo($from: L) {
+				display: none;
 			}
 		}
 	}

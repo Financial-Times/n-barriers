@@ -4,13 +4,16 @@
 	&__button {
 		@include oButtons($size: big, $theme: primary);
 	}
+
 	&__nav {
 		padding: 10px 20px;
 		background-color: getColor('wheat');
 		border-bottom: 1px solid getColor('black-40');
+
 		h1 {
 			@include oTypographySize($scale: 0);
 		}
+
 		a {
 			margin-bottom: 5px;
 		}

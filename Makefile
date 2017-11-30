@@ -15,9 +15,6 @@ build:
 demo: build
 	node demos/demo.js
 
-verify:
-	obt verify
-
 test: verify
 
 run:
