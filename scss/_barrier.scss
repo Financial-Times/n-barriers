@@ -3,7 +3,7 @@
 	@include oTypographySans($scale: 0);
 
 	:focus {
-		outline: 4px solid getColor('claret');
+		outline: 4px solid getColor('teal-100');
 		outline-offset: -4px;
 	}
 }
