@@ -16,7 +16,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "n-ui-foundations": "^2.5.0",
+    "n-ui-foundations": "^3.0.0",
     "o-subs-card": "^1.0.2"
   }
 }
