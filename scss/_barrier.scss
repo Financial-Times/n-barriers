@@ -41,7 +41,7 @@
 	@include oTypographySansBold();
 
 	&-serif {
-		@include oTypographySerifBold();
+		@include oTypographyDisplayBold();
 	}
 
 	&--xs {
@@ -114,5 +114,9 @@
 			@include oButtons($size: big, $theme: inverse);
 			@include oButtonsCustomTheme($background: 'white', $accent: 'teal', $colorizer: secondary);
 		}
+	}
+
+	&-wide {
+		width: 100%;
 	}
 }

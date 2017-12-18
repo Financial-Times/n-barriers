@@ -46,20 +46,27 @@
 
 	&__quote-list {
 		@include oTypographySize(2);
-		margin: 40px 0;
-		padding: 40px 0;
+		margin: 0;
+		padding: 0;
 		position: relative;
 		flex-grow: 1;
 		list-style: none;
 
+		@include oGridRespondTo(L) {
+			margin: 40px 0;
+			padding: 40px 0;
+		}
+
 		&::before {
-			position: absolute;
-			height: 4px;
-			width: 54px;
-			background: getColor('teal');
-			top: 0;
-			left: 0;
-			content: '';
+			@include oGridRespondTo($from: L) {
+				position: absolute;
+				height: 4px;
+				width: 54px;
+				background: getColor('teal');
+				top: 0;
+				left: 0;
+				content: '';
+			}
 		}
 
 		li {
@@ -70,26 +77,46 @@
 
 	&__form {
 		padding: 20px 0;
-		min-width: 305px;
+		width: 305px;
 		margin: 0 auto;
-		@include oGridRespondTo(S) {
+		position: relative;
+		@include oGridRespondTo($from: M) {
 			min-width: 380px;
 			width: 380px;
+			text-align: center;
 		}
 		@include oGridRespondTo(L) {
 			padding: 0 20px;
 		}
 
+		&-anchor {
+			position: absolute;
+			top: -50px;
+		}
+	
 		iframe {
-			height: 830px;
+			height: 850px;
 			margin: 0 auto;
 			border: 0;
+			@include oGridRespondTo($until: M) {
+				height: 830px;
+			}
 		}
 	}
 
 	&__cta-strip {
-		align-items: center;
-		justify-content: center;
+		@include oGridRespondTo($from: M) {
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		&__button {
+			@include oGridRespondTo($until: M) {
+				margin-top: 20px;
+				width: 100%;
+			}
+		}
 	}
 
 }
