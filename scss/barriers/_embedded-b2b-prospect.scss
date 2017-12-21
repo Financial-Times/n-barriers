@@ -75,6 +75,15 @@
 		}
 	}
 
+	&__bullet-list {
+		margin-top: 16px;
+		padding-left: 20px;
+		
+		li {
+			margin-bottom: 16px;
+		}
+	}
+
 	&__form {
 		padding: 20px 0;
 		width: 305px;
@@ -94,13 +103,19 @@
 			top: -50px;
 		}
 	
-		iframe {
+		&-frame {
 			height: 850px;
 			margin: 0 auto;
 			border: 0;
-			@include oGridRespondTo($until: M) {
-				height: 830px;
-			}
+		}
+	}
+
+	&__factiva-frame {
+		height: 900px;
+		margin: 0 auto;
+		border: 0;
+		@include oGridRespondTo($until: M) {
+			height: 930px;
 		}
 	}
 

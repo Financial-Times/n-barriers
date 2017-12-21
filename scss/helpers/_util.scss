@@ -11,6 +11,10 @@
 		&--left {
 			text-align: left;
 		}
+
+		&--capitalized {
+			text-transform: capitalize;
+		}
 	}
 
 	&-quotes {
