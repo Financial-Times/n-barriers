@@ -1,9 +1,26 @@
-.barrier__package-card--white {
+.barrier__package-card {
 	@include oSubsCard;
 	border-bottom: 5px solid getColor('paper');
 	margin: 0 0 20px;
 
-		&__header {
+	&--slate {
+		background: getColor('slate');
+		color: getColor('white');
+
+		.o-subs-card__copy-details {
+			background: getColor('slate');
+			color: getColor('white');
+		}
+
+		.o-subs-card__select-button {
+			@include oButtons($size: big, $theme: primary);
+			@include oButtonsCustomTheme('slate', 'white');
+
+			margin-top: 12px;
+		}
+	}
+
+	&__header {
 		&-copy {
 			padding: 0 20px;
 			display: flex;
@@ -72,5 +89,9 @@
 
 	.o-subs-card__copy-details {
 		padding: 10px 20px;
+	}
+
+	.o-subs-card__select-button {
+		padding: 11px 5px;
 	}
 }

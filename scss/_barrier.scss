@@ -39,6 +39,22 @@
 		margin-bottom: -40px;
 		padding-bottom: 20px;
 	}
+
+	&--newspaper {
+		background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fwww.ft.com%2F__assets%2Fcreatives%2Fproduct%2FPrintPackshot-2017-09-07_smallest.png?source=next");
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		padding-bottom: 48px;
+
+		.barrier__heading--m {
+			margin-bottom: 0;
+		}
+
+		.barrier__button {
+			border: getColor('black');
+			margin-top: 20px;
+		}
+	}
 }
 
 .barrier__heading {
@@ -116,7 +132,14 @@
 	&-white {
 		&--big {
 			@include oButtons($size: big, $theme: inverse);
-			@include oButtonsCustomTheme($background: 'white', $accent: 'teal', $colorizer: secondary);
+			@include oButtonsCustomTheme('white', 'teal');
+		}
+	}
+
+	&--black {
+		&--big {
+			@include oButtons($size: big, $theme: primary);
+			@include oButtonsCustomTheme('black', 'white');
 		}
 	}
 
