@@ -40,6 +40,10 @@
 	}
 
 	&-margin {
+		&--none {
+			margin: 0;
+		}
+
 		&--top {
 			margin-top: 20px;
 		}
@@ -52,12 +56,22 @@
 			margin-bottom: 20px;
 		}
 
+		&--largeBottom {
+			margin-bottom: 28px;
+		}
+
 		&--left {
 			margin-left: 20px;
 		}
 	}
 
 	&-hide {
+		&--xs {
+			@include oGridRespondTo($until: S) {
+				display: none;
+			}
+		}
+
 		&--s {
 			@include oGridRespondTo($until: M) {
 				display: none;
