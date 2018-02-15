@@ -44,6 +44,13 @@
 		padding-bottom: 40px;
 	}
 
+	&--package-image {
+		display: none;
+		@include oGridRespondTo(M) {
+			display: block;
+		}
+	}
+
 	&--newspaper {
 		background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fwww.ft.com%2F__assets%2Fcreatives%2Fproduct%2FPrintPackshot-2017-09-07_smallest.png?source=next");
 		background-position: center bottom;
