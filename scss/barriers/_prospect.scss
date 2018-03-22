@@ -1,0 +1,30 @@
+.barrier__prospect {
+    &__heading {
+        @include oTypographySize($scale: 6);
+        margin-top: 30px;
+
+        @include oGridRespondTo($until: L) {
+            @include oTypographySize($scale: 5);
+            margin-top: 20px;
+        }
+
+        @include oGridRespondTo($until: M) {
+            @include oTypographySize($scale: 4);
+            margin-top: 0;
+        }
+
+        @include oGridRespondTo($until: S) {
+            @include oTypographySize($scale: 3);
+            margin-top: 0;
+        }
+    }
+
+    &__form-frame {
+		height: 850px;
+		margin: 0 auto;
+		border: 0;
+		@include oGridRespondTo($until: M) {
+			height: 930px;
+		}
+    }
+}
