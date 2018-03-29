@@ -121,6 +121,153 @@
 
 }
 
+%barrier-banner-shared {
+	.barrier__heading {
+		@include oTypographySize($scale: 6);
+	}
+
+	.barrier__heading--sub {
+		opacity: 0.5;
+	}
+
+	.barrier-banner--copy {
+		@include oGridColspan((default: 12, M: 7));
+	}
+
+	.barrier__heading--content {
+		@include oGridColspan((default: 12, M: 6));
+	}
+
+}
+%barrier-background-shared {
+	@include oGridRespondTo(M) {
+		background-repeat: no-repeat;
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 0;
+	}
+}
+
+.barrier-banner {
+	overflow: hidden;
+	position: relative;
+
+	.o-grid-container {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.o-grid-row {
+		position: relative;
+		z-index: 1;
+	}
+
+	.barrier__heading {
+		@include oTypographySize($scale: 5);
+	}
+
+	&__image {
+		margin-top: -84px;
+
+		&__container {
+			float: none;
+			margin-left: auto;
+		}
+	}
+
+	&--copy {
+		@include oGridColspan((default: 12, M: 6));
+	}
+
+	&--content {
+		@include oGridColspan((default: 12, M: 5));
+	}
+
+	&--brexit {
+		@extend %barrier-banner-shared;
+		
+		background-color: getColor('oxford-30');
+		color: white;
+
+		.o-grid-container:after {
+			@extend %barrier-background-shared;
+			
+			@include oGridRespondTo(M) {
+				background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:brand-brexit?source=origami-registry&width=430);
+				background-position: 100% 50%;
+				bottom: -215px;
+				height: 430px;
+				right: 20px;
+				width: 430px;
+			}
+		}
+	}
+
+	&--cryptocurrencies {
+		@extend %barrier-banner-shared;
+		
+		background-color: getColor('velvet');
+		color: white;
+
+		.o-grid-container:after {
+			@extend %barrier-background-shared;
+			
+			@include oGridRespondTo(M) {
+				background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Fft-next-assets-prod%2Fassets%2Fbackgrounds%2Fbarriers%2Fcryptocurrencies.svg?source=next&format=svg);
+				bottom: -80px;
+				height: 348px;
+				opacity: 0.75;
+				right: 20px;
+				width: 566px;
+			}
+		}
+	}
+
+	&--global {
+		@extend %barrier-banner-shared;
+
+		background-color: #003894;
+		color: getColor('white');
+
+		&:after {
+			@extend %barrier-background-shared;
+			
+			@include oGridRespondTo(M) {
+				background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Fft-next-assets-prod%2Fassets%2Fbackgrounds%2Fbarriers%2Fglobal.svg?source=next&format=svg);
+				bottom: -62px;
+				height: 413px;
+				right: -120px;
+				width: 520px;
+			}
+		}
+	}
+
+	&--markets {
+		@extend %barrier-banner-shared;
+
+		background-color: getColor('paper');
+
+		&:after {
+			@extend %barrier-background-shared;
+			
+			@include oGridRespondTo(M) {
+				background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Fft-next-assets-prod%2Fassets%2Fbackgrounds%2Fbarriers%2Fmarkets.svg?source=next&format=svg);
+				bottom: -40px;
+				height: 286px;
+				right: -420px;
+				width: 1791px;
+			}
+			@include oGridRespondTo(L) {
+				right: -220px;
+			}
+			@include oGridRespondTo(XL) {
+				right: -50px;
+			}
+		}
+	}
+}
+
 .barrier__button {
 	&-primary {
 		&--big {
