@@ -173,6 +173,9 @@
 		&__container {
 			float: none;
 			margin-left: auto;
+			@include oGridRespondTo($until: M) {
+				display: none;
+			}
 		}
 	}
 

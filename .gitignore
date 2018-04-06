@@ -3,7 +3,7 @@
 /public*
 /.idea
 *.env*
-package-lock.json
+package-lock.json*
 
 /build/
 /demos/local*
