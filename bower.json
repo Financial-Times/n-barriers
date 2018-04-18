@@ -17,6 +17,7 @@
   "private": true,
   "dependencies": {
     "n-ui-foundations": "^3.0.0",
-    "o-subs-card": "^1.0.2"
+    "o-subs-card": "^2.0.1",
+    "o-expander": "^4.4.4"
   }
 }

@@ -1,98 +1,11 @@
-.barrier__package-card {
+.o-subs-card {
 	@include oSubsCard;
-	border-bottom: 5px solid getColor('paper');
-	margin: 0 0 20px;
+}
 
-	&--slate {
-		background: getColor('slate');
-		color: getColor('white');
+.o-subs-card__container {
+	@include oSubsCardContainer;
+}
 
-		.o-subs-card__copy-details {
-			background: getColor('slate');
-			color: getColor('white');
-		}
-
-		.o-subs-card__select-button {
-			@include oButtons($size: big, $theme: primary);
-			@include oButtonsCustomTheme('slate', 'white');
-
-			margin-top: 12px;
-		}
-	}
-
-	&__header {
-		&-copy {
-			padding: 0 20px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		&-title {
-			min-height: 52px;
-
-			&:first-child {
-				padding-top: 16px;
-			}
-		}
-
-		&-benefits {
-			min-height: 60px;
-		}
-
-		&-charge {
-			padding: 0;
-		}
-	}
-
-	&__benefits {
-		list-style: none;
-		margin: 10px 0;
-		padding: 0;
-
-		li {
-			margin-bottom: 10px;
-			padding: 0;
-		}
-	}
-
-	&__expander {
-		@include oTypographySans($scale: 0);
-		border: 0;
-		background-color: transparent;
-		color: getColor('teal');
-
-		&::after {
-			background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-down?source=o-icons&tint=%230D7680,%230D7680&format=png&width=24');
-			width: 24px;
-			height: 24px;
-			display: inline-block;
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: 50%;
-			background-color: transparent;
-			content: '';
-			position: relative;
-			vertical-align: middle;
-		}
-
-		&--expanded {
-			&::after {
-				background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-up?source=o-icons&tint=%230D7680,%230D7680&format=png&width=24");
-			}
-		}
-	}
-
-	.o-subs-card__read-more {
-		padding: 5px 0;
-	}
-
-	.o-subs-card__copy-details {
-		padding: 10px 20px;
-	}
-
-	.o-subs-card__select-button {
-		padding: 11px 5px;
-		margin-bottom: 5px;
-	}
+.barrier__toggle {
+	@include oExpanderToggle('barrier__toggle', getColor('teal-40'));
 }
