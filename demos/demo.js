@@ -1,6 +1,6 @@
 const express = require('@financial-times/n-internal-tool');
 const handler = require('./handler');
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 const app = module.exports = express({
 	name: 'public',
 	systemCode: 'n-barriers-demo',
