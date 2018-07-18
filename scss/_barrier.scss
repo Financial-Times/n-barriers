@@ -290,7 +290,10 @@
 
 	&-inverse {
 		&--big {
-			@include oButtons($size: big, $theme: inverse);
+			@include oButtons($size: 'big', $theme: (
+			accent: 'white',
+			background: 'teal',
+			colorizer: 'secondary'));
 		}
 	}
 
