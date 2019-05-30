@@ -1,3 +1,4 @@
+@import "o-icons/main";
 
 .barrier {
 	@include oTypographySans($scale: 0);
@@ -163,6 +164,157 @@
 		z-index: 1;
 	}
 
+	// The following are used in the new variant
+	&--dynamic {
+		overflow: visible;
+
+		@include oGridRespondTo(M) {
+			.o-grid-row {
+				min-height: 323px;
+			}
+		}
+
+		&::after {
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0) 100%);
+			bottom: 0;
+			content: '';
+			display: block;
+			height: 30px;
+			position: absolute;
+			width: 100%;
+			z-index: 3;
+		}
+
+		.barrier__leading-text {
+			@include oTypographySansBold($scale: -1);
+
+			@include oGridRespondTo(M) {
+				@include oTypographySize($scale: 1);
+			}
+		}
+	}
+	&__img {
+		bottom: -20px;
+		display: none;
+		position: absolute;
+		z-index: 1;
+
+		@include oGridRespondTo(M) {
+			display: block;
+			right: -250px;
+		}
+		@include oGridRespondTo(L) {
+			right: -50px;
+		}
+	}
+	&__quote {
+		blockquote {
+			@include oTypographyDisplay($scale: 3, $line-height: 28px);
+			font-weight: 400;
+			margin: 15px 0 0;
+			position: relative;
+
+			@include oGridRespondTo(M) {
+				@include oTypographySize($scale: 6, $line-height: 44px);
+			}
+
+			&::after {
+				@include oIconsGetIcon('speech-right', getColor('black-10'), 50);
+				bottom: -18px;
+				content: '';
+				left: -20px;
+				position: relative;
+
+				@include oGridRespondTo(M) {
+					bottom: -27px;
+					left: -25px;
+				}
+			}
+
+			&::before {
+				@include oIconsGetIcon('speech-left', getColor('black-10'), 50);
+				content: '';
+				left: -25px;
+				margin-right: -44px;
+				position: absolute;
+				top: 30px;
+
+				@include oGridRespondTo(M) {
+					left: -35px;
+					top: 20px;
+				}
+			}
+
+			&::after,
+			&::before {
+				display: inline-block;
+				margin-top: -40px;
+				z-index: -1;
+
+				@include oGridRespondTo(M) {
+					height: 60px;
+					width: 60px;
+				}
+			}
+		}
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0 30px;
+
+		@include oGridRespondTo(M) {
+			padding: 0 0 0 10px;
+		}
+		@include oGridRespondTo(L) {
+			padding: 0 0 0 70px;
+		}
+	}
+	&__content {
+		@include oTypographySans($scale: -1);
+		padding-left: 7px;
+		position: relative;
+
+		@include oGridRespondTo(M) {
+			@include oTypographySize($scale: 1);
+			padding-left: 55px;
+		}
+
+		&::before {
+			background: getColor('black');
+			bottom: -60px;
+			content: '';
+			display: block;
+			height: 100%;
+			left: -15px;
+			padding-bottom: 60px;
+			position: absolute;
+			width: 1px;
+
+			@include oGridRespondTo(M) {
+				left: 25px;
+			}
+		}
+
+		ul,
+		ol {
+			list-style: none;
+			padding-left: 0;
+		}
+		li {
+			&::before {
+				@include oIconsGetIcon('tick', getColor('black'), 26);
+				content: '';
+				display: inline-block;
+				margin-left: -6px;
+				margin-top: -3px;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	// The below are used in the previous implementation.
 	.barrier__heading {
 		@include oTypographySize($scale: 5);
 	}
