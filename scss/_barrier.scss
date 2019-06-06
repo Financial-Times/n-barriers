@@ -263,6 +263,8 @@
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 0 30px;
+		position: relative;
+		z-index: 2;
 
 		@include oGridRespondTo(M) {
 			padding: 0 0 0 10px;
