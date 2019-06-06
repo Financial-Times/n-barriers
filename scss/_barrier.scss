@@ -191,6 +191,23 @@
 			@include oGridRespondTo(M) {
 				@include oTypographySize($scale: 1);
 			}
+
+			&--no-article {
+				@include oTypographySansBold($scale: 3);
+
+				@include oGridRespondTo(M) {
+					@include oTypographySize($scale: 5);
+					display: inline-block;
+					margin-top: 60px;
+				}
+			}
+		}
+
+	}
+	&__img-container {
+		overflow: hidden;
+		@include oGridRespondTo(XL) {
+			overflow: visible;
 		}
 	}
 	&__img {
@@ -204,6 +221,9 @@
 			right: -250px;
 		}
 		@include oGridRespondTo(L) {
+			right: -120px;
+		}
+		@include oGridRespondTo(XL) {
 			right: -50px;
 		}
 	}
@@ -281,6 +301,12 @@
 		@include oGridRespondTo(M) {
 			@include oTypographySize($scale: 1);
 			padding-left: 55px;
+		}
+
+		&--no-article {
+			@include oGridRespondTo(M) {
+				padding-bottom: 45px;
+			}
 		}
 
 		&::before {
