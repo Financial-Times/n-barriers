@@ -15,7 +15,8 @@
   "scripts": {
     "precommit": "node_modules/.bin/secret-squirrel",
     "prepush": "make verify -j3",
-    "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg"
+    "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg",
+    "prepare": "npx snyk protect || npx snyk protect -d || true"
   },
   "engines": {
     "node": "^9.2.0"
@@ -28,6 +29,7 @@
     "node-sass": "^4.9.2",
     "postcss-cli": "^5.0.1",
     "postcss-discard-duplicates": "^4.0.0",
-    "postcss-extract-css-block": "^0.1.0"
+    "postcss-extract-css-block": "^0.1.0",
+    "snyk": "^1.167.2"
   }
 }
