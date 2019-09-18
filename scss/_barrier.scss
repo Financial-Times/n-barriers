@@ -47,7 +47,7 @@
 
 	&--package-image {
 		display: none;
-		@include oGridRespondTo(M) {
+		@include oGridRespondTo(L) {
 			display: block;
 		}
 	}
@@ -168,7 +168,7 @@
 	&--dynamic {
 		overflow: visible;
 
-		@include oGridRespondTo(M) {
+		@include oGridRespondTo(L) {
 			.o-grid-row {
 				min-height: 337px;
 			}
@@ -189,6 +189,9 @@
 			@include oTypographySansBold($scale: -1);
 
 			@include oGridRespondTo(M) {
+				@include oTypographySize($scale: 0);
+			}
+			@include oGridRespondTo(L) {
 				@include oTypographySize($scale: 1);
 			}
 
@@ -196,9 +199,12 @@
 				@include oTypographySansBold($scale: 3);
 
 				@include oGridRespondTo(M) {
-					@include oTypographySize($scale: 5);
+					@include oTypographySize($scale: 4);
 					display: inline-block;
 					margin-top: 60px;
+				}
+				@include oGridRespondTo(L) {
+					@include oTypographySize($scale: 5);
 				}
 			}
 		}
@@ -206,7 +212,7 @@
 	}
 	&__img-container {
 		overflow: hidden;
-		@include oGridRespondTo(XL) {
+		@include oGridRespondTo(L) {
 			overflow: visible;
 		}
 	}
@@ -216,12 +222,8 @@
 		position: absolute;
 		z-index: 1;
 
-		@include oGridRespondTo(M) {
-			display: block;
-			right: -250px;
-		}
 		@include oGridRespondTo(L) {
-			right: -120px;
+			display: block;
 		}
 		@include oGridRespondTo(XL) {
 			right: -50px;
@@ -235,6 +237,12 @@
 			position: relative;
 
 			@include oGridRespondTo(M) {
+				@include oTypographySize($scale: 4, $line-height: 36px);
+			}
+			@include oGridRespondTo(L) {
+				@include oTypographySize($scale: 5, $line-height: 36px);
+			}
+			@include oGridRespondTo(XL) {
 				@include oTypographySize($scale: 6, $line-height: 44px);
 			}
 
@@ -299,8 +307,12 @@
 		position: relative;
 
 		@include oGridRespondTo(M) {
-			@include oTypographySize($scale: 1);
+			@include oTypographySize($scale: 0);
 			padding-left: 55px;
+		}
+
+		@include oGridRespondTo(L) {
+			@include oTypographySize($scale: 1);
 		}
 
 		&--no-article {
